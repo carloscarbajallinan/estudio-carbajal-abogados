@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Versión 1: Editorial Prestige | Estudio Carbajal Abogados</title>
+  
+  <!-- Tipografías de Prestigio -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            prestige: {
+              emerald: '#14362E',
+              'emerald-dark': '#0E241F',
+              gold: '#C5A880',
+              'gold-light': '#E5D3BA',
+              sand: '#F7F4EE',
+              charcoal: '#18201E',
+            }
+          },
+          fontFamily: {
+            editorial: ['"Playfair Display"', 'Georgia', 'serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#FDFCFA] text-[#18201E] font-sans antialiased selection:bg-prestige-emerald selection:text-white">
+
+  <!-- Top bar de prestigio -->
+  <div class="bg-prestige-emerald-dark text-prestige-gold-light py-2.5 px-4 sm:px-8 text-xs border-b border-prestige-gold/20">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-6 tracking-wide">
+        <span class="flex items-center gap-2">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-prestige-gold"></i>
+          <span>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú</span>
+        </span>
+        <span class="hidden md:inline text-prestige-gold/40">|</span>
+        <span class="hidden md:flex items-center gap-2">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-prestige-gold"></i>
+          <span>estudiocarbajal@usa.com</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-5">
+        <span class="text-white/80">Central: (01) 476-2155</span>
+        <a href="tel:971111730" class="text-prestige-gold hover:underline font-semibold flex items-center gap-1.5">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>971 111 730</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barra de Navegación Editorial -->
+  <header class="sticky top-0 z-40 bg-[#FDFCFA]/95 backdrop-blur-md border-b border-prestige-gold/20 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-5">
+      <div class="flex items-center justify-between">
+        
+        <a href="#inicio" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded bg-prestige-emerald text-prestige-gold-light flex items-center justify-center font-editorial font-bold text-2xl border border-prestige-gold/40 shadow-xs">
+            C
+          </div>
+          <div>
+            <span class="font-editorial text-2xl font-bold tracking-tight text-prestige-emerald-dark block leading-none">
+              ESTUDIO CARBAJAL
+            </span>
+            <span class="text-[10px] uppercase tracking-widest text-prestige-gold font-bold block mt-1">
+              Abogados Consultores & Litigantes • RUC: 10066665360
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-slate-700">
+          <a href="#inicio" class="hover:text-prestige-emerald transition-colors">Inicio</a>
+          <a href="#doctrina" class="hover:text-prestige-emerald transition-colors">La Firma</a>
+          <a href="#areas" class="hover:text-prestige-emerald transition-colors">Áreas de Práctica</a>
+          <a href="#clientes" class="hover:text-prestige-emerald transition-colors">Clientes & Alianzas</a>
+          <a href="#socio" class="hover:text-prestige-emerald transition-colors">Socio Director</a>
+          <a href="#equipo" class="hover:text-prestige-emerald transition-colors">Equipo Legal</a>
+        </nav>
+
+        <a 
+          href="#contacto" 
+          class="hidden sm:flex items-center gap-2 px-5 py-2.5 rounded bg-prestige-emerald hover:bg-prestige-emerald-dark text-prestige-gold-light text-xs font-semibold uppercase tracking-wider transition-all border border-prestige-gold/30 shadow-xs"
+        >
+          <i data-lucide="scale" class="w-4 h-4 text-prestige-gold"></i>
+          <span>Consulta Confidencial</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section Editorial -->
+  <section id="inicio" class="py-20 lg:py-28 relative overflow-hidden bg-gradient-to-b from-[#F7F4EE] via-[#FDFCFA] to-white border-b border-prestige-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-prestige-emerald/5 border border-prestige-gold/40 text-xs font-semibold text-prestige-emerald">
+            <span class="w-1.5 h-1.5 rounded-full bg-prestige-gold"></span>
+            <span>Estudio Jurídico en San Isidro • Más de 20 Años en Tribunales</span>
+          </div>
+
+          <h1 class="font-editorial text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-prestige-emerald-dark leading-[1.12]">
+            Rigor jurídico y pensamiento estratégico al servicio de <span class="italic font-serif font-normal text-prestige-emerald">empresas y aseguradoras</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-700 font-light leading-relaxed max-w-2xl">
+            Especialistas en dar soporte continuo a compañías de seguros, clínicas privadas y corporaciones en el Perú, garantizando tranquilidad, solvencia técnica y estricta confidencialidad.
+          </p>
+
+          <!-- Cita de Couture -->
+          <div class="p-5 rounded-lg bg-white border border-prestige-gold/30 shadow-2xs border-l-4 border-l-prestige-emerald">
+            <p class="font-serif italic text-lg sm:text-xl text-slate-800 leading-snug">
+              “El derecho se aprende estudiando, pero se ejerce pensando.”
+            </p>
+            <span class="block text-xs uppercase tracking-wider font-semibold text-prestige-gold mt-2">
+              — Eduardo J. Couture
+            </span>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+            <a 
+              href="#contacto" 
+              class="w-full sm:w-auto px-7 py-3.5 rounded bg-prestige-emerald hover:bg-prestige-emerald-dark text-prestige-gold-light text-xs font-bold uppercase tracking-wider transition-all shadow-sm flex items-center justify-center gap-2"
+            >
+              <i data-lucide="calendar" class="w-4 h-4 text-prestige-gold"></i>
+              <span>Agendar Consulta Institucional</span>
+            </a>
+            <a 
+              href="https://wa.me/51971111730?text=Hola,%20deseo%20hacer%20una%20consulta%20con%20el%20Estudio%20Carbajal%20Abogados."
+              target="_blank"
+              class="w-full sm:w-auto px-6 py-3.5 rounded border border-prestige-gold/60 hover:bg-prestige-sand text-prestige-emerald-dark text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+            >
+              <i data-lucide="message-square" class="w-4 h-4 text-emerald-700"></i>
+              <span>WhatsApp Directo: 971 111 730</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagen Arquitectónica Solemne -->
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <div class="rounded-2xl overflow-hidden border-2 border-prestige-gold/30 shadow-xl bg-slate-900">
+              <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
+                alt="Arquitectura Corporativa San Isidro" 
+                class="w-full h-[460px] object-cover object-center filter grayscale contrast-115 opacity-90 hover:grayscale-0 transition-all duration-700"
+              />
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-xl border border-prestige-gold/40 shadow-lg max-w-xs hidden sm:block">
+              <span class="text-xs uppercase tracking-widest text-prestige-gold font-bold block">Sede Corporativa</span>
+              <p class="font-editorial text-sm font-bold text-slate-900 mt-1">Urb. Córpac, San Isidro</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">Centro financiero y asegurador de Lima</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección Doctrina y Filosofía -->
+  <section id="doctrina" class="py-20 bg-white border-b border-prestige-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <span class="text-xs uppercase tracking-widest text-prestige-gold font-bold">Compromiso Institucional</span>
+        <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-prestige-emerald-dark">
+          “La calidad de nuestros servicios, son nuestra mejor publicidad.”
+        </h2>
+        <div class="w-16 h-0.5 bg-prestige-gold mx-auto my-4"></div>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-light">
+          Tenemos más de veinte años asesorando empresas y compañías de seguros. Nuestro objetivo principal es brindar una asesoría legal permanente a nuestros clientes para darles tranquilidad y seguridad jurídica ante cualquier contingencia.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
+        <div class="p-6 rounded-lg bg-prestige-sand border border-prestige-gold/30 text-center space-y-3">
+          <div class="w-12 h-12 rounded-full bg-prestige-emerald text-prestige-gold mx-auto flex items-center justify-center">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-editorial text-lg font-bold text-prestige-emerald-dark">Especialistas en Seguros</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Patrocinio integral en litigios de cobertura, siniestralidad de gran envergadura y acciones de recupero para las principales firmas del país.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-prestige-sand border border-prestige-gold/30 text-center space-y-3">
+          <div class="w-12 h-12 rounded-full bg-prestige-emerald text-prestige-gold mx-auto flex items-center justify-center">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-editorial text-lg font-bold text-prestige-emerald-dark">Soporte a Empresas</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Asesoría corporativa permanente orientada a blindar operaciones mercantiles, prevenir litigios y garantizar continuidad comercial.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-prestige-sand border border-prestige-gold/30 text-center space-y-3">
+          <div class="w-12 h-12 rounded-full bg-prestige-emerald text-prestige-gold mx-auto flex items-center justify-center">
+            <i data-lucide="scale" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-editorial text-lg font-bold text-prestige-emerald-dark">Solvencia Procesal</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Defensa técnica en fueros civil, penal y administrativo, con dirección letrada directa del socio principal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Áreas de Práctica -->
+  <section id="areas" class="py-20 bg-[#F7F4EE] border-b border-prestige-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-prestige-gold font-bold block mb-1">Materias de Actuación</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-prestige-emerald-dark">
+            Áreas de Práctica Jurídica
+          </h2>
+        </div>
+        <p class="text-xs text-slate-600 max-w-md">
+          Atención especializada en controversias complejas con enfoque interdisciplinario.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Tarjetas con diseño solemne -->
+        <div class="bg-white p-7 rounded-lg border border-prestige-gold/30 shadow-2xs space-y-3">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-prestige-gold">01. Práctica Destacada</span>
+          <h3 class="font-editorial text-xl font-bold text-prestige-emerald-dark">Derecho de Seguros y Reaseguros</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Siniestros patrimoniales, coberturas, disputas de pólizas, subrogación aseguradora y regulación ante SBS.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-lg border border-prestige-gold/30 shadow-2xs space-y-3">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-prestige-gold">02. Asesoría Corporativa</span>
+          <h3 class="font-editorial text-xl font-bold text-prestige-emerald-dark">Derecho Corporativo & Empresarial</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Contratos mercantiles, gobierno corporativo, fusiones, auditorías legales preventivas y soporte a directorios.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-lg border border-prestige-gold/30 shadow-2xs space-y-3">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-prestige-gold">03. Defensa Penal</span>
+          <h3 class="font-editorial text-xl font-bold text-prestige-emerald-dark">Derecho Penal de la Empresa</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Litigación penal corporativa, delitos contra el patrimonio, fraude económico y defensa técnica en sede fiscal y judicial.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-lg border border-prestige-gold/30 shadow-2xs space-y-3">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-prestige-gold">04. Litigación Civil</span>
+          <h3 class="font-editorial text-xl font-bold text-prestige-emerald-dark">Derecho Civil y Laboral</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Responsabilidad civil contractual y extracontractual, indemnizaciones cuantiosas, derechos reales y gestión laboral.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-lg border border-prestige-gold/30 shadow-2xs space-y-3">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-prestige-gold">05. Regulatorio</span>
+          <h3 class="font-editorial text-xl font-bold text-prestige-emerald-dark">Derecho Administrativo</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Procedimientos sancionadores, recursos de impugnación y representación ante SUSALUD, INDECOPI y entidades públicas.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-lg border border-prestige-gold/30 shadow-2xs space-y-3">
+          <span class="text-[10px] uppercase tracking-widest font-bold text-prestige-gold">06. Sucesiones & Familia</span>
+          <h3 class="font-editorial text-xl font-bold text-prestige-emerald-dark">Derecho de Familia</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Patrimonio familiar, partición de herencias, sucesiones intestadas, testamentos y solución extrajudicial con absoluta reserva.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clientes Principales -->
+  <section id="clientes" class="py-20 bg-white border-b border-prestige-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-widest text-prestige-gold font-bold">Relaciones Institucionales</span>
+        <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-prestige-emerald-dark mt-1">
+          Nuestros Clientes Principales
+        </h2>
+        <p class="text-xs text-slate-600 mt-2">
+          Empresas que depositan su confianza en nuestro equipo letrado:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">Rímac Seguros</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Compañía de Seguros</span>
+        </div>
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">Pacífico Seguros</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Compañía de Seguros</span>
+        </div>
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">Clínica Internacional</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Sector Salud & Clínicas</span>
+        </div>
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">Rímac EPS</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Entidad Prestadora de Salud</span>
+        </div>
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">Protecta Security</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Seguros de Vida</span>
+        </div>
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">HDI Seguros</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Seguros Patrimoniales</span>
+        </div>
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">ADECCO Perú</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Servicios Corporativos</span>
+        </div>
+        <div class="p-6 rounded border border-prestige-gold/20 bg-prestige-sand text-center">
+          <span class="font-editorial font-bold text-base text-slate-900 block">Touring Escuela SAC</span>
+          <span class="text-[10px] uppercase text-prestige-gold font-semibold">Transporte & Educación</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Socio Director & Equipo -->
+  <section id="socio" class="py-20 bg-[#F7F4EE] border-b border-prestige-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
+      
+      <!-- Socio Director -->
+      <div class="bg-white p-8 sm:p-12 rounded-2xl border border-prestige-gold/40 shadow-xs">
+        <div class="max-w-3xl space-y-4">
+          <span class="text-xs uppercase tracking-widest font-bold text-prestige-gold">Dirección de la Firma</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-prestige-emerald-dark">
+            Dr. Carlos Alberto Carbajal Gonzales
+          </h2>
+          <p class="text-sm font-semibold text-slate-800">
+            Abogado con Especialización Penal y Máster en Derecho Empresarial por la <span class="text-prestige-emerald font-bold">Universidad de Lima</span>.
+          </p>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
+            Con más de veinte años de ejercicio profesional ininterrumpido en tribunales y consultoría empresarial, lidera la estrategia procesal en litigios de alta cuantía y la asesoría continua a aseguradoras líderes en el Perú.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1 rounded bg-prestige-sand border border-prestige-gold/30 font-medium">Derecho Corporativo</span>
+            <span class="px-3 py-1 rounded bg-prestige-sand border border-prestige-gold/30 font-medium">Derecho de Seguros</span>
+            <span class="px-3 py-1 rounded bg-prestige-sand border border-prestige-gold/30 font-medium">Derecho Penal</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipo de Abogados Asociados -->
+      <div id="equipo" class="space-y-6">
+        <h3 class="font-editorial text-2xl font-bold text-prestige-emerald-dark">
+          Abogados Asociados
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-5 rounded-lg bg-white border border-prestige-gold/30">
+            <h4 class="font-editorial font-bold text-slate-900">Julio Chavarry Valdez</h4>
+            <span class="text-xs text-prestige-gold font-semibold block mt-0.5">Civil y Laboral</span>
+            <p class="text-[11px] text-slate-500 mt-2">Controversias contractuales, responsabilidad civil y relaciones laborales.</p>
+          </div>
+          <div class="p-5 rounded-lg bg-white border border-prestige-gold/30">
+            <h4 class="font-editorial font-bold text-slate-900">Osmar Sánchez Bustamante</h4>
+            <span class="text-xs text-prestige-gold font-semibold block mt-0.5">Penal y Seguros</span>
+            <p class="text-[11px] text-slate-500 mt-2">Patrocinio penal económico y siniestralidad aseguradora.</p>
+          </div>
+          <div class="p-5 rounded-lg bg-white border border-prestige-gold/30">
+            <h4 class="font-editorial font-bold text-slate-900">Daniel Liñán Gambini</h4>
+            <span class="text-xs text-prestige-gold font-semibold block mt-0.5">Administrativo</span>
+            <p class="text-[11px] text-slate-500 mt-2">Procedimientos sancionadores y regulación estatal.</p>
+          </div>
+          <div class="p-5 rounded-lg bg-white border border-prestige-gold/30">
+            <h4 class="font-editorial font-bold text-slate-900">Jandira Barrera Lagos</h4>
+            <span class="text-xs text-prestige-gold font-semibold block mt-0.5">Familia</span>
+            <p class="text-[11px] text-slate-500 mt-2">Sucesiones, particiones patrimoniales y acuerdos familiares.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto y Ubicación -->
+  <section id="contacto" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs uppercase tracking-widest text-prestige-gold font-bold">Atención Personalizada</span>
+            <h2 class="font-editorial text-3xl font-bold text-prestige-emerald-dark mt-1">
+              Coordinar una Consulta
+            </h2>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Póngase en contacto con nuestra secretaría letrada para coordinar una cita en San Isidro o mediante videoconferencia reservada.
+            </p>
+          </div>
+
+          <div class="space-y-4 text-xs text-slate-700 bg-prestige-sand p-6 rounded-xl border border-prestige-gold/30">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-prestige-emerald shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="block text-slate-900">Sede San Isidro:</strong>
+                <span>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-prestige-emerald shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="block text-slate-900">Teléfonos Oficiales:</strong>
+                <span>Central: (01) 476-2155</span>
+                <span class="block">Celulares: 971 111 730 – 975 137 308</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i data-lucide="mail" class="w-4 h-4 text-prestige-emerald shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="block text-slate-900">Correo Institucional:</strong>
+                <span>estudiocarbajal@usa.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <form class="p-8 rounded-xl bg-prestige-sand border border-prestige-gold/30 space-y-4 shadow-xs" onsubmit="event.preventDefault(); alert('Solicitud registrada con éxito. La secretaría letrada se comunicará con usted a la brevedad.');">
+            <h3 class="font-editorial text-xl font-bold text-prestige-emerald-dark">
+              Formulario de Consulta Confidencial
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Nombre o Empresa *</label>
+                <input type="text" required placeholder="Nombre completo" class="w-full px-3 py-2 rounded bg-white border border-prestige-gold/30 text-xs focus:outline-none focus:border-prestige-emerald" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Teléfono Móvil *</label>
+                <input type="tel" required placeholder="971 111 730" class="w-full px-3 py-2 rounded bg-white border border-prestige-gold/30 text-xs focus:outline-none focus:border-prestige-emerald" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Materia Legal *</label>
+              <select class="w-full px-3 py-2 rounded bg-white border border-prestige-gold/30 text-xs focus:outline-none focus:border-prestige-emerald">
+                <option>Derecho de Seguros y Reaseguros</option>
+                <option>Derecho Corporativo y Empresarial</option>
+                <option>Derecho Penal de la Empresa</option>
+                <option>Derecho Civil y Laboral</option>
+                <option>Derecho Administrativo</option>
+                <option>Derecho de Familia</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Resumen del Asunto</label>
+              <textarea rows="3" placeholder="Describa brevemente los antecedentes de su caso..." class="w-full p-3 rounded bg-white border border-prestige-gold/30 text-xs focus:outline-none focus:border-prestige-emerald"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 rounded bg-prestige-emerald hover:bg-prestige-emerald-dark text-prestige-gold-light text-xs font-bold uppercase tracking-wider transition-colors shadow-2xs">
+              Remitir Solicitud a Secretaría
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-prestige-emerald-dark text-slate-300 py-12 border-t border-prestige-gold/20 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-editorial text-base font-bold text-white block">ESTUDIO CARBAJAL ABOGADOS</span>
+        <span class="text-slate-400 text-[11px]">RUC: 10066665360 • San Isidro, Lima - Perú</span>
+      </div>
+      <div class="text-[11px] text-prestige-gold-light">
+        © 2026 Estudio Carbajal Abogados. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

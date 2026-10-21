@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Versión 2: Corporativo San Isidro | Estudio Carbajal Abogados</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            corp: {
+              navy: '#0B1B3D',
+              'navy-dark': '#060F24',
+              blue: '#1E40AF',
+              accent: '#0284C7',
+              slate: '#334155',
+              surface: '#F1F5F9',
+            }
+          },
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-corp-navy selection:text-white">
+
+  <!-- Header Moderno San Isidro -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="#inicio" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-corp-navy text-white flex items-center justify-center font-heading font-bold text-xl shadow-xs">
+            EC
+          </div>
+          <div>
+            <span class="font-heading text-xl font-bold tracking-tight text-corp-navy block leading-none">
+              CARBAJAL ABOGADOS
+            </span>
+            <span class="text-[10px] uppercase tracking-widest text-corp-accent font-semibold block mt-1">
+              San Isidro • Corporativo & Seguros
+            </span>
+          </div>
+        </a>
+
+        <!-- Navegación -->
+        <nav class="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-slate-600">
+          <a href="#inicio" class="hover:text-corp-blue transition-colors">Inicio</a>
+          <a href="#practicas" class="hover:text-corp-blue transition-colors">Prácticas</a>
+          <a href="#clientes" class="hover:text-corp-blue transition-colors">Clientes Líderes</a>
+          <a href="#firma" class="hover:text-corp-blue transition-colors">La Firma</a>
+          <a href="#contacto" class="hover:text-corp-blue transition-colors">Contacto</a>
+        </nav>
+
+        <!-- CTA Directo -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a href="tel:014762155" class="text-xs font-semibold text-slate-600 hover:text-corp-navy flex items-center gap-1.5">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-corp-blue"></i>
+            <span>(01) 476-2155</span>
+          </a>
+          <a 
+            href="#contacto" 
+            class="px-4 py-2.5 rounded-lg bg-corp-navy hover:bg-corp-blue text-white text-xs font-bold uppercase tracking-wider transition-all shadow-xs"
+          >
+            Consulta Legal
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section Corporativo con Foto Arquitectónica -->
+  <section id="inicio" class="relative bg-corp-navy-dark text-white py-20 lg:py-28 overflow-hidden">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <img 
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600" 
+        alt="Centro Financiero San Isidro"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-8 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-blue-900/60 border border-blue-400/30 text-xs font-semibold text-blue-300">
+            <i data-lucide="building-2" class="w-4 h-4 text-blue-400"></i>
+            <span>Sede en Urb. Córpac, San Isidro — RUC: 10066665360</span>
+          </div>
+
+          <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+            Soporte jurídico de alto nivel para <span class="text-blue-400">aseguradoras y corporaciones</span> en el Perú.
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+            Más de 20 años de experiencia asesorando a empresas líderes como Pacífico Seguros, Rímac, Protecta Security y Clínica Internacional con rigor procesal y defensa predictiva.
+          </p>
+
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a 
+              href="#contacto" 
+              class="px-6 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center gap-2"
+            >
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Solicitar Asesoría Corporativa</span>
+            </a>
+            <a 
+              href="https://wa.me/51971111730?text=Hola,%20deseo%20hacer%20una%20consulta%20con%20el%20Estudio%20Carbajal%20Abogados."
+              target="_blank"
+              class="px-6 py-3.5 rounded-lg border border-slate-600 hover:border-slate-400 bg-white/5 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2"
+            >
+              <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
+              <span>WhatsApp: 971 111 730</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cifras de Impacto Corporativo -->
+        <div class="lg:col-span-4">
+          <div class="rounded-2xl border border-slate-700 bg-slate-900/90 backdrop-blur-md p-6 space-y-4 shadow-xl">
+            <h3 class="font-heading text-sm font-bold uppercase tracking-widest text-blue-400 border-b border-slate-800 pb-3">
+              Indicadores de Confianza
+            </h3>
+            
+            <div class="space-y-4 text-xs">
+              <div class="flex items-center justify-between border-b border-slate-800/80 pb-3">
+                <span class="text-slate-400">Trayectoria:</span>
+                <span class="font-bold text-white text-base">+20 Años</span>
+              </div>
+              <div class="flex items-center justify-between border-b border-slate-800/80 pb-3">
+                <span class="text-slate-400">Especialidad:</span>
+                <span class="font-bold text-blue-300">Seguros & Corporativo</span>
+              </div>
+              <div class="flex items-center justify-between border-b border-slate-800/80 pb-3">
+                <span class="text-slate-400">Socio Director:</span>
+                <span class="font-bold text-white text-right">Dr. Carlos Alberto Carbajal G.</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Posgrado:</span>
+                <span class="font-bold text-white text-right">Máster Univ. de Lima</span>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <div class="p-3 rounded bg-blue-950/60 border border-blue-900/50 text-[11px] text-blue-200">
+                “El derecho se aprende estudiando, pero se ejerce pensando.” — Couture
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Marcas y Clientes Principales -->
+  <section id="clientes" class="py-16 bg-corp-surface border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs uppercase tracking-widest text-corp-blue font-bold">Respaldo Comprobado</span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-corp-navy mt-1">
+          Clientes Principales & Entidades Asesoradas
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">Rímac Seguros</strong>
+          <span class="text-[11px] text-slate-500">Compañía de Seguros</span>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">Pacífico Seguros</strong>
+          <span class="text-[11px] text-slate-500">Proveedor Legal</span>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">Clínica Internacional</strong>
+          <span class="text-[11px] text-slate-500">Sector Salud</span>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">Rímac EPS</strong>
+          <span class="text-[11px] text-slate-500">Planes de Salud</span>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">Protecta Security</strong>
+          <span class="text-[11px] text-slate-500">Seguros de Vida</span>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">HDI Seguros</strong>
+          <span class="text-[11px] text-slate-500">Seguros Patrimoniales</span>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">ADECCO Perú</strong>
+          <span class="text-[11px] text-slate-500">Servicios Corporativos</span>
+        </div>
+        <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs text-center">
+          <strong class="font-heading text-slate-900 block text-base">Touring Escuela SAC</strong>
+          <span class="text-[11px] text-slate-500">Transporte y Servicios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Áreas de Práctica con Enfoque Corporativo -->
+  <section id="practicas" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="mb-14">
+        <span class="text-xs uppercase tracking-widest text-corp-blue font-bold block mb-1">Portafolio Legal</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-corp-navy">
+          Áreas de Práctica Estratégica
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-xl border border-slate-200 bg-white hover:border-corp-blue transition-all shadow-2xs">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-corp-blue flex items-center justify-center mb-4">
+            <i data-lucide="shield-alert" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-corp-navy mb-2">Derecho de Seguros</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">Siniestros complejos, litigios de cobertura, subrogación aseguradora y transacciones extrajudiciales.</p>
+          <span class="text-xs font-bold text-corp-blue">Proveedor homologado →</span>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white hover:border-corp-blue transition-all shadow-2xs">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-corp-blue flex items-center justify-center mb-4">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-corp-navy mb-2">Derecho Corporativo</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">Asesoría permanente a empresas, estructuración de contratos mercantiles y prevención de riesgos legales.</p>
+          <span class="text-xs font-bold text-corp-blue">Soporte a directorios →</span>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white hover:border-corp-blue transition-all shadow-2xs">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-corp-blue flex items-center justify-center mb-4">
+            <i data-lucide="scale" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-corp-navy mb-2">Penal de la Empresa</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">Defensa penal corporativa y patrocinio técnico en investigaciones fiscales por delitos económicos.</p>
+          <span class="text-xs font-bold text-corp-blue">Litigación penal →</span>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white hover:border-corp-blue transition-all shadow-2xs">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-corp-blue flex items-center justify-center mb-4">
+            <i data-lucide="users" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-corp-navy mb-2">Civil y Laboral</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">Indemnizaciones por daños y perjuicios, resolución contractual y relaciones laborales empresariales.</p>
+          <span class="text-xs font-bold text-corp-blue">Dr. Julio Chavarry →</span>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white hover:border-corp-blue transition-all shadow-2xs">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-corp-blue flex items-center justify-center mb-4">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-corp-navy mb-2">Derecho Administrativo</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">Procedimientos ante SUSALUD, INDECOPI, SUNAFIL y demandas contencioso-administrativas.</p>
+          <span class="text-xs font-bold text-corp-blue">Dr. Daniel Liñán →</span>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-white hover:border-corp-blue transition-all shadow-2xs">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-corp-blue flex items-center justify-center mb-4">
+            <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading text-lg font-bold text-corp-navy mb-2">Derecho de Familia</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">Sucesiones intestadas, particiones de herencia y régimen patrimonial familiar con estricta reserva.</p>
+          <span class="text-xs font-bold text-corp-blue">Dra. Jandira Barrera →</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- La Firma & Socio Director -->
+  <section id="firma" class="py-20 bg-corp-surface border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 space-y-5">
+          <span class="text-xs uppercase tracking-widest text-corp-blue font-bold">Trayectoria & Dirección</span>
+          <h2 class="font-heading text-3xl font-bold text-corp-navy">
+            Dr. Carlos Alberto Carbajal Gonzales
+          </h2>
+          <p class="text-xs font-bold text-slate-700">
+            Máster en Derecho Empresarial por la Universidad de Lima • Especialización Penal
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Con más de dos décadas asesorando corporaciones y compañías de seguros, el Dr. Carbajal lidera un equipo legal caracterizado por la rapidez de respuesta, el rigor analítico y una relación de confianza duradera con los clientes.
+          </p>
+          <blockquote class="p-4 rounded-lg bg-white border-l-4 border-corp-blue text-slate-700 text-xs italic">
+            “La calidad de nuestros servicios, son nuestra mejor publicidad.”
+          </blockquote>
+        </div>
+
+        <!-- Foto de Sala de Juntas Corporativa -->
+        <div class="lg:col-span-6">
+          <div class="rounded-xl overflow-hidden border border-slate-300 shadow-md">
+            <img 
+              src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1000" 
+              alt="Sala de Directorio Corporativa"
+              class="w-full h-80 object-cover"
+            />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto San Isidro -->
+  <section id="contacto" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs uppercase tracking-widest text-corp-blue font-bold">Atención San Isidro</span>
+        <h2 class="font-heading text-3xl font-bold text-corp-navy">Contacto y Agendamiento</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <div class="lg:col-span-5 p-6 rounded-xl bg-corp-surface border border-slate-200 space-y-4 text-xs text-slate-700">
+          <strong class="font-heading text-base text-corp-navy block">Estudio Carbajal Abogados</strong>
+          <p>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú</p>
+          <p><strong>Central:</strong> (01) 476-2155</p>
+          <p><strong>Celulares:</strong> 971 111 730 – 975 137 308</p>
+          <p><strong>Email:</strong> estudiocarbajal@usa.com</p>
+          <p><strong>RUC:</strong> 10066665360</p>
+          
+          <div class="pt-2">
+            <a 
+              href="https://wa.me/51971111730?text=Hola,%20deseo%20hacer%20una%20consulta%20con%20el%20Estudio%20Carbajal%20Abogados."
+              target="_blank"
+              class="w-full py-2.5 px-4 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase flex items-center justify-center gap-2 transition-colors"
+            >
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Abrir WhatsApp: 971 111 730</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <form class="p-6 rounded-xl border border-slate-200 bg-white space-y-4 shadow-2xs" onsubmit="event.preventDefault(); alert('Consulta enviada a secretaría legal.');">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Nombre o Empresa</label>
+                <input type="text" required placeholder="Nombre completo" class="w-full px-3 py-2 rounded border border-slate-300 text-xs focus:outline-none focus:border-corp-blue" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Teléfono</label>
+                <input type="tel" required placeholder="971 111 730" class="w-full px-3 py-2 rounded border border-slate-300 text-xs focus:outline-none focus:border-corp-blue" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Materia Legal</label>
+              <select class="w-full px-3 py-2 rounded border border-slate-300 text-xs focus:outline-none focus:border-corp-blue">
+                <option>Derecho de Seguros y Reaseguros</option>
+                <option>Derecho Corporativo y Empresarial</option>
+                <option>Derecho Penal de la Empresa</option>
+                <option>Derecho Civil y Laboral</option>
+                <option>Derecho Administrativo</option>
+                <option>Derecho de Familia</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Mensaje</label>
+              <textarea rows="3" placeholder="Detalle su consulta..." class="w-full p-3 rounded border border-slate-300 text-xs focus:outline-none focus:border-corp-blue"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 rounded-lg bg-corp-navy hover:bg-corp-blue text-white font-bold text-xs uppercase tracking-wider transition-colors">
+              Enviar Consulta Inmediata
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-corp-navy-dark text-slate-400 py-10 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <strong class="font-heading text-white block">ESTUDIO CARBAJAL ABOGADOS</strong>
+        <span>Calle 31 N° 170 Of. 203 Urb. Córpac, San Isidro — RUC: 10066665360</span>
+      </div>
+      <div>© 2026 Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

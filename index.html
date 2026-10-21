@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Showcase de Diseños Web | Estudio Carbajal Abogados</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#1F4E4B',
+              'teal-dark': '#14362E',
+              gold: '#C5A880',
+              surface: '#F8FAFC',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased">
+
+  <!-- Header del Showcase -->
+  <header class="bg-white border-b border-slate-200 py-6 px-4 sm:px-8 shadow-xs">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-lg bg-brand-teal text-brand-gold flex items-center justify-center font-serif font-bold text-2xl border border-brand-gold/30 shadow-xs">
+          ⚖
+        </div>
+        <div>
+          <h1 class="font-serif text-2xl font-bold tracking-tight text-slate-900 leading-none">
+            Estudio Carbajal Abogados
+          </h1>
+          <span class="text-xs text-brand-teal font-semibold tracking-wider uppercase block mt-1">
+            Showcase de Prototipos Web • San Isidro, Lima
+          </span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a 
+          href="https://wa.me/51971111730" 
+          target="_blank" 
+          class="text-xs font-semibold px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white flex items-center gap-2 transition-colors shadow-xs"
+        >
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>WhatsApp Oficial: 971 111 730</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Presentación del Proyecto -->
+  <section class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-4">
+      <span class="inline-block px-3 py-1 rounded-full bg-brand-teal/10 text-brand-teal text-xs font-bold uppercase tracking-widest">
+        5 Enfoques de Diseño Exclusivos
+      </span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-slate-900 max-w-3xl mx-auto leading-tight">
+        Explora las 5 propuestas para la presencia digital del estudio
+      </h2>
+      <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
+        Cada versión ha sido desarrollada con las mejores prácticas internacionales de diseño legal y corporativo, utilizando los datos oficiales del brochure (RUC 10066665360, Pacífico Seguros, Rímac, Clínica Internacional, Córpac San Isidro).
+      </p>
+    </div>
+  </section>
+
+  <!-- Grilla de las 5 Versiones -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card Versión 1 -->
+      <div class="bg-white rounded-2xl border border-slate-200 hover:border-brand-teal shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col justify-between group">
+        <div>
+          <div class="p-6 bg-[#14362E] text-white">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A880] block mb-1">Versión 01</span>
+            <h3 class="font-serif text-2xl font-bold">Editorial Prestige</h3>
+            <p class="text-xs text-slate-300 mt-2 font-light">Estilo firma centenaria y directorio Chambers & Partners. Tipografía solemne, detalles en oro y acabado de alta alcurnia.</p>
+          </div>
+          <div class="p-6 space-y-3 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+              <span>Ideal para proyectar solidez y tradición</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+              <span>Paleta Verde Esmeralda & Oro Viejo</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+              <span>Cita destacada de Couture y doctrina</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a 
+            href="./version-1-editorial-prestige.html" 
+            class="w-full py-3 rounded-lg bg-[#14362E] hover:bg-slate-900 text-[#C5A880] font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+          >
+            <span>Ver Versión 1</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Versión 2 -->
+      <div class="bg-white rounded-2xl border border-slate-200 hover:border-blue-600 shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col justify-between group">
+        <div>
+          <div class="p-6 bg-[#0B1B3D] text-white">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-blue-400 block mb-1">Versión 02</span>
+            <h3 class="font-serif text-2xl font-bold">Corporativo San Isidro</h3>
+            <p class="text-xs text-slate-300 mt-2 font-light">Estilo centro financiero moderno (tipo Rodrigo Elías o DLA Piper). Azul marino, métricas de confianza y estética B2B.</p>
+          </div>
+          <div class="p-6 space-y-3 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600"></i>
+              <span>Enfocada en gerencias legales y corporativas</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600"></i>
+              <span>Paleta Azul Marino & Platino</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-blue-600"></i>
+              <span>Fotografía de torres corporativas de Lima</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a 
+            href="./version-2-corporate-san-isidro.html" 
+            class="w-full py-3 rounded-lg bg-[#0B1B3D] hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+          >
+            <span>Ver Versión 2</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Versión 3 -->
+      <div class="bg-white rounded-2xl border border-slate-200 hover:border-slate-800 shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col justify-between group">
+        <div>
+          <div class="p-6 bg-[#0F1115] text-white">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block mb-1">Versión 03</span>
+            <h3 class="font-serif text-2xl font-bold">Minimal Executive</h3>
+            <p class="text-xs text-slate-300 mt-2 font-light">Diseño suizo minimalista de altísima gama. Cero distracciones, tipografía sans-serif ligera y máximo espacio en blanco.</p>
+          </div>
+          <div class="p-6 space-y-3 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-slate-800"></i>
+              <span>Elegancia contemporánea y lectura descansada</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-slate-800"></i>
+              <span>Monocromo con toques de verde sage</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-slate-800"></i>
+              <span>Grids asimétricos limpios tipo revista</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a 
+            href="./version-3-minimal-executive.html" 
+            class="w-full py-3 rounded-lg bg-[#0F1115] hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+          >
+            <span>Ver Versión 3</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Versión 4 -->
+      <div class="bg-white rounded-2xl border border-slate-200 hover:border-[#1A4D4A] shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col justify-between group">
+        <div>
+          <div class="p-6 bg-gradient-to-r from-[#1A4D4A] to-[#0E1E38] text-white">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A880] block mb-1">Versión 04</span>
+            <h3 class="font-serif text-2xl font-bold">Dual Portal (Seguros & Salud)</h3>
+            <p class="text-xs text-slate-300 mt-2 font-light">Hero en pantalla dividida que separa los dos grandes nichos del estudio: División Seguros y División Salud / Clínicas.</p>
+          </div>
+          <div class="p-6 space-y-3 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-700"></i>
+              <span>Segmentación directa según el tipo de cliente</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-700"></i>
+              <span>Contraste visual entre finanzas y sector médico</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-700"></i>
+              <span>Tipografía Cinzel solemne</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a 
+            href="./version-4-insurance-defense-split.html" 
+            class="w-full py-3 rounded-lg bg-[#1A4D4A] hover:bg-slate-900 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+          >
+            <span>Ver Versión 4</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card Versión 5 -->
+      <div class="bg-white rounded-2xl border border-slate-200 hover:border-emerald-600 shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col justify-between group">
+        <div>
+          <div class="p-6 bg-[#164E4D] text-white">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-300 block mb-1">Versión 05</span>
+            <h3 class="font-serif text-2xl font-bold">Alta Conversión (CRO)</h3>
+            <p class="text-xs text-slate-300 mt-2 font-light">Diseñada obsesivamente para maximizar llamadas y mensajes a WhatsApp sin perder la compostura legal.</p>
+          </div>
+          <div class="p-6 space-y-3 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+              <span>Widget en el Hero: Evaluar caso en 2 clics</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+              <span>Barra superior de urgencias sticky</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+              <span>Garantía de respuesta en menos de 2 horas</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a 
+            href="./version-5-conversion-leadgen.html" 
+            class="w-full py-3 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+          >
+            <span>Ver Versión 5</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer con Datos de la Firma -->
+  <footer class="bg-slate-900 text-slate-400 py-10 px-4 sm:px-8 text-xs border-t border-slate-800 text-center">
+    <div class="max-w-4xl mx-auto space-y-2">
+      <strong class="text-white font-serif text-sm">Estudio Carbajal Abogados</strong>
+      <p>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro, Lima - Perú • Central: (01) 476-2155 • WhatsApp: 971 111 730 • RUC: 10066665360</p>
+      <p class="text-slate-600 text-[11px] pt-2">© 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

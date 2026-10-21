@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Versión 3: Minimal Executive | Estudio Carbajal Abogados</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mono: {
+              black: '#0F1115',
+              gray: '#52525B',
+              border: '#E4E4E7',
+              bg: '#FAFAFA',
+              sage: '#2E4A40',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-mono-black font-sans antialiased selection:bg-mono-black selection:text-white">
+
+  <!-- Header Minimalista -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-sm border-b border-mono-border py-4 px-6 sm:px-12">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="#inicio" class="text-sm font-bold tracking-widest uppercase">
+        Carbajal <span class="text-mono-gray font-normal">/ Abogados</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-xs font-medium text-mono-gray tracking-wide">
+        <a href="#areas" class="hover:text-mono-black transition-colors">Áreas</a>
+        <a href="#clientes" class="hover:text-mono-black transition-colors">Clientes</a>
+        <a href="#firma" class="hover:text-mono-black transition-colors">La Firma</a>
+        <a href="#contacto" class="hover:text-mono-black transition-colors">Contacto</a>
+      </nav>
+
+      <a 
+        href="https://wa.me/51971111730" 
+        target="_blank"
+        class="text-xs font-semibold px-4 py-2 rounded-full border border-mono-black hover:bg-mono-black hover:text-white transition-all"
+      >
+        WhatsApp Directo
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Minimalista con Enfoque en Espacio y Texto -->
+  <section id="inicio" class="py-24 sm:py-36 px-6 sm:px-12 border-b border-mono-border">
+    <div class="max-w-6xl mx-auto space-y-12">
+      
+      <div class="max-w-4xl space-y-6">
+        <span class="text-[11px] uppercase tracking-widest font-semibold text-mono-sage block">
+          Lima, Perú • San Isidro • Desde 2002
+        </span>
+
+        <h1 class="text-4xl sm:text-6xl font-light tracking-tight text-mono-black leading-[1.15]">
+          Asesoría jurídica de alta precisión para <strong class="font-semibold">empresas de seguros</strong> y corporaciones.
+        </h1>
+
+        <p class="text-base sm:text-xl text-mono-gray font-light max-w-2xl leading-relaxed">
+          Más de veinte años acompañando a directorios y gerencias en la gestión de siniestros, controversias civiles y contingencias corporativas complejas.
+        </p>
+      </div>
+
+      <!-- Fotografía de Arquitectura Minimalista -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end pt-4">
+        <div class="md:col-span-8 overflow-hidden rounded-lg border border-mono-border">
+          <img 
+            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1200" 
+            alt="Arquitectura Minimalista" 
+            class="w-full h-80 sm:h-96 object-cover filter grayscale contrast-110"
+          />
+        </div>
+
+        <div class="md:col-span-4 p-6 rounded-lg bg-mono-bg border border-mono-border space-y-4 text-xs text-mono-gray">
+          <blockquote class="italic text-mono-black leading-relaxed">
+            “El derecho se aprende estudiando, pero se ejerce pensando.”
+            <span class="block not-italic font-semibold text-[10px] uppercase text-mono-gray mt-2">— Couture</span>
+          </blockquote>
+          <div class="pt-2 border-t border-mono-border text-[11px]">
+            <strong>Dr. Carlos Alberto Carbajal G.</strong><br>
+            Máster en Derecho Empresarial por la Universidad de Lima.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Áreas de Práctica con Formato Editorial Ligero -->
+  <section id="areas" class="py-24 px-6 sm:px-12 border-b border-mono-border">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-16 pb-4 border-b border-mono-border">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-mono-black">
+          Prácticas Legales
+        </h2>
+        <span class="text-xs text-mono-gray mt-1 sm:mt-0">Especialización transversal</span>
+      </div>
+
+      <div class="divide-y divide-mono-border">
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+          <span class="md:col-span-1 text-xs font-mono text-mono-gray">01</span>
+          <h3 class="md:col-span-4 text-lg font-medium text-mono-black">Derecho de Seguros y Reaseguros</h3>
+          <p class="md:col-span-7 text-xs sm:text-sm text-mono-gray font-light leading-relaxed">
+            Siniestros de gran cuantía, arbitrajes de póliza, recobros, subrogación y regulación ante la SBS para aseguradoras líderes.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+          <span class="md:col-span-1 text-xs font-mono text-mono-gray">02</span>
+          <h3 class="md:col-span-4 text-lg font-medium text-mono-black">Derecho Corporativo y Empresarial</h3>
+          <p class="md:col-span-7 text-xs sm:text-sm text-mono-gray font-light leading-relaxed">
+            Contratación mercantil, gobierno societario, cumplimiento normativo y asesoría legal permanente para empresas.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+          <span class="md:col-span-1 text-xs font-mono text-mono-gray">03</span>
+          <h3 class="md:col-span-4 text-lg font-medium text-mono-black">Derecho Penal de la Empresa</h3>
+          <p class="md:col-span-7 text-xs sm:text-sm text-mono-gray font-light leading-relaxed">
+            Patrocinio especializado en delitos patrimoniales y económicos, estafas procesales y contingencias penales corporativas.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+          <span class="md:col-span-1 text-xs font-mono text-mono-gray">04</span>
+          <h3 class="md:col-span-4 text-lg font-medium text-mono-black">Derecho Civil y Laboral</h3>
+          <p class="md:col-span-7 text-xs sm:text-sm text-mono-gray font-light leading-relaxed">
+            Indemnización por daños y perjuicios, resolución contractual y controversias laborales a cargo del Dr. Julio Chavarry.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+          <span class="md:col-span-1 text-xs font-mono text-mono-gray">05</span>
+          <h3 class="md:col-span-4 text-lg font-medium text-mono-black">Derecho Administrativo</h3>
+          <p class="md:col-span-7 text-xs sm:text-sm text-mono-gray font-light leading-relaxed">
+            Procedimientos sancionadores ante SUSALUD, INDECOPI y entidades estatales a cargo del Dr. Daniel Liñán.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline">
+          <span class="md:col-span-1 text-xs font-mono text-mono-gray">06</span>
+          <h3 class="md:col-span-4 text-lg font-medium text-mono-black">Derecho de Familia</h3>
+          <p class="md:col-span-7 text-xs sm:text-sm text-mono-gray font-light leading-relaxed">
+            Sucesiones, división de patrimonios y conciliaciones a cargo de la Dra. Jandira Barrera.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clientes con Diseño Tipográfico Limpio -->
+  <section id="clientes" class="py-24 px-6 sm:px-12 bg-mono-bg border-b border-mono-border">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="mb-12">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-mono-black">
+          Clientes de Referencia
+        </h2>
+        <p class="text-xs text-mono-gray mt-1">Confianza comprobada por más de 20 años</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-xs text-mono-black font-medium">
+        <div class="p-4 border border-mono-border bg-white rounded">Rímac Seguros y Reaseguros</div>
+        <div class="p-4 border border-mono-border bg-white rounded">Pacífico Seguros</div>
+        <div class="p-4 border border-mono-border bg-white rounded">Clínica Internacional</div>
+        <div class="p-4 border border-mono-border bg-white rounded">Rímac EPS</div>
+        <div class="p-4 border border-mono-border bg-white rounded">Protecta Security</div>
+        <div class="p-4 border border-mono-border bg-white rounded">HDI Seguros</div>
+        <div class="p-4 border border-mono-border bg-white rounded">ADECCO Perú</div>
+        <div class="p-4 border border-mono-border bg-white rounded">Touring Escuela SAC</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto Directo Minimalista -->
+  <section id="contacto" class="py-24 px-6 sm:px-12">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        
+        <div class="md:col-span-5 space-y-6">
+          <h2 class="text-3xl font-light text-mono-black">Iniciar Consulta</h2>
+          <p class="text-xs sm:text-sm text-mono-gray font-light leading-relaxed">
+            Atendemos requerimientos legales con estricta reserva y respuesta oportuna.
+          </p>
+
+          <div class="text-xs space-y-3 pt-4 border-t border-mono-border text-mono-gray">
+            <p><strong class="text-mono-black">Sede:</strong> Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro</p>
+            <p><strong class="text-mono-black">Central:</strong> (01) 476-2155</p>
+            <p><strong class="text-mono-black">WhatsApp:</strong> +51 971 111 730 / 975 137 308</p>
+            <p><strong class="text-mono-black">Email:</strong> estudiocarbajal@usa.com</p>
+            <p><strong class="text-mono-black">RUC:</strong> 10066665360</p>
+          </div>
+        </div>
+
+        <div class="md:col-span-7">
+          <form class="space-y-4" onsubmit="event.preventDefault(); alert('Solicitud registrada.');">
+            <input type="text" required placeholder="Nombre o Razón Social" class="w-full px-4 py-3 rounded border border-mono-border text-xs focus:outline-none focus:border-mono-black" />
+            <input type="tel" required placeholder="Teléfono de contacto" class="w-full px-4 py-3 rounded border border-mono-border text-xs focus:outline-none focus:border-mono-black" />
+            <select class="w-full px-4 py-3 rounded border border-mono-border text-xs focus:outline-none focus:border-mono-black">
+              <option>Derecho de Seguros y Reaseguros</option>
+              <option>Derecho Corporativo</option>
+              <option>Derecho Penal</option>
+              <option>Derecho Civil</option>
+            </select>
+            <textarea rows="3" placeholder="Breve detalle de su consulta..." class="w-full p-4 rounded border border-mono-border text-xs focus:outline-none focus:border-mono-black"></textarea>
+            <button type="submit" class="px-8 py-3 rounded bg-mono-black hover:bg-mono-gray text-white text-xs uppercase tracking-widest font-semibold transition-colors">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 sm:px-12 border-t border-mono-border text-[11px] text-mono-gray">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div>Estudio Carbajal Abogados • San Isidro, Lima</div>
+      <div>© 2026 Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
