@@ -7,7 +7,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -23,6 +23,7 @@
             }
           },
           fontFamily: {
+            cinzel: ['"Cinzel"', 'serif'],
             serif: ['"Playfair Display"', 'Georgia', 'serif'],
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
           }
@@ -68,10 +69,10 @@
   <section class="py-12 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-4">
       <span class="inline-block px-3 py-1 rounded-full bg-brand-teal/10 text-brand-teal text-xs font-bold uppercase tracking-widest">
-        5 Enfoques de Diseño Exclusivos
+        6 Enfoques de Diseño Exclusivos
       </span>
       <h2 class="font-serif text-3xl sm:text-5xl font-bold text-slate-900 max-w-3xl mx-auto leading-tight">
-        Explora las 5 propuestas para la presencia digital del estudio
+        Explora las 6 propuestas para la presencia digital del estudio
       </h2>
       <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
         Cada versión ha sido desarrollada con las mejores prácticas internacionales de diseño legal y corporativo, utilizando los datos oficiales del brochure (RUC 10066665360, Pacífico Seguros, Rímac, Clínica Internacional, Córpac San Isidro).
@@ -79,10 +80,34 @@
     </div>
   </section>
 
-  <!-- Grilla de las 5 Versiones -->
+  <!-- Grilla de las 6 Versiones -->
   <section class="py-16 max-w-7xl mx-auto px-4 sm:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
+      <!-- Card Versión 6 (DESTACADA: Inspiración Estudio Rodrigo) -->
+      <div class="bg-white rounded-2xl border-2 border-[#0C1E36] shadow-md hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group md:col-span-2 lg:col-span-3">
+        <div class="p-8 bg-[#0C1E36] text-white flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#C5A880]/20 text-[#C5A880] text-[10px] font-bold uppercase tracking-widest border border-[#C5A880]/40">
+              ⭐ Nueva Versión 06 • Inspiración de Élite
+            </div>
+            <h3 class="font-cinzel text-2xl sm:text-3xl font-bold tracking-wide">Inspiración Estudio Rodrigo (estudiorodrigo.com)</h3>
+            <p class="text-xs sm:text-sm text-slate-300 font-light max-w-2xl">
+              Diseño sobrio, riguroso y de máxima jerarquía institucional, inspirado en el despacho legal líder del Perú. Tipografía Cinzel solemne, líneas divisorias precisas, áreas de práctica estructuradas y narrativa corporativa de alta distinción.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <a 
+              href="./version-6-estudio-rodrigo-inspired.html" 
+              class="px-7 py-4 rounded bg-[#C5A880] hover:bg-[#D4AF37] text-[#0C1E36] font-bold text-xs uppercase tracking-widest shadow-md flex items-center gap-2 transition-all"
+            >
+              <span>Abrir Versión Estudio Rodrigo</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Card Versión 1 -->
       <div class="bg-white rounded-2xl border border-slate-200 hover:border-brand-teal shadow-xs hover:shadow-md transition-all overflow-hidden flex flex-col justify-between group">
         <div>
@@ -99,10 +124,6 @@
             <div class="flex items-center gap-2">
               <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
               <span>Paleta Verde Esmeralda & Oro Viejo</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
-              <span>Cita destacada de Couture y doctrina</span>
             </div>
           </div>
         </div>
@@ -123,7 +144,7 @@
           <div class="p-6 bg-[#0B1B3D] text-white">
             <span class="text-[10px] uppercase font-bold tracking-widest text-blue-400 block mb-1">Versión 02</span>
             <h3 class="font-serif text-2xl font-bold">Corporativo San Isidro</h3>
-            <p class="text-xs text-slate-300 mt-2 font-light">Estilo centro financiero moderno (tipo Rodrigo Elías o DLA Piper). Azul marino, métricas de confianza y estética B2B.</p>
+            <p class="text-xs text-slate-300 mt-2 font-light">Estilo centro financiero moderno (tipo DLA Piper). Azul marino, métricas de confianza y estética B2B.</p>
           </div>
           <div class="p-6 space-y-3 text-xs text-slate-600">
             <div class="flex items-center gap-2">
@@ -133,10 +154,6 @@
             <div class="flex items-center gap-2">
               <i data-lucide="check" class="w-4 h-4 text-blue-600"></i>
               <span>Paleta Azul Marino & Platino</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-blue-600"></i>
-              <span>Fotografía de torres corporativas de Lima</span>
             </div>
           </div>
         </div>
@@ -168,10 +185,6 @@
               <i data-lucide="check" class="w-4 h-4 text-slate-800"></i>
               <span>Monocromo con toques de verde sage</span>
             </div>
-            <div class="flex items-center gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-slate-800"></i>
-              <span>Grids asimétricos limpios tipo revista</span>
-            </div>
           </div>
         </div>
         <div class="p-6 pt-0">
@@ -200,10 +213,6 @@
             </div>
             <div class="flex items-center gap-2">
               <i data-lucide="check" class="w-4 h-4 text-emerald-700"></i>
-              <span>Contraste visual entre finanzas y sector médico</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-emerald-700"></i>
               <span>Tipografía Cinzel solemne</span>
             </div>
           </div>
@@ -225,7 +234,7 @@
           <div class="p-6 bg-[#164E4D] text-white">
             <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-300 block mb-1">Versión 05</span>
             <h3 class="font-serif text-2xl font-bold">Alta Conversión (CRO)</h3>
-            <p class="text-xs text-slate-300 mt-2 font-light">Diseñada obsesivamente para maximizar llamadas y mensajes a WhatsApp sin perder la compostura legal.</p>
+            <p class="text-xs text-slate-300 mt-2 font-light">Diseñada con widget en el Hero para evaluar casos en 2 clics y derivación automática inteligente a WhatsApp.</p>
           </div>
           <div class="p-6 space-y-3 text-xs text-slate-600">
             <div class="flex items-center gap-2">
@@ -235,10 +244,6 @@
             <div class="flex items-center gap-2">
               <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
               <span>Barra superior de urgencias sticky</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
-              <span>Garantía de respuesta en menos de 2 horas</span>
             </div>
           </div>
         </div>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Versión 6: Inspiración Estudio Rodrigo | Estudio Carbajal Abogados</title>
+  <meta name="description" content="Estudio Carbajal Abogados. Firma jurídica líder en San Isidro, Lima. Más de 20 años de excelencia en Derecho de Seguros, Corporativo, Civil y Penal." />
+  
+  <!-- Tipografías de Prestigio: Cinzel + Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rodrigo: {
+              navy: '#0C1E36',
+              'navy-dark': '#06101E',
+              blue: '#163D66',
+              accent: '#8B1E2D', // Borgoña corporativo sobrio estilo firmas tradicionales
+              gold: '#C5A880',
+              border: '#E5E7EB',
+              surface: '#F9FAFB',
+            }
+          },
+          fontFamily: {
+            cinzel: ['"Cinzel"', 'serif'],
+            editorial: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-rodrigo-navy selection:text-white">
+
+  <!-- ========================================== -->
+  <!-- 1. TOPBAR INSTITUCIONAL MINIMALISTA        -->
+  <!-- ========================================== -->
+  <div class="bg-rodrigo-navy-dark text-slate-300 py-2 px-4 sm:px-12 text-xs border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5 text-slate-300">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-rodrigo-gold"></i>
+          <span>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú</span>
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:flex items-center gap-1.5 text-slate-300">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-rodrigo-gold"></i>
+          <span>estudiocarbajal@usa.com</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-6 text-[11px]">
+        <span class="text-slate-400">RUC: 10066665360</span>
+        <span class="text-slate-600">|</span>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-white">ES</span>
+          <span class="text-slate-600">/</span>
+          <span class="text-slate-400 hover:text-white cursor-pointer transition-colors">EN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- 2. NAVBAR ESTILO ESTUDIO RODRIGO           -->
+  <!-- ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/98 backdrop-blur-md border-b border-slate-200 py-4 px-4 sm:px-12 shadow-2xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Logotipo Solemne con Tipografía Serif Clásica -->
+      <a href="#inicio" class="flex flex-col">
+        <span class="font-cinzel text-xl sm:text-2xl font-bold tracking-[0.18em] text-rodrigo-navy leading-none">
+          ESTUDIO CARBAJAL
+        </span>
+        <span class="text-[9px] uppercase tracking-[0.35em] text-slate-500 font-semibold block mt-1.5">
+          Abogados • Fundado en Lima
+        </span>
+      </a>
+
+      <!-- Menú Limpio e Institucional -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-slate-700">
+        <a href="#nosotros" class="hover:text-rodrigo-navy transition-colors">La Firma</a>
+        <a href="#areas" class="hover:text-rodrigo-navy transition-colors">Áreas de Práctica</a>
+        <a href="#abogados" class="hover:text-rodrigo-navy transition-colors">Abogados</a>
+        <a href="#clientes" class="hover:text-rodrigo-navy transition-colors">Clientes & Sectores</a>
+        <a href="#reconocimientos" class="hover:text-rodrigo-navy transition-colors">Reconocimientos</a>
+        <a href="#contacto" class="hover:text-rodrigo-navy transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Botón de Contacto Sobrio -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a 
+          href="#contacto" 
+          class="px-5 py-2.5 rounded border border-rodrigo-navy hover:bg-rodrigo-navy hover:text-white text-rodrigo-navy text-xs font-bold uppercase tracking-wider transition-all"
+        >
+          Contáctenos
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- 3. HERO SECTION ESTILO ESTUDIO RODRIGO     -->
+  <!-- ========================================== -->
+  <section id="inicio" class="relative bg-rodrigo-navy text-white overflow-hidden py-24 sm:py-36 border-b border-slate-200">
+    
+    <!-- Imagen de Fondo Panorámica con Overlay -->
+    <div class="absolute inset-0 opacity-25 pointer-events-none">
+      <img 
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1800" 
+        alt="Lima Centro Financiero y Corporativo" 
+        class="w-full h-full object-cover object-center filter grayscale contrast-125"
+      />
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-rodrigo-navy-dark via-rodrigo-navy/90 to-transparent pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-12 relative z-10">
+      <div class="max-w-3xl space-y-7">
+        
+        <div class="inline-flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-rodrigo-gold">
+          <span class="w-2 h-2 rounded-full bg-rodrigo-gold"></span>
+          <span>Soluciones Jurídicas Estratégicas en el Perú</span>
+        </div>
+
+        <h1 class="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.14]">
+          Soluciones oportunas, rigurosas y estratégicas que agregan <span class="italic font-editorial font-normal text-rodrigo-gold">valor y tranquilidad</span> a nuestros clientes.
+        </h1>
+
+        <p class="text-slate-300 text-base sm:text-lg font-light leading-relaxed max-w-2xl">
+          Con más de dos décadas de trayectoria ininterrumpida, el Estudio Carbajal Abogados se sitúa en la vanguardia de la asesoría corporativa, la resolución de controversias civiles y la defensa técnica especializada para el mercado asegurador y el sector salud.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a 
+            href="#areas" 
+            class="px-7 py-3.5 rounded bg-white hover:bg-slate-100 text-rodrigo-navy font-bold text-xs uppercase tracking-wider transition-all shadow-sm flex items-center gap-2"
+          >
+            <span>Explorar Áreas de Práctica</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+
+          <a 
+            href="#abogados" 
+            class="px-6 py-3.5 rounded border border-white/40 hover:border-white text-white font-bold text-xs uppercase tracking-wider transition-all"
+          >
+            Conocer a Nuestros Abogados
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 4. LA FIRMA (NOSOTROS)                     -->
+  <!-- ========================================== -->
+  <section id="nosotros" class="py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-12">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase tracking-[0.25em] text-rodrigo-navy font-bold block">
+            Nuestra Firma
+          </span>
+          <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-rodrigo-navy leading-tight">
+            Compromiso ético, excelencia técnica y lealtad con el cliente
+          </h2>
+
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-light">
+            En Estudio Carbajal Abogados, concebimos el ejercicio del derecho como una disciplina de pensamiento estratégico y rigor permanente. Nuestros servicios se han especializado en dar soporte continuo a compañías de seguros de primer orden, clínicas privadas e instituciones corporativas de alta exigencia regulatoria.
+          </p>
+
+          <p class="text-slate-600 text-sm leading-relaxed font-light">
+            Estamos comprometidos en brindar nuestros servicios legales en forma permanente para darles tranquilidad y seguridad a nuestros clientes. La calidad y el resultado de nuestro patrocinio procesal constituyen nuestra mejor carta de presentación.
+          </p>
+
+          <blockquote class="p-5 rounded bg-rodrigo-surface border-l-4 border-rodrigo-navy text-slate-800 text-sm italic font-editorial">
+            “El derecho se aprende estudiando, pero se ejerce pensando.”
+            <span class="block not-italic font-sans text-xs uppercase tracking-wider font-semibold text-rodrigo-navy mt-2">
+              — Eduardo J. Couture
+            </span>
+          </blockquote>
+        </div>
+
+        <!-- Indicadores de Confianza Institucional -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="p-8 rounded-xl bg-rodrigo-surface border border-slate-200 space-y-6">
+            <h3 class="font-cinzel text-lg font-bold text-rodrigo-navy border-b border-slate-200 pb-3">
+              Pilares Institucionales
+            </h3>
+
+            <div class="space-y-4 text-xs">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded bg-rodrigo-navy text-white flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">1</div>
+                <div>
+                  <strong class="text-slate-900 block font-semibold text-sm">Más de 20 Años de Experiencia</strong>
+                  <span class="text-slate-600 leading-relaxed">Litigando y asesorando ininterrumpidamente en los fueros civil, comercial, penal y administrativo.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded bg-rodrigo-navy text-white flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">2</div>
+                <div>
+                  <strong class="text-slate-900 block font-semibold text-sm">Dirección de Posgrado</strong>
+                  <span class="text-slate-600 leading-relaxed">Socio Director con Máster en Derecho Empresarial por la prestigiosa Universidad de Lima.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 rounded bg-rodrigo-navy text-white flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">3</div>
+                <div>
+                  <strong class="text-slate-900 block font-semibold text-sm">Sede en San Isidro</strong>
+                  <span class="text-slate-600 leading-relaxed">Ubicación estratégica en Urb. Córpac, en el núcleo financiero y asegurador del país.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. ÁREAS DE PRÁCTICA ESTILO ESTUDIO RODRIGO -->
+  <!-- ========================================== -->
+  <section id="areas" class="py-24 bg-rodrigo-surface border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 pb-6 border-b border-slate-200">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-rodrigo-navy font-bold block mb-1">
+            Especialidades Jurídicas
+          </span>
+          <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-rodrigo-navy">
+            Áreas de Práctica
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 max-w-md font-light leading-relaxed">
+          Asesoría especializada y multidisciplinaria organizada por industrias y materias jurídicas.
+        </p>
+      </div>
+
+      <!-- Grilla con Líneas Divisorias Limpias estilo Estudio Rodrigo -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Práctica 1 -->
+        <div class="bg-white p-8 rounded-lg border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs group flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-[10px] uppercase tracking-widest font-bold text-rodrigo-gold block">
+              Práctica Líder
+            </span>
+            <h3 class="font-cinzel text-xl font-bold text-rodrigo-navy group-hover:text-rodrigo-blue transition-colors">
+              Derecho de Seguros y Reaseguros
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-light">
+              Asesoría integral y patrocinio procesal en siniestros de alta cuantía, controversias sobre coberturas y exclusiones de póliza, arbitrajes y procesos de subrogación para entidades aseguradoras y reaseguradoras.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Siniestros & Coberturas</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-rodrigo-navy group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Práctica 2 -->
+        <div class="bg-white p-8 rounded-lg border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs group flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 block">
+              Corporativo
+            </span>
+            <h3 class="font-cinzel text-xl font-bold text-rodrigo-navy group-hover:text-rodrigo-blue transition-colors">
+              Corporativo y Comercial
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-light">
+              Asesoría legal permanente para empresas en contratación mercantil, estructuración de acuerdos societarios, gobierno corporativo y mitigación preventiva de contingencias operativas.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Gobierno & Contratos</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-rodrigo-navy group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Práctica 3 -->
+        <div class="bg-white p-8 rounded-lg border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs group flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 block">
+              Litigios Penales
+            </span>
+            <h3 class="font-cinzel text-xl font-bold text-rodrigo-navy group-hover:text-rodrigo-blue transition-colors">
+              Derecho Penal de la Empresa
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-light">
+              Defensa penal especializada liderada por el socio director en delitos económicos, defraudaciones patrimoniales y patrocinio letrado en sede fiscal y judicial para directores y empresas.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Defensa Penal Corporativa</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-rodrigo-navy group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Práctica 4 -->
+        <div class="bg-white p-8 rounded-lg border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs group flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 block">
+              Controversias
+            </span>
+            <h3 class="font-cinzel text-xl font-bold text-rodrigo-navy group-hover:text-rodrigo-blue transition-colors">
+              Litigios Civiles y Laborales
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-light">
+              Patrocinio judicial en demandas de indemnización por responsabilidad civil contractual y extracontractual, ejecución de garantías y contingencias laborales a cargo del Dr. Julio Chavarry.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Resolución de Conflictos</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-rodrigo-navy group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Práctica 5 -->
+        <div class="bg-white p-8 rounded-lg border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs group flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 block">
+              Regulatorio
+            </span>
+            <h3 class="font-cinzel text-xl font-bold text-rodrigo-navy group-hover:text-rodrigo-blue transition-colors">
+              Derecho Administrativo
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-light">
+              Defensa técnica ante organismos reguladores y entidades de la administración pública (SUSALUD, SBS, INDECOPI) y procesos contencioso-administrativos a cargo del Dr. Daniel Liñán.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Procedimientos Sancionadores</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-rodrigo-navy group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+        <!-- Práctica 6 -->
+        <div class="bg-white p-8 rounded-lg border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs group flex flex-col justify-between">
+          <div class="space-y-3">
+            <span class="text-[10px] uppercase tracking-widest font-bold text-slate-400 block">
+              Patrimonial
+            </span>
+            <h3 class="font-cinzel text-xl font-bold text-rodrigo-navy group-hover:text-rodrigo-blue transition-colors">
+              Derecho de Familia y Sucesiones
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-light">
+              Asesoría personalizada en particiones de herencia, testamentos, sucesiones intestadas y acuerdos extrajudiciales con estricta reserva deontológica a cargo de la Dra. Jandira Barrera.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Gestión Patrimonial</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 text-rodrigo-navy group-hover:translate-x-1 transition-transform"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 6. ABOGADOS / NUESTRO EQUIPO               -->
+  <!-- ========================================== -->
+  <section id="abogados" class="py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-12 space-y-16">
+      
+      <!-- Encabezado -->
+      <div class="max-w-3xl">
+        <span class="text-xs uppercase tracking-[0.25em] text-rodrigo-navy font-bold block mb-1">
+          Cuerpo Letrado
+        </span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-rodrigo-navy">
+          Nuestros Abogados
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 font-light mt-2 leading-relaxed">
+          Profesionales con formación de posgrado y probada solvencia en tribunales y mesas de negociación corporativa.
+        </p>
+      </div>
+
+      <!-- Socio Director Ficha Principal -->
+      <div class="p-8 sm:p-12 rounded-xl bg-rodrigo-surface border border-slate-200">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-block px-3 py-1 rounded bg-rodrigo-navy text-white text-[10px] font-bold uppercase tracking-widest">
+              Socio Director & Fundador
+            </div>
+            <h3 class="font-cinzel text-2xl sm:text-3xl font-bold text-rodrigo-navy">
+              Dr. Carlos Alberto Carbajal Gonzales
+            </h3>
+            <p class="text-xs sm:text-sm font-semibold text-slate-700">
+              Máster en Derecho Empresarial por la <strong>Universidad de Lima</strong> • Especialización Penal
+            </p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">
+              Con más de veinte años de ejercicio profesional ininterrumpido en el patrocinio de corporaciones y aseguradoras líderes, ejerce la dirección general y la conducción letrada de los litigios de mayor cuantía y complejidad del despacho.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1 rounded bg-white border border-slate-200 text-slate-800 font-medium">Derecho Corporativo</span>
+              <span class="px-3 py-1 rounded bg-white border border-slate-200 text-slate-800 font-medium">Derecho de Seguros</span>
+              <span class="px-3 py-1 rounded bg-white border border-slate-200 text-slate-800 font-medium">Derecho Penal</span>
+            </div>
+            <div class="pt-4 border-t border-slate-200 text-xs text-slate-600 flex items-center gap-6">
+              <span>Contacto Directo: 971 111 730</span>
+              <span>•</span>
+              <span>estudiocarbajal@usa.com</span>
+            </div>
+          </div>
+
+          <!-- Sello Institucional -->
+          <div class="lg:col-span-4 flex justify-center">
+            <div class="w-48 h-48 rounded-full bg-white border-2 border-rodrigo-navy/20 flex flex-col items-center justify-center p-6 text-center shadow-xs">
+              <span class="font-cinzel text-3xl font-bold text-rodrigo-navy">+20</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-800 mt-1">Años de Ejercicio</span>
+              <span class="text-[10px] text-slate-500 mt-0.5">En Tribunales & Arbitrajes</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Abogados Asociados -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-lg bg-white border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs">
+          <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block mb-1">Abogado Asociado</span>
+          <h4 class="font-cinzel text-lg font-bold text-rodrigo-navy">Julio Chavarry Valdez</h4>
+          <span class="text-xs font-semibold text-rodrigo-blue block mt-1">Civil y Laboral</span>
+          <p class="text-xs text-slate-500 mt-3 font-light leading-relaxed">Litigios civiles, controversias de contratos comerciales y asesoría laboral.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs">
+          <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block mb-1">Abogado Asociado</span>
+          <h4 class="font-cinzel text-lg font-bold text-rodrigo-navy">Osmar Sánchez Bustamante</h4>
+          <span class="text-xs font-semibold text-rodrigo-blue block mt-1">Penal y Seguros</span>
+          <p class="text-xs text-slate-500 mt-3 font-light leading-relaxed">Patrocinio penal económico y controversias en siniestros aseguradores.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs">
+          <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block mb-1">Abogado Asociado</span>
+          <h4 class="font-cinzel text-lg font-bold text-rodrigo-navy">Daniel Liñán Gambini</h4>
+          <span class="text-xs font-semibold text-rodrigo-blue block mt-1">Administrativo</span>
+          <p class="text-xs text-slate-500 mt-3 font-light leading-relaxed">Procedimientos sancionadores y recursos ante entidades del Estado.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white border border-slate-200 hover:border-rodrigo-navy transition-all shadow-2xs">
+          <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block mb-1">Abogada Asociada</span>
+          <h4 class="font-cinzel text-lg font-bold text-rodrigo-navy">Jandira Barrera Lagos</h4>
+          <span class="text-xs font-semibold text-rodrigo-blue block mt-1">Familia</span>
+          <p class="text-xs text-slate-500 mt-3 font-light leading-relaxed">Sucesiones, particiones hereditarias y conciliaciones reservadas.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 7. CLIENTES & SECTORES                     -->
+  <!-- ========================================== -->
+  <section id="clientes" class="py-20 bg-rodrigo-surface border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-12">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+        <span class="text-xs uppercase tracking-[0.25em] text-rodrigo-navy font-bold">Relaciones de Confianza</span>
+        <h2 class="font-cinzel text-3xl font-bold text-rodrigo-navy">
+          Clientes Institucionales de Referencia
+        </h2>
+        <p class="text-xs text-slate-500 font-light">
+          Entidades del sector asegurador, salud y corporativo asesoradas por la firma:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">Rímac Seguros</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Seguros & Reaseguros</span>
+        </div>
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">Pacífico Seguros</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Compañía de Seguros</span>
+        </div>
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">Clínica Internacional</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Sector Salud</span>
+        </div>
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">Rímac EPS</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Prestadora de Salud</span>
+        </div>
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">Protecta Security</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Seguros de Vida</span>
+        </div>
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">HDI Seguros</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Seguros Patrimoniales</span>
+        </div>
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">ADECCO Perú</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Servicios Corporativos</span>
+        </div>
+        <div class="p-6 rounded bg-white border border-slate-200 text-center shadow-2xs">
+          <strong class="font-cinzel text-sm sm:text-base text-slate-900 block">Touring Escuela SAC</strong>
+          <span class="text-[10px] uppercase text-slate-500 font-semibold block mt-1">Transporte y Servicios</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 8. RECONOCIMIENTOS & ESTÁNDAR ÉTICO        -->
+  <!-- ========================================== -->
+  <section id="reconocimientos" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-12 text-center space-y-6">
+      <span class="text-xs uppercase tracking-[0.25em] text-slate-400 font-bold block">
+        Garantía y Respaldo Institucional
+      </span>
+      <div class="flex flex-wrap justify-center items-center gap-8 sm:gap-16 text-xs text-slate-700 font-semibold uppercase tracking-wider">
+        <span class="border-b-2 border-rodrigo-navy pb-1">Ilustre Colegio de Abogados de Lima (CAL)</span>
+        <span class="border-b-2 border-rodrigo-navy pb-1">Superintendencia de Banca y Seguros (SBS)</span>
+        <span class="border-b-2 border-rodrigo-navy pb-1">Superintendencia Nacional de Salud (SUSALUD)</span>
+        <span class="border-b-2 border-rodrigo-navy pb-1">Cámara de Comercio de Lima (CCL)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 9. CONTACTO & SEDE SAN ISIDRO              -->
+  <!-- ========================================== -->
+  <section id="contacto" class="py-24 bg-rodrigo-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-12">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Datos de Contacto -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs uppercase tracking-[0.25em] text-rodrigo-navy font-bold block mb-1">
+              Sede San Isidro
+            </span>
+            <h2 class="font-cinzel text-3xl font-bold text-rodrigo-navy">
+              Contáctenos
+            </h2>
+            <p class="text-xs text-slate-600 mt-2 font-light leading-relaxed">
+              Para consultas o requerimientos de asesoría permanente, coordine directamente con nuestra secretaría letrada.
+            </p>
+          </div>
+
+          <div class="space-y-4 text-xs text-slate-700 bg-white p-7 rounded-xl border border-slate-200 shadow-2xs">
+            <div class="space-y-1">
+              <strong class="text-rodrigo-navy font-bold block text-sm">Dirección de la Sede:</strong>
+              <span>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú</span>
+            </div>
+            <div class="space-y-1 pt-2 border-t border-slate-100">
+              <strong class="text-rodrigo-navy font-bold block text-sm">Central Telefónica:</strong>
+              <span>(01) 476-2155</span>
+            </div>
+            <div class="space-y-1 pt-2 border-t border-slate-100">
+              <strong class="text-rodrigo-navy font-bold block text-sm">Celulares / WhatsApp:</strong>
+              <span>+51 971 111 730 / +51 975 137 308</span>
+            </div>
+            <div class="space-y-1 pt-2 border-t border-slate-100">
+              <strong class="text-rodrigo-navy font-bold block text-sm">Correo Institucional:</strong>
+              <a href="mailto:estudiocarbajal@usa.com" class="text-rodrigo-blue hover:underline">estudiocarbajal@usa.com</a>
+            </div>
+            <div class="space-y-1 pt-2 border-t border-slate-100">
+              <strong class="text-rodrigo-navy font-bold block text-sm">RUC:</strong>
+              <span>10066665360</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario Confidencial -->
+        <div class="lg:col-span-7">
+          <form class="bg-white p-8 sm:p-10 rounded-xl border border-slate-200 shadow-2xs space-y-4" onsubmit="event.preventDefault(); alert('Solicitud remitida con éxito al Estudio Carbajal Abogados.');">
+            <h3 class="font-cinzel text-xl font-bold text-rodrigo-navy mb-2">
+              Solicitud de Consulta Institucional
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Nombre Completo o Razón Social *</label>
+                <input type="text" required placeholder="Nombre o Empresa" class="w-full px-3 py-2.5 rounded border border-slate-300 text-xs focus:outline-none focus:border-rodrigo-navy" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Teléfono Móvil *</label>
+                <input type="tel" required placeholder="971 111 730" class="w-full px-3 py-2.5 rounded border border-slate-300 text-xs focus:outline-none focus:border-rodrigo-navy" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Correo Electrónico *</label>
+                <input type="email" required placeholder="contacto@empresa.com" class="w-full px-3 py-2.5 rounded border border-slate-300 text-xs focus:outline-none focus:border-rodrigo-navy" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Área Legal Requerida *</label>
+                <select class="w-full px-3 py-2.5 rounded border border-slate-300 text-xs focus:outline-none focus:border-rodrigo-navy">
+                  <option>Derecho de Seguros y Reaseguros</option>
+                  <option>Derecho Corporativo y Comercial</option>
+                  <option>Derecho Penal de la Empresa</option>
+                  <option>Derecho Civil y Laboral</option>
+                  <option>Derecho Administrativo</option>
+                  <option>Derecho de Familia</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Detalle del Asunto Legal</label>
+              <textarea rows="4" placeholder="Indique brevemente los antecedentes de su consulta o controversia..." class="w-full p-3 rounded border border-slate-300 text-xs focus:outline-none focus:border-rodrigo-navy"></textarea>
+            </div>
+
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <span class="text-[11px] text-slate-400">
+                Estricta reserva y confidencialidad garantizada.
+              </span>
+
+              <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded bg-rodrigo-navy hover:bg-slate-900 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-2xs">
+                Enviar Solicitud
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 10. FOOTER INSTITUCIONAL                   -->
+  <!-- ========================================== -->
+  <footer class="bg-rodrigo-navy-dark text-slate-400 py-12 px-4 sm:px-12 text-xs border-t border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-cinzel text-sm font-bold text-white tracking-widest block">ESTUDIO CARBAJAL ABOGADOS</span>
+        <span class="text-[11px] text-slate-500">Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — RUC: 10066665360</span>
+      </div>
+      <div class="text-[11px] text-slate-500">
+        © 2026 Estudio Carbajal Abogados. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
