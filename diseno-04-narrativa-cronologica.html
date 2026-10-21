@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados — Dossier Institucional</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dossier: {
+              paper: '#F4F0E8',
+              card: '#FCFAF5',
+              ink: '#1C1B19',
+              muted: '#63605A',
+              crimson: '#7A1C28',
+              border: '#E0DBD0',
+            }
+          },
+          fontFamily: {
+            garamond: ['"EB Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-dossier-paper text-dossier-ink font-garamond text-lg leading-relaxed antialiased selection:bg-dossier-crimson selection:text-white">
+
+  <!-- Cabecera de Archivo / Dossier -->
+  <header class="py-10 px-6 sm:px-16 border-b border-dossier-border">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+      <div>
+        <span class="text-xs font-sans uppercase tracking-[0.25em] text-dossier-crimson font-bold block mb-1">
+          Dossier Jurídico Oficial
+        </span>
+        <h1 class="text-3xl font-bold tracking-tight">Estudio Carbajal Abogados</h1>
+        <span class="text-xs font-sans text-dossier-muted">Urb. Córpac, San Isidro — RUC: 10066665360</span>
+      </div>
+
+      <div class="font-sans text-xs flex items-center gap-4">
+        <span>Central: (01) 476-2155</span>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-4 py-2 rounded bg-dossier-crimson text-white hover:bg-black transition-colors">
+          WhatsApp Directo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Portada del Dossier -->
+  <main class="max-w-4xl mx-auto px-6 sm:px-16 py-20 space-y-24">
+    
+    <!-- Prólogo -->
+    <section class="space-y-6">
+      <div class="text-xs font-sans uppercase tracking-widest text-dossier-muted">Prólogo Institucional</div>
+      
+      <p class="text-2xl sm:text-3xl font-normal leading-relaxed text-dossier-ink">
+        Fundado hace más de dos décadas en Lima, el <strong class="font-semibold text-dossier-crimson">Estudio Carbajal Abogados</strong> ha desarrollado una práctica singularmente enfocada en dar soporte legal permanente a compañías de seguros, clínicas privadas y corporaciones en el Perú.
+      </p>
+
+      <blockquote class="my-8 p-6 rounded bg-dossier-card border-l-2 border-dossier-crimson italic text-xl">
+        “El derecho se aprende estudiando, pero se ejerce pensando.”
+        <span class="block not-italic font-sans text-xs uppercase text-dossier-muted mt-2">— Eduardo J. Couture</span>
+      </blockquote>
+
+      <p class="text-base text-dossier-muted">
+        Nuestra máxima no es cuantitativa sino deontológica: <em>“Estamos comprometidos en brindar nuestros servicios legales en forma permanente para darles tranquilidad y seguridad a nuestros clientes. La calidad de nuestros servicios son nuestra mejor publicidad.”</em>
+      </p>
+    </section>
+
+    <!-- Capítulo I: Trayectoria del Titular -->
+    <section class="space-y-6 border-t border-dossier-border pt-16">
+      <span class="text-xs font-sans uppercase tracking-widest text-dossier-crimson font-bold block">Capítulo I</span>
+      <h2 class="text-3xl font-bold">Dirección Letrada: Dr. Carlos Alberto Carbajal Gonzales</h2>
+      
+      <div class="font-sans text-xs text-dossier-muted bg-dossier-card p-4 rounded border border-dossier-border space-y-1">
+        <p><strong>Grado:</strong> Abogado, Máster en Derecho Empresarial por la Universidad de Lima.</p>
+        <p><strong>Especialidad:</strong> Derecho Corporativo, Derecho de Seguros y Derecho Penal.</p>
+        <p><strong>Experiencia:</strong> Más de veinte años asesorando empresas y compañías de seguros.</p>
+      </div>
+
+      <p class="text-base leading-relaxed text-dossier-muted">
+        El Dr. Carbajal lidera un equipo multidisciplinario integrado por los abogados asociados <strong>Julio Chavarry Valdez</strong> (Civil y Laboral), <strong>Osmar Sánchez Bustamante</strong> (Penal y Seguros), <strong>Daniel Liñán Gambini</strong> (Administrativo) y <strong>Jandira Barrera Lagos</strong> (Familia).
+      </p>
+    </section>
+
+    <!-- Capítulo II: El Mercado Asegurador y de Salud -->
+    <section class="space-y-6 border-t border-dossier-border pt-16">
+      <span class="text-xs font-sans uppercase tracking-widest text-dossier-crimson font-bold block">Capítulo II</span>
+      <h2 class="text-3xl font-bold">Respaldo Institucional & Clientes</h2>
+      <p class="text-base text-dossier-muted leading-relaxed">
+        Nuestros servicios se han especializado de forma continua en dar soporte a las principales entidades aseguradoras y sanitarias del mercado peruano:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans text-xs">
+        <div class="p-4 rounded bg-dossier-card border border-dossier-border">
+          <strong class="text-dossier-ink block text-sm mb-1 font-serif">Rímac Seguros & Reaseguros</strong>
+          <span class="text-dossier-muted">Siniestros complejos, litigios de cobertura y subrogación.</span>
+        </div>
+        <div class="p-4 rounded bg-dossier-card border border-dossier-border">
+          <strong class="text-dossier-ink block text-sm mb-1 font-serif">Pacífico Seguros</strong>
+          <span class="text-dossier-muted">Asesoría técnica y defensa en controversias aseguradoras.</span>
+        </div>
+        <div class="p-4 rounded bg-dossier-card border border-dossier-border">
+          <strong class="text-dossier-ink block text-sm mb-1 font-serif">Clínica Internacional</strong>
+          <span class="text-dossier-muted">Contingencias de salud, comités asistenciales y SUSALUD.</span>
+        </div>
+        <div class="p-4 rounded bg-dossier-card border border-dossier-border">
+          <strong class="text-dossier-ink block text-sm mb-1 font-serif">Rímac EPS</strong>
+          <span class="text-dossier-muted">Planes de salud, controversias contractuales y regulación.</span>
+        </div>
+        <div class="p-4 rounded bg-dossier-card border border-dossier-border">
+          <strong class="text-dossier-ink block text-sm mb-1 font-serif">Protecta Security</strong>
+          <span class="text-dossier-muted">Patrocinio en siniestros y seguros de vida.</span>
+        </div>
+        <div class="p-4 rounded bg-dossier-card border border-dossier-border">
+          <strong class="text-dossier-ink block text-sm mb-1 font-serif">HDI Seguros</strong>
+          <span class="text-dossier-muted">Gestión procesal de seguros patrimoniales.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capítulo III: Las Materias -->
+    <section class="space-y-6 border-t border-dossier-border pt-16">
+      <span class="text-xs font-sans uppercase tracking-widest text-dossier-crimson font-bold block">Capítulo III</span>
+      <h2 class="text-3xl font-bold">Catálogo de Prácticas Jurídicas</h2>
+
+      <div class="space-y-6 text-base text-dossier-muted">
+        <div>
+          <h3 class="text-xl font-bold text-dossier-ink">1. Derecho de Seguros y Reaseguros</h3>
+          <p class="text-sm mt-1">Siniestros de gran cuantía, arbitrajes de cobertura, interpretación de pólizas complejas y recuperos por subrogación judicial.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-dossier-ink">2. Derecho Corporativo y Empresarial</h3>
+          <p class="text-sm mt-1">Blindaje de operaciones comerciales, contratos mercantiles y asesoría legal permanente para empresas.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-dossier-ink">3. Derecho Penal de la Empresa</h3>
+          <p class="text-sm mt-1">Patrocinio técnico en delitos patrimoniales y económicos, estafas procesales y contingencias penales corporativas.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-dossier-ink">4. Litigación Civil y Laboral</h3>
+          <p class="text-sm mt-1">Indemnizaciones por daños y perjuicios, resolución contractual y relaciones laborales empresariales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Epílogo: Contacto Directo -->
+    <section class="border-t border-dossier-border pt-16 space-y-6 font-sans text-xs">
+      <span class="uppercase tracking-widest text-dossier-crimson font-bold block">Epílogo & Contacto</span>
+      <h2 class="font-serif text-3xl font-bold text-dossier-ink">Sede San Isidro</h2>
+      <p class="text-dossier-muted text-sm">Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú</p>
+      
+      <div class="p-6 bg-dossier-card rounded border border-dossier-border flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div>
+          <p><strong>Central:</strong> (01) 476-2155</p>
+          <p><strong>WhatsApp / Móviles:</strong> 971 111 730 / 975 137 308</p>
+          <p><strong>Email:</strong> estudiocarbajal@usa.com</p>
+        </div>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-6 py-3 rounded bg-dossier-crimson text-white font-bold uppercase tracking-wider">
+          Iniciar Consulta
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-8 border-t border-dossier-border font-sans text-xs text-center text-dossier-muted">
+    © 2026 Estudio Carbajal Abogados • Todos los derechos reservados.
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

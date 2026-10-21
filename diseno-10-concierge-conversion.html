@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados — Concierge Legal Privado</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            concierge: {
+              teal: '#1B4D4F',
+              sand: '#F7F5F0',
+              charcoal: '#1A1C20',
+              gold: '#C5A880',
+              card: '#FFFFFF',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-concierge-sand text-concierge-charcoal font-sans antialiased">
+
+  <!-- Header Concierge -->
+  <header class="py-6 px-6 sm:px-12 border-b border-slate-200/60 bg-white/80 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="w-8 h-8 rounded-full bg-concierge-teal text-white flex items-center justify-center font-serif text-sm">⚖</span>
+        <div>
+          <span class="font-serif text-lg font-bold text-slate-900 block leading-none">Estudio Carbajal</span>
+          <span class="text-[9px] uppercase tracking-widest text-concierge-teal font-semibold">Concierge Legal • San Isidro</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs">
+        <a href="tel:014762155" class="hidden sm:inline text-slate-600 hover:text-concierge-teal font-medium">(01) 476-2155</a>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-4 py-2 rounded-full bg-concierge-teal text-white hover:bg-slate-900 transition-colors font-medium">
+          Asistencia WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero con Flujo Guiado Concierge -->
+  <main class="max-w-5xl mx-auto px-6 sm:px-12 py-16 space-y-16">
+    
+    <div class="text-center space-y-4 max-w-2xl mx-auto">
+      <span class="text-xs uppercase tracking-widest font-bold text-concierge-teal block">
+        Atención Personalizada de Alto Nivel
+      </span>
+      <h1 class="font-serif text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
+        Orientación jurídica inmediata y confidencial para su empresa o caso civil.
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">
+        Más de 20 años respaldando a aseguradoras líderes (Pacífico Seguros, Rímac, Protecta, HDI), clínicas y particulares en el Perú. Sede en Córpac, San Isidro.
+      </p>
+    </div>
+
+    <!-- Módulo Concierge Interactivo: Intake en 3 Pasos -->
+    <div class="bg-white p-8 sm:p-12 rounded-3xl shadow-sm border border-slate-200/80 space-y-8">
+      
+      <div class="border-b border-slate-100 pb-4">
+        <h2 class="font-serif text-2xl font-bold text-slate-900">Consulta Guiada</h2>
+        <p class="text-xs text-slate-500 mt-1">Seleccione la materia para dirigir su requerimiento al especialista adecuado:</p>
+      </div>
+
+      <!-- Paso 1: Selector de Materia -->
+      <div class="space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-concierge-teal block">1. Materia Principal</span>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <button type="button" onclick="selectMatter(this, 'Seguros y Reaseguros')" class="matter-btn p-4 rounded-xl border border-slate-200 text-left hover:border-concierge-teal transition-all bg-slate-50 font-medium">
+            <strong class="block text-slate-900 mb-0.5">Seguros & Reaseguros</strong>
+            <span class="text-[11px] text-slate-500">Siniestros, pólizas, subrogación</span>
+          </button>
+          <button type="button" onclick="selectMatter(this, 'Derecho Médico y Clínicas')" class="matter-btn p-4 rounded-xl border border-slate-200 text-left hover:border-concierge-teal transition-all bg-slate-50 font-medium">
+            <strong class="block text-slate-900 mb-0.5">Clínicas & Derecho Médico</strong>
+            <span class="text-[11px] text-slate-500">Responsabilidad sanitaria, SUSALUD</span>
+          </button>
+          <button type="button" onclick="selectMatter(this, 'Litigios Civiles y Corporativo')" class="matter-btn p-4 rounded-xl border border-slate-200 text-left hover:border-concierge-teal transition-all bg-slate-50 font-medium">
+            <strong class="block text-slate-900 mb-0.5">Civil & Corporativo</strong>
+            <span class="text-[11px] text-slate-500">Contratos, indemnizaciones, empresas</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Paso 2: Datos de Contacto Directo -->
+      <form id="conciergeForm" class="space-y-4 pt-4 border-t border-slate-100" onsubmit="handleConciergeSubmit(event)">
+        <span class="text-xs font-bold uppercase tracking-wider text-concierge-teal block">2. Datos de Contacto</span>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="text" id="cName" required placeholder="Nombre Completo o Razón Social" class="p-3.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-concierge-teal" />
+          <input type="tel" id="cPhone" required placeholder="Teléfono Móvil / WhatsApp" class="p-3.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-concierge-teal" />
+        </div>
+
+        <textarea id="cDetails" rows="3" placeholder="Breve descripción del asunto o siniestro..." class="w-full p-3.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-concierge-teal"></textarea>
+
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-2">
+          <span class="text-[11px] text-slate-500">Respuesta en menos de 2 horas hábiles • Secreto profesional</span>
+          <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-concierge-teal hover:bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider transition-colors shadow-sm">
+            Conectar con Secretaría por WhatsApp
+          </button>
+        </div>
+      </form>
+
+    </div>
+
+    <!-- Respaldo del Director & Filosofía -->
+    <div class="p-8 rounded-2xl bg-white border border-slate-200/80 space-y-4 text-xs text-slate-600">
+      <div class="flex items-center gap-2">
+        <span class="text-concierge-teal font-bold uppercase tracking-widest text-[11px]">Dirección Letrada:</span>
+        <strong class="text-slate-900">Dr. Carlos Alberto Carbajal Gonzales</strong>
+        <span>(Máster en Derecho Empresarial por la Universidad de Lima)</span>
+      </div>
+      <p class="italic text-slate-700">
+        “El derecho se aprende estudiando, pero se ejerce pensando.” — Eduardo J. Couture
+      </p>
+      <div class="pt-2 border-t border-slate-100 flex flex-wrap gap-4 text-slate-500">
+        <span>RUC: 10066665360</span>
+        <span>•</span>
+        <span>Urb. Córpac, San Isidro</span>
+        <span>•</span>
+        <span>(01) 476-2155</span>
+        <span>•</span>
+        <span>estudiocarbajal@usa.com</span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-200">
+    © 2026 Estudio Carbajal Abogados • San Isidro, Lima
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let selectedMatter = 'Seguros y Reaseguros';
+
+    function selectMatter(btn, matter) {
+      document.querySelectorAll('.matter-btn').forEach(b => {
+        b.classList.remove('border-concierge-teal', 'bg-emerald-50');
+      });
+      btn.classList.add('border-concierge-teal', 'bg-emerald-50');
+      selectedMatter = matter;
+    }
+
+    function handleConciergeSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('cName').value;
+      const phone = document.getElementById('cPhone').value;
+      const details = document.getElementById('cDetails').value;
+
+      const msg = encodeURIComponent(
+        `🏛 *CONSULTA CONCIERGE - ESTUDIO CARBAJAL ABOGADOS*\n\n` +
+        `👤 *Cliente:* ${name}\n` +
+        `📞 *Teléfono:* ${phone}\n` +
+        `⚖ *Materia:* ${selectedMatter}\n` +
+        `📝 *Detalle:* ${details || 'Solicito coordinación de cita'}\n\n` +
+        `_Enviado desde el portal concierge web._`
+      );
+
+      window.open(`https://wa.me/51971111730?text=${msg}`, '_blank');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados — The Legal Journal</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            journal: {
+              bg: '#FBF8F3',
+              paper: '#FFFFFF',
+              ink: '#111827',
+              muted: '#4B5563',
+              burgundy: '#8B1E2D',
+              line: '#E5E0D8',
+            }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            serif: ['"Newsreader"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-journal-bg text-journal-ink font-serif text-base antialiased selection:bg-journal-burgundy selection:text-white">
+
+  <!-- Header Estilo Periódico/Revista -->
+  <header class="border-b-2 border-journal-ink py-6 px-6 sm:px-12 bg-journal-bg">
+    <div class="max-w-6xl mx-auto space-y-4">
+      <div class="flex justify-between items-center text-xs font-sans uppercase tracking-widest text-journal-muted border-b border-journal-line pb-2">
+        <span>San Isidro, Lima • Edición Continua</span>
+        <span>RUC 10066665360</span>
+        <span>Central: (01) 476-2155</span>
+      </div>
+
+      <div class="text-center py-2">
+        <h1 class="font-display text-4xl sm:text-6xl font-black tracking-tight text-journal-ink uppercase">
+          Estudio Carbajal Abogados
+        </h1>
+        <p class="font-sans text-xs uppercase tracking-[0.3em] text-journal-burgundy font-bold mt-2">
+          Revista de Asesoría Jurídica, Seguros & Litigios Corporativos
+        </p>
+      </div>
+
+      <div class="flex justify-center items-center gap-8 text-xs font-sans font-bold uppercase tracking-wider text-journal-ink border-t border-journal-line pt-3">
+        <a href="#titular-editorial" class="hover:text-journal-burgundy">Editorial</a>
+        <a href="#materias" class="hover:text-journal-burgundy">Materias</a>
+        <a href="#cobertura" class="hover:text-journal-burgundy">Seguros & Salud</a>
+        <a href="#cuerpo-letrado" class="hover:text-journal-burgundy">Cuerpo Letrado</a>
+        <a href="#contacto" class="hover:text-journal-burgundy">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Portada Editorial: Titular Principal a Tres Columnas -->
+  <main class="max-w-6xl mx-auto px-6 sm:px-12 py-16 space-y-20">
+    
+    <section id="titular-editorial" class="grid grid-cols-1 lg:grid-cols-12 gap-10 border-b border-journal-line pb-16">
+      
+      <!-- Columna Izquierda: Gran Noticia -->
+      <div class="lg:col-span-8 space-y-6">
+        <span class="text-xs font-sans uppercase font-bold tracking-widest text-journal-burgundy">
+          Crónica Institucional • Más de dos décadas
+        </span>
+
+        <h2 class="font-display text-3xl sm:text-5xl font-bold leading-tight">
+          La defensa estratégica en seguros y responsabilidad civil como disciplina de pensamiento letrado.
+        </h2>
+
+        <p class="text-lg text-journal-muted leading-relaxed font-light first-letter:text-5xl first-letter:font-display first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:text-journal-burgundy">
+          Desde su fundación en la emblemática Urbanización Córpac de San Isidro, el Estudio Carbajal Abogados se ha consolidado como un despacho de referencia técnica para las principales compañías aseguradoras del Perú, tales como Pacífico Seguros, Rímac, Protecta Security y HDI Seguros.
+        </p>
+
+        <p class="text-base text-journal-muted leading-relaxed">
+          Bajo la dirección del Dr. Carlos Alberto Carbajal Gonzales —Máster en Derecho Empresarial por la Universidad de Lima— la firma rige su práctica bajo una máxima célebre: <em>“El derecho se aprende estudiando, pero se ejerce pensando”</em> (Eduardo J. Couture).
+        </p>
+      </div>
+
+      <!-- Columna Derecha: Columna de Opinión / Manifiesto -->
+      <div class="lg:col-span-4 border-l border-journal-line pl-0 lg:pl-8 space-y-6">
+        <div class="p-6 bg-white rounded border border-journal-line space-y-3 font-sans text-xs">
+          <strong class="font-display text-sm font-bold text-journal-ink block uppercase tracking-wider">
+            Principio del Despacho
+          </strong>
+          <p class="text-journal-muted italic leading-relaxed font-serif text-sm">
+            “Estamos comprometidos en brindar nuestros servicios legales en forma permanente para darles tranquilidad y seguridad a nuestros clientes. La calidad de nuestros servicios son nuestra mejor publicidad.”
+          </p>
+        </div>
+
+        <div class="space-y-3 font-sans text-xs text-journal-muted">
+          <strong class="font-display text-sm font-bold text-journal-ink block uppercase tracking-wider">
+            Sede Central San Isidro
+          </strong>
+          <p>Calle 31 N° 170 Of. 203, Urb. Córpac</p>
+          <p>Móviles: 971 111 730 – 975 137 308</p>
+          <p>Email: estudiocarbajal@usa.com</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Materias Especializadas -->
+    <section id="materias" class="space-y-10 border-b border-journal-line pb-16">
+      <div class="flex justify-between items-baseline border-b-2 border-journal-ink pb-2 font-sans">
+        <h3 class="font-display text-2xl font-bold uppercase tracking-tight">Catálogo de Prácticas</h3>
+        <span class="text-xs uppercase text-journal-muted font-bold">Fueros Civil, Penal y Administrativo</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+        <div class="space-y-2">
+          <h4 class="font-display text-lg font-bold text-journal-burgundy">Derecho de Seguros</h4>
+          <p class="text-xs text-journal-muted leading-relaxed font-sans">Gestión y patrocinio en siniestros patrimoniales, coberturas de póliza complejas, arbitrajes y subrogación.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-display text-lg font-bold text-journal-burgundy">Corporativo & Empresas</h4>
+          <p class="text-xs text-journal-muted leading-relaxed font-sans">Contratación mercantil, gobierno societario, compliance y asesoría legal continua a directorios.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-display text-lg font-bold text-journal-burgundy">Penal de la Empresa</h4>
+          <p class="text-xs text-journal-muted leading-relaxed font-sans">Patrocinio en delitos patrimoniales, estafas procesales y contingencias penales corporativas.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-display text-lg font-bold text-journal-burgundy">Civil y Laboral</h4>
+          <p class="text-xs text-journal-muted leading-relaxed font-sans">Indemnizaciones por daños y perjuicios, resolución contractual y relaciones laborales (Dr. Julio Chavarry).</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-display text-lg font-bold text-journal-burgundy">Administrativo</h4>
+          <p class="text-xs text-journal-muted leading-relaxed font-sans">Procedimientos ante SUSALUD, SBS e INDECOPI y demandas contenciosas (Dr. Daniel Liñán).</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-display text-lg font-bold text-journal-burgundy">Familia & Sucesiones</h4>
+          <p class="text-xs text-journal-muted leading-relaxed font-sans">Herencias, particiones de patrimonio y acuerdos reservados (Dra. Jandira Barrera).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entidades Atendidas (Formato Prensa) -->
+    <section id="cobertura" class="space-y-6 border-b border-journal-line pb-16">
+      <h3 class="font-display text-2xl font-bold uppercase tracking-tight border-b border-journal-line pb-2">
+        Clientes y Entidades Asesoradas
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 font-sans text-xs font-bold text-journal-ink text-center">
+        <div class="p-4 bg-white border border-journal-line">Pacífico Seguros</div>
+        <div class="p-4 bg-white border border-journal-line">Rímac Seguros</div>
+        <div class="p-4 bg-white border border-journal-line">Clínica Internacional</div>
+        <div class="p-4 bg-white border border-journal-line">Rímac EPS</div>
+        <div class="p-4 bg-white border border-journal-line">Protecta Security</div>
+        <div class="p-4 bg-white border border-journal-line">HDI Seguros</div>
+        <div class="p-4 bg-white border border-journal-line">ADECCO Perú</div>
+        <div class="p-4 bg-white border border-journal-line">Touring Escuela SAC</div>
+      </div>
+    </section>
+
+    <!-- Contacto Directo -->
+    <section id="contacto" class="space-y-6 font-sans">
+      <h3 class="font-display text-2xl font-bold uppercase tracking-tight">Comunicación con la Secretaría</h3>
+      <p class="text-xs text-journal-muted font-sans">Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — (01) 476-2155 • WhatsApp: 971 111 730</p>
+      
+      <div class="p-6 bg-white border border-journal-line rounded flex flex-col sm:flex-row justify-between items-center gap-4">
+        <span class="text-xs text-journal-muted">Atención confidencial de consultas corporativas y particulares.</span>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-6 py-2.5 rounded bg-journal-burgundy text-white text-xs font-bold uppercase tracking-wider">
+          Contactar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-8 bg-journal-ink text-slate-400 font-sans text-xs text-center">
+    © 2026 Estudio Carbajal Abogados • Todos los derechos reservados.
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
