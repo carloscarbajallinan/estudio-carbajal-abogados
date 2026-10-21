@@ -22,10 +22,31 @@ const versions = [
 ];
 
 versions.forEach(({ port, file, name }) => {
-  const filePath = path.join(__dirname, file);
+  const htmlPath = path.join(__dirname, file);
 
   const server = http.createServer((req, res) => {
-    fs.readFile(filePath, (err, data) => {
+    const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
+    let pathname = decodeURIComponent(parsedUrl.pathname);
+
+    // Servir imágenes y estáticos si se solicitan
+    if (pathname.endsWith('.jpg') || pathname.endsWith('.jpeg') || pathname.endsWith('.png') || pathname.endsWith('.svg')) {
+      const imgPath = path.join(__dirname, pathname.replace(/^\//, ''));
+      if (fs.existsSync(imgPath)) {
+        const ext = path.extname(imgPath).toLowerCase();
+        const mimeTypes = {
+          '.jpg': 'image/jpeg',
+          '.jpeg': 'image/jpeg',
+          '.png': 'image/png',
+          '.svg': 'image/svg+xml',
+        };
+        res.writeHead(200, { 'Content-Type': mimeTypes[ext] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
+        fs.createReadStream(imgPath).pipe(res);
+        return;
+      }
+    }
+
+    // Por defecto, servir el HTML de la versión
+    fs.readFile(htmlPath, (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
         res.end(`Error al cargar ${file}: ${err.message}`);
