@@ -66,9 +66,15 @@
     .ambient-glow {
       box-shadow: 0 0 50px -15px rgba(205, 168, 115, 0.18);
     }
+    .bg-cinema-hero {
+      background: linear-gradient(135deg, rgba(4, 8, 16, 0.94) 0%, rgba(7, 15, 30, 0.86) 60%, rgba(4, 8, 16, 0.95) 100%), url('./hero-bg-san-isidro-financial.jpg') center top / cover no-repeat;
+    }
+    .bg-boardroom-ambient {
+      background: linear-gradient(to right, rgba(4, 8, 16, 0.95) 0%, rgba(7, 15, 30, 0.82) 50%, rgba(4, 8, 16, 0.95) 100%), url('./boardroom-directorate.jpg') center / cover no-repeat;
+    }
   </style>
 </head>
-<body class="bg-flagship-black text-slate-100 font-sans antialiased selection:bg-flagship-gold selection:text-black min-h-screen flex flex-col justify-between">
+<body class="bg-flagship-black bg-cinema-hero text-slate-100 font-sans antialiased selection:bg-flagship-gold selection:text-black min-h-screen flex flex-col justify-between">
 
   <!-- Header Superior Institucional -->
   <header class="py-4 px-6 border-b border-flagship-border/40 bg-flagship-black/95 backdrop-blur-md sticky top-0 z-50">
@@ -163,17 +169,17 @@
           </p>
         </div>
 
-        <!-- 3 Métricas Aireadas -->
+        <!-- 3 Métricas Aireadas con Glassmorphism -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/50 ambient-glow space-y-2">
+          <div class="p-6 rounded-2xl bg-slate-950/75 backdrop-blur-xl border border-white/10 hover:border-flagship-gold/50 ambient-glow transition-all space-y-2">
             <div class="font-serif text-3xl sm:text-4xl text-flagship-gold font-bold">+20 Años</div>
             <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">De Ejercicio Continuo en Córpac</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/50 ambient-glow space-y-2">
+          <div class="p-6 rounded-2xl bg-slate-950/75 backdrop-blur-xl border border-white/10 hover:border-flagship-gold/50 ambient-glow transition-all space-y-2">
             <div class="font-serif text-3xl sm:text-4xl text-flagship-gold font-bold">S/ 48M+</div>
             <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">En Reservas y Fondos Protegidos</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/50 ambient-glow space-y-2">
+          <div class="p-6 rounded-2xl bg-slate-950/75 backdrop-blur-xl border border-white/10 hover:border-flagship-gold/50 ambient-glow transition-all space-y-2">
             <div class="font-serif text-3xl sm:text-4xl text-flagship-gold font-bold">100%</div>
             <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Reserva Procesal y Confidencialidad</p>
           </div>
@@ -243,35 +249,35 @@
       </div>
 
       <!-- Slide 04: Metodología -->
-      <div id="ks-3" class="keynote-slide out-right space-y-8">
+      <div id="ks-3" class="keynote-slide out-right space-y-8 bg-boardroom-ambient p-8 sm:p-12 rounded-3xl border border-flagship-border/40 shadow-2xl">
         <div class="space-y-4">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/20 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/40">
             <i data-lucide="layers" class="w-4 h-4"></i>
-            Protocolo Procesal en 3 Etapas
+            Protocolo Procesal en 3 Etapas • Sala de Arbitraje
           </div>
           <h2 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
             Metodología Predictiva de <span class="gold-shimmer italic">Intervención</span>.
           </h2>
-          <p class="text-flagship-muted text-base leading-relaxed max-w-2xl font-light">
+          <p class="text-slate-200 text-base leading-relaxed max-w-2xl font-light">
             Estructura rigurosa para acelerar la resolución de controversias periciales y resguardar las reservas matemáticas de la empresa.
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <span class="text-xs font-mono text-flagship-gold">FASE 01</span>
             <h3 class="font-serif text-xl text-white">Auditoría Pericial</h3>
-            <p class="text-xs text-flagship-muted leading-relaxed">Examen preliminar de la póliza o historia clínica. Determinación de cobertura y eximentes.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Examen preliminar de la póliza o historia clínica. Determinación de cobertura y eximentes.</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <span class="text-xs font-mono text-flagship-gold">FASE 02</span>
             <h3 class="font-serif text-xl text-white">Defensa Blindada</h3>
-            <p class="text-xs text-flagship-muted leading-relaxed">Patrocinio en juzgados comerciales, arbitrajes y descargos técnicos ante SUSALUD.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Patrocinio en juzgados comerciales, arbitrajes y descargos técnicos ante SUSALUD.</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/85 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <span class="text-xs font-mono text-flagship-gold">FASE 03</span>
             <h3 class="font-serif text-xl text-white">Recupero de Fondos</h3>
-            <p class="text-xs text-flagship-muted leading-relaxed">Ejecución efectiva del recupero por subrogación y protección de reservas técnicas.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Ejecución efectiva del recupero por subrogación y protección de reservas técnicas.</p>
           </div>
         </div>
       </div>

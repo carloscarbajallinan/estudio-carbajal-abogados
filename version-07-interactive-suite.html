@@ -42,9 +42,13 @@
     .fade-cross {
       transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
+    .bg-suite-hero {
+      background: linear-gradient(135deg, rgba(4, 9, 17, 0.94) 0%, rgba(9, 19, 34, 0.86) 60%, rgba(4, 9, 17, 0.95) 100%),
+                  url('./hero-bg-san-isidro-financial.jpg') center top / cover no-repeat;
+    }
   </style>
 </head>
-<body class="bg-suite-black text-slate-100 font-sans antialiased selection:bg-suite-gold selection:text-black min-h-screen flex flex-col justify-between">
+<body class="bg-suite-black bg-suite-hero text-slate-100 font-sans antialiased selection:bg-suite-gold selection:text-black min-h-screen flex flex-col justify-between">
 
   <!-- Header -->
   <header class="py-4 px-6 border-b border-suite-border/30 bg-suite-black/95 backdrop-blur-md sticky top-0 z-50">
