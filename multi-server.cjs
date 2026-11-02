@@ -19,6 +19,11 @@ const versions = [
   { port: 5014, file: 'diseno-08-dual-split-monochrome.html', name: 'v14: Bicolor Arquitectónico Split 50/50' },
   { port: 5015, file: 'diseno-09-corporate-firm-uriamendez.html', name: 'v15: Alta Firma Iberoamericana' },
   { port: 5016, file: 'diseno-10-concierge-conversion.html', name: 'v16: Concierge Legal Privado' },
+  { port: 5017, file: 'diseno-11-wall-street-prestige.html', name: 'v17: Wall Street Prestige Clásico' },
+  { port: 5018, file: 'diseno-12-bauhaus-vanguardia.html', name: 'v18: Bauhaus Racionalismo Arquitectónico' },
+  { port: 5019, file: 'diseno-13-sovereign-diplomatic.html', name: 'v19: Gabinete Soberano & Diplomático' },
+  { port: 5020, file: 'diseno-14-organic-warm-atelier.html', name: 'v20: Atelier Cálido & Resguardo Patrimonial' },
+  { port: 5021, file: 'diseno-15-insurtech-shield.html', name: 'v21: InsurTech Shield & Corporate Defense' },
 ];
 
 versions.forEach(({ port, file, name }) => {
