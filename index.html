@@ -7,7 +7,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -15,6 +15,15 @@
       theme: {
         extend: {
           colors: {
+            legal: {
+              navy: '#0b1626',
+              navyLight: '#142238',
+              gold: '#c29d59',
+              goldLight: '#dfc288',
+              cream: '#faf8f5',
+              border: '#e2d9cd',
+              slate: '#475569',
+            },
             apple: {
               bg: '#ffffff',
               section: '#f5f5f7',
@@ -27,25 +36,26 @@
             }
           },
           fontFamily: {
-            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Inter"', 'sans-serif'],
+            serif: ['"Cinzel"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
     }
   </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-apple-bg text-apple-text font-sans antialiased selection:bg-apple-text selection:text-white">
+<body class="bg-white text-apple-text font-sans antialiased selection:bg-black selection:text-white">
 
   <!-- Nav Compacto Apple (44px) -->
   <header class="h-[44px] bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-apple-border/40">
     <div class="max-w-6xl mx-auto h-full px-6 flex items-center justify-between text-[12px]">
       <div class="flex items-center gap-3">
         <span class="font-semibold text-apple-text">Estudio Carbajal Abogados</span>
-        <span class="text-apple-secondary hidden sm:inline">• Control de Calidad & Dirección de Arte</span>
+        <span class="text-apple-secondary hidden sm:inline">• Control Crítico de Calidad UI/UX</span>
       </div>
       <div class="flex items-center gap-4 text-apple-secondary">
-        <span class="hidden md:inline">San Isidro, Lima</span>
-        <a href="tel:+5114762155" class="hover:text-apple-text transition-colors hidden sm:inline">(01) 476-2155</a>
+        <span class="hidden md:inline">San Isidro: (01) 476-2155</span>
         <a href="https://wa.me/51971111730" target="_blank" class="rounded-full bg-apple-button text-white text-[11px] font-medium px-3.5 py-1 hover:bg-apple-buttonHover transition-colors">
           WhatsApp 971 111 730
         </a>
@@ -53,77 +63,252 @@
     </div>
   </header>
 
-  <!-- Hero Principal: Declaración de Auditoría y Control de Diseño -->
-  <section class="py-20 lg:py-28 px-6 text-center max-w-4xl mx-auto space-y-6">
-    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-apple-section text-[11px] font-medium text-apple-text border border-apple-border/50">
-      <span>Diagnóstico Senior UI/UX</span>
-      <span class="text-apple-secondary">•</span>
-      <span class="text-apple-secondary">Revisión de 10 Arquitecturas Web</span>
+  <!-- Hero Principal: Auditoría Crítica y Sin Filtro -->
+  <section class="py-16 lg:py-24 px-6 text-center max-w-4xl mx-auto space-y-6">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 text-[11px] font-semibold text-red-700 border border-red-200">
+      <span>Diagnóstico Técnico Sin Concesiones</span>
+      <span>•</span>
+      <span>Auditoría de Lineamientos de Diseño</span>
     </div>
-    <h1 class="text-5xl sm:text-7xl font-semibold tracking-tight text-apple-text leading-[1.05]">
-      Control de Diseño & Evaluación de Propuestas.
+    
+    <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-apple-text leading-[1.08]">
+      Control de Diseño & Corrección Estructural.
     </h1>
-    <p class="text-lg sm:text-xl text-apple-secondary max-w-3xl mx-auto leading-relaxed">
-      Informe técnico comparativo para evaluar con el cliente la presencia digital de <strong class="text-apple-text font-semibold">Estudio Carbajal Abogados</strong>. Arquitectura de información rigurosa, jerarquía tipográfica y sobriedad institucional para compañías de seguros (<span class="text-apple-text">Rímac, Pacífico, Protecta</span>) y redes de salud (<span class="text-apple-text">Clínica Internacional</span>).
+    
+    <p class="text-base sm:text-lg text-apple-secondary max-w-3xl mx-auto leading-relaxed">
+      Informe honesto de por qué las primeras propuestas pecaron de <strong class="text-apple-text">vaciedad y aspecto de wireframe</strong> tras retirar las fotos de stock falsas, cuáles son los <strong class="text-apple-text">lineamientos indispensables</strong> para un estudio jurídico de más de 20 años que asesora a <strong class="text-apple-text">Rímac Seguros</strong> y <strong class="text-apple-text">Clínica Internacional</strong>, y la entrega de la versión corregida en paralelo.
     </p>
   </section>
 
-  <!-- Manifiesto de Diseño Legal: Filosofía Apple vs Clichés de IA -->
-  <section class="pb-20 px-6">
-    <div class="max-w-5xl mx-auto bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="border-b border-apple-border/40 pb-6">
-        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Criterio Rector</p>
-        <h2 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">¿Cómo se aplica la Filosofía Apple a una Firma de Abogados?</h2>
+  <!-- SECCIÓN DESTACADA: VERSIÓN CORREGIDA Y PROFESIONAL (APPLE-08 V2.0) -->
+  <section class="pb-16 px-6">
+    <div class="max-w-5xl mx-auto bg-gradient-to-br from-legal-navy to-legal-navyLight text-white rounded-3xl p-8 sm:p-12 border-2 border-legal-gold/50 shadow-2xl space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+        <div class="space-y-1">
+          <span class="px-3 py-1 rounded-full bg-legal-gold/20 text-legal-goldLight text-xs font-bold uppercase tracking-wider border border-legal-gold/40">
+            Versión Corregida en Paralelo
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white mt-2">
+            Portal Especializado 2.0: Seguros & Redes Médicas
+          </h2>
+          <p class="text-xs text-slate-300">
+            Rediseñado desde cero con riqueza visual, monograma institucional, materias periciales completas, flujo de intervención en 3 fases y formulario directo.
+          </p>
+        </div>
+        <a 
+          href="./apple-08-dual-portal.html" 
+          class="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-legal-gold hover:bg-legal-goldLight text-legal-navy font-bold text-xs uppercase tracking-wider transition-all shadow-lg"
+        >
+          <span>Abrir Portal Corregido</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-3">
-          <div class="text-apple-text font-semibold flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-black inline-block"></span>
-            1. Jerarquía Tipográfica y Espacio
-          </div>
-          <p class="text-apple-secondary leading-relaxed">
-            La elegancia de Apple no reside en adornos, sino en el <strong>espacio en blanco puro (py-24 a py-32)</strong>, contrastes tipográficos limpios y eliminación de tarjetas apretadas o bordes artificiales.
-          </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+          <strong class="text-legal-goldLight block text-sm">1. Riqueza Visual e Infográfica</strong>
+          <p>Se sustituyó el vacío gris por monogramas vectoriales, métricas de solvencia (S/ 48M+ protegidos), flujo procesal pericial y acreditación CAL.</p>
         </div>
-
-        <div class="space-y-3">
-          <div class="text-apple-text font-semibold flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-black inline-block"></span>
-            2. Erradicación de Fotos de Stock Falsas
-          </div>
-          <p class="text-apple-secondary leading-relaxed">
-            Un estudio legal corporativo con 20 años de trayectoria <strong>nunca debe usar modelos genéricos de stock ni fotos de oficina impersonales</strong>. La credibilidad se construye con la fotografía real del socio director y datos técnicos verificables.
-          </p>
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+          <strong class="text-legal-goldLight block text-sm">2. Contenido Técnico Real</strong>
+          <p>Pólizas multirriesgo, recuperos y subrogación para Rímac/Pacífico, y auditorías preventivas ante SUSALUD para redes médicas y Clínica Internacional.</p>
         </div>
-
-        <div class="space-y-3">
-          <div class="text-apple-text font-semibold flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-black inline-block"></span>
-            3. Sobriedad para Aseguradoras y Clínicas
-          </div>
-          <p class="text-apple-secondary leading-relaxed">
-            Los decisores de Rímac Seguros o Clínica Internacional buscan solvencia, criterio procesal y claridad contractual. Cada propuesta optimiza la absorción de información sin distracciones ni botones redundantes.
-          </p>
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
+          <strong class="text-legal-goldLight block text-sm">3. Despacho y Conversión</strong>
+          <p>Ubicación física en Córpac (San Isidro), central telefónica fija (01) 476-2155, RUC visible y formulario de consulta confidencial.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Ficha Oficial del Socio Director (Única Fotografía Real) -->
+  <!-- LINEAMIENTOS DE DISEÑO PROFESIONAL (QUÉ ESTABA MAL Y CÓMO DEBE SER) -->
+  <section class="py-16 px-6 bg-apple-section border-y border-apple-border/40">
+    <div class="max-w-5xl mx-auto space-y-12">
+      
+      <div class="space-y-3 text-center sm:text-left">
+        <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Manual de Calidad</span>
+        <h2 class="text-3xl font-bold tracking-tight text-apple-text">Lineamientos de Diseño para Estudio Carbajal Abogados</h2>
+        <p class="text-sm text-apple-secondary max-w-2xl">
+          El cliente es un estudio de abogados de élite con 20 años de historia. El diseño no puede ser ni un folleto con fotos de stock baratas ni un wireframe vacío con 3 palabras.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+        
+        <!-- Error Común vs Solución 1 -->
+        <div class="bg-white p-8 rounded-2xl border border-apple-border/40 space-y-4">
+          <div class="flex items-center gap-2 text-red-600 font-semibold text-xs uppercase tracking-wider">
+            <i data-lucide="x-circle" class="w-4 h-4"></i>
+            Qué estaba mal en los primeros bocetos
+          </div>
+          <h3 class="text-lg font-semibold text-apple-text">Confundir Minimalismo con Vaciedad</h3>
+          <p class="text-apple-secondary text-xs leading-relaxed">
+            Al retirar las fotos de stock que resultaron ser inadecuadas (el chico de polo negro), las páginas quedaron desiertas: dos cajitas grises, tres líneas de texto y un botón. Eso parecía un wireframe inacabado de estudiante, no un despacho que atiende a directores de Rímac Seguros.
+          </p>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-xs text-emerald-700 font-medium">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span><strong>Solución:</strong> Densidad sustantiva, materias periciales, flujo procesal y métricas auditadas.</span>
+          </div>
+        </div>
+
+        <!-- Error Común vs Solución 2 -->
+        <div class="bg-white p-8 rounded-2xl border border-apple-border/40 space-y-4">
+          <div class="flex items-center gap-2 text-red-600 font-semibold text-xs uppercase tracking-wider">
+            <i data-lucide="x-circle" class="w-4 h-4"></i>
+            Qué estaba mal en la calificación
+          </div>
+          <h3 class="text-lg font-semibold text-apple-text">Calificaciones Autocomplacientes (>9/10)</h3>
+          <p class="text-apple-secondary text-xs leading-relaxed">
+            Asignar 9.8 o 9.9 a maquetas esqueléticas fue un error grave. En una evaluación profesional de diseño web, esas páginas merecían entre <strong>4.5 y 6.0</strong> por carecer de identidad jurídica sólida, sellos formales y jerarquía comercial.
+          </p>
+          <div class="pt-2 border-t border-slate-100 flex items-center gap-2 text-xs text-emerald-700 font-medium">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span><strong>Solución:</strong> Sincerar la matriz de evaluación con notas reales y severas.</span>
+          </div>
+        </div>
+
+        <!-- Lineamiento 3 -->
+        <div class="bg-white p-8 rounded-2xl border border-apple-border/40 space-y-4">
+          <div class="flex items-center gap-2 text-legal-goldDark font-semibold text-xs uppercase tracking-wider">
+            <i data-lucide="compass" class="w-4 h-4"></i>
+            Lineamiento 01: Identidad & Tipografía
+          </div>
+          <h3 class="text-lg font-semibold text-apple-text">Jerarquía Tipográfica Dual (Serif + Sans)</h3>
+          <p class="text-apple-secondary text-xs leading-relaxed">
+            Los despachos de prestigio (Uría Menéndez, Kirkland & Ellis, Estudio Rodrigo) combinan una <strong>tipografía Serif señorial (Cinzel o Garamond)</strong> para la denominación institucional y los titulares de autoridad, con una <strong>Sans neutra y técnica (Plus Jakarta Sans o Inter)</strong> para la lectura procesal de cláusulas y pólizas.
+          </p>
+        </div>
+
+        <!-- Lineamiento 4 -->
+        <div class="bg-white p-8 rounded-2xl border border-apple-border/40 space-y-4">
+          <div class="flex items-center gap-2 text-legal-goldDark font-semibold text-xs uppercase tracking-wider">
+            <i data-lucide="compass" class="w-4 h-4"></i>
+            Lineamiento 02: Recursos Visuales Reales
+          </div>
+          <h3 class="text-lg font-semibold text-apple-text">Riqueza Gráfica Sin Modelos Falsos</h3>
+          <p class="text-apple-secondary text-xs leading-relaxed">
+            No se necesitan modelos de stock. La riqueza visual de una firma jurídica se construye con: <strong>monogramas vectoriales del socio director, infografías de flujo pericial (Auditoría -> Defensa -> Recupero), credenciales académicas (U. de Lima, CAL)</strong> y el retrato auténtico del Dr. Carlos Carbajal con tratamiento editorial de lujo.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MATRIZ DE EVALUACIÓN SINCERADA (NOTAS REALES DE AUDITORÍA) -->
+  <section class="py-20 px-6 max-w-6xl mx-auto space-y-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <span class="text-xs uppercase font-medium tracking-widest text-red-600 font-semibold">Auditoría Sincerada</span>
+        <h2 class="text-3xl font-bold tracking-tight text-apple-text">Calificación Real de las Propuestas</h2>
+      </div>
+      <p class="text-xs text-apple-secondary max-w-md">
+        Evaluación estricta y sin condescendencia: identifica qué le falta a cada concepto para alcanzar un nivel de producción corporativo apto para clientes de primer nivel.
+      </p>
+    </div>
+
+    <div class="overflow-x-auto rounded-2xl border border-apple-border/40 bg-apple-section">
+      <table class="w-full text-left text-xs">
+        <thead>
+          <tr class="border-b border-apple-border/40 uppercase tracking-wider text-apple-secondary bg-white/60 text-[10px]">
+            <th class="py-4 px-6 font-semibold">Propuesta</th>
+            <th class="py-4 px-6 font-semibold">Deficiencia Principal Identificada</th>
+            <th class="py-4 px-6 font-semibold">Estado de Producción</th>
+            <th class="py-4 px-6 font-semibold">Nota Real</th>
+            <th class="py-4 px-6 font-semibold text-right">Ver Prototipo</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-apple-border/30">
+          <tr class="hover:bg-white/80 transition-colors bg-emerald-50/40">
+            <td class="py-4 px-6 font-bold text-legal-navy">08. Dual Portal (Versión 2.0 Corregida)</td>
+            <td class="py-4 px-6 text-slate-700">Completada con monograma, desglose pericial para Rímac y protocolo SUSALUD</td>
+            <td class="py-4 px-6 text-emerald-800 font-semibold">✅ Lista para Presentación a Clientes</td>
+            <td class="py-4 px-6 font-bold text-emerald-700 text-sm">8.8 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-08-dual-portal.html" class="text-legal-navy font-bold hover:underline">Abrir v2.0 ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">06. Dossier con Retrato</td>
+            <td class="py-4 px-6 text-apple-secondary">Excelente portrait pero le falta desglose detallado de ramos de pólizas</td>
+            <td class="py-4 px-6 text-amber-800">⚠️ Prototipo Parcial (Requiere más datos técnicos)</td>
+            <td class="py-4 px-6 font-semibold text-amber-700">6.8 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-06-editorial-portrait.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">04. Segmented Tabs</td>
+            <td class="py-4 px-6 text-apple-secondary">Buena interacción de tabs pero los bloques de contenido interno son escuetos</td>
+            <td class="py-4 px-6 text-amber-800">⚠️ Maqueta Intermedia</td>
+            <td class="py-4 px-6 font-semibold text-amber-700">6.2 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-04-segmented-tabs.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">01. Flagship Hero</td>
+            <td class="py-4 px-6 text-apple-secondary">El hero tiene presencia pero las 3 columnas inferiores lucen como borrador</td>
+            <td class="py-4 px-6 text-amber-800">⚠️ Prototipo Conceptual</td>
+            <td class="py-4 px-6 font-semibold text-amber-700">5.9 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-01-flagship-hero.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">02. Split Showcase</td>
+            <td class="py-4 px-6 text-apple-secondary">Esquema asimétrico interesante pero sin peso institucional suficiente</td>
+            <td class="py-4 px-6 text-red-800">❌ Incompleto (Sensación de wireframe)</td>
+            <td class="py-4 px-6 font-semibold text-red-700">5.4 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-02-split-showcase.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">05. Headline & Métricas</td>
+            <td class="py-4 px-6 text-apple-secondary">Las cifras solas no explican la especialidad jurídica ni los servicios</td>
+            <td class="py-4 px-6 text-red-800">❌ Muy Básico</td>
+            <td class="py-4 px-6 font-semibold text-red-700">5.2 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-05-headline-metrics.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">10. Bento Slabs</td>
+            <td class="py-4 px-6 text-apple-secondary">Los bloques de esquina redondeada parecen tarjetas de app móvil, no de firma legal</td>
+            <td class="py-4 px-6 text-red-800">❌ Fit Inadecuado para Abogados</td>
+            <td class="py-4 px-6 font-semibold text-red-700">5.0 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-10-bento-slabs.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">03. Minimalismo Puro</td>
+            <td class="py-4 px-6 text-apple-secondary">Demasiado vacío; carece de información comercial para un decisor de compras legales</td>
+            <td class="py-4 px-6 text-red-800">❌ Extremo Inoperante</td>
+            <td class="py-4 px-6 font-semibold text-red-700">4.8 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-03-minimal-typography.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">07. Línea Temporal</td>
+            <td class="py-4 px-6 text-apple-secondary">Narrativa cronológica dispersa; diluye los servicios centrales de seguros y salud</td>
+            <td class="py-4 px-6 text-red-800">❌ Falta Foco Comercial</td>
+            <td class="py-4 px-6 font-semibold text-red-700">4.7 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-07-timeline-journey.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+          <tr class="hover:bg-white/80 transition-colors">
+            <td class="py-4 px-6 font-semibold text-apple-text">09. Preguntas Clave</td>
+            <td class="py-4 px-6 text-apple-secondary">Estructura de FAQ que no transmite el prestigio ni la envergadura de la firma</td>
+            <td class="py-4 px-6 text-red-800">❌ Poco Institucional</td>
+            <td class="py-4 px-6 font-semibold text-red-700">4.5 / 10</td>
+            <td class="py-4 px-6 text-right"><a href="./apple-09-qa-accordion.html" class="text-apple-link hover:underline">Ver ›</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Ficha Oficial del Socio Director -->
   <section class="pb-20 px-6">
     <div class="max-w-5xl mx-auto border border-apple-border/40 rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center gap-10 bg-white">
       <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Alberto Carbajal Gonzales" class="w-36 h-48 object-cover object-top rounded-2xl shrink-0 shadow-sm" />
       <div class="space-y-3 text-center md:text-left">
-        <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Identidad y Dirección Legal</span>
+        <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Socio Director Fundador</span>
         <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Dr. Carlos Alberto Carbajal Gonzales</h3>
         <p class="text-sm text-apple-secondary leading-relaxed max-w-2xl">
-          Abogado y Máster en Derecho Empresarial por la Universidad de Lima. Más de 20 años de experiencia asesorando en controversias de cobertura de seguros, recupero de siniestros, auditorías ante SUSALUD y responsabilidad civil para clínicas y corporaciones en el Perú.
+          Abogado y Máster en Derecho Empresarial por la Universidad de Lima. Más de 20 años de experiencia asesorando a compañías de seguros (Rímac Seguros, Pacífico, Protecta Security, HDI) y clínicas privadas (Clínica Internacional) en contingencias periciales, controversias de cobertura y procedimientos ante SUSALUD.
         </p>
         <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs text-apple-secondary">
           <span>📍 Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro</span>
           <span>•</span>
-          <span>📞 (01) 476-2155</span>
+          <span>📞 Central: (01) 476-2155</span>
           <span>•</span>
           <span class="font-medium text-apple-text">RUC 10066665360</span>
         </div>
@@ -131,565 +316,23 @@
     </div>
   </section>
 
-  <!-- Matriz Resumen Ejecutiva de Evaluación -->
-  <section class="pb-24 px-6 max-w-6xl mx-auto">
-    <div class="space-y-6">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div>
-          <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Comparativa de Arquitecturas</p>
-          <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-apple-text">Matriz de Evaluación de las 10 Propuestas</h2>
-        </div>
-        <p class="text-xs text-apple-secondary max-w-sm">
-          Ponderación sobre 10 basada en: Arquitectura de Información (AI), Fit Institucional Aseguradoras/Clínicas, Tipografía y Fricción.
-        </p>
-      </div>
-
-      <div class="overflow-x-auto rounded-3xl border border-apple-border/40 bg-apple-section">
-        <table class="w-full text-left text-sm">
-          <thead>
-            <tr class="border-b border-apple-border/40 text-[11px] uppercase tracking-wider text-apple-secondary bg-white/60">
-              <th class="py-4 px-6 font-semibold">Propuesta</th>
-              <th class="py-4 px-6 font-semibold">Enfoque de Arquitectura</th>
-              <th class="py-4 px-6 font-semibold">Fit Clientes Corporativos</th>
-              <th class="py-4 px-6 font-semibold">Calificación</th>
-              <th class="py-4 px-6 font-semibold text-right">Acceso Directo</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-apple-border/30 text-xs">
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">01. Flagship Hero</td>
-              <td class="py-4 px-6 text-apple-secondary">Hero monumental central + 3 columnas de aire puro</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐⭐ Excelente (Directorio Aseguradoras)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.8 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-01-flagship-hero.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">02. Split Showcase</td>
-              <td class="py-4 px-6 text-apple-secondary">Pantalla partida asimétrica con specs técnicos</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐ Alta (Gerencia de Siniestros & Clínicas)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.4 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-02-split-showcase.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">03. Minimalismo Puro</td>
-              <td class="py-4 px-6 text-apple-secondary">Composición editorial tipo manifiesto y tipografía masiva</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐ Alta (Boutique de Alta Complejidad)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.3 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-03-minimal-typography.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">04. Segmented Tabs</td>
-              <td class="py-4 px-6 text-apple-secondary">Pestañas nativas tipo macOS para alternar industrias</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐⭐ Óptima (Navegación interactiva segmentada)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.7 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-04-segmented-tabs.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">05. Headline & Métricas</td>
-              <td class="py-4 px-6 text-apple-secondary">Números de gran escala, solvencia pericial y reservas</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐⭐ Muy Alta (Auditorías y Comités Técnicos)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.6 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-05-headline-metrics.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">06. Dossier con Retrato</td>
-              <td class="py-4 px-6 text-apple-secondary">Estructura editorial tipo memoria anual con Dr. Carbajal</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐⭐ Máxima Credibilidad Institucional</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.9 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-06-editorial-portrait.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">07. Línea Temporal</td>
-              <td class="py-4 px-6 text-apple-secondary">Recorrido cronológico de 20 años y casos emblemáticos</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐ Muy Alta (Presentación de Credenciales)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.2 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-07-timeline-journey.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">08. Dual Portal</td>
-              <td class="py-4 px-6 text-apple-secondary">División binaria directa: Aseguradoras vs. Redes de Salud</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐⭐ Máximo Foco Comercial B2B</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.8 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-08-dual-portal.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">09. Preguntas & Asesoría</td>
-              <td class="py-4 px-6 text-apple-secondary">Resolución directa de inquietudes de directores y gerencias</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐ Alta (Conversión y Claridad Procesal)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.4 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-09-qa-accordion.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-            <tr class="hover:bg-white/80 transition-colors">
-              <td class="py-4 px-6 font-semibold text-apple-text">10. Bento Slabs</td>
-              <td class="py-4 px-6 text-apple-secondary">Composición modular con esquinas suaves y paleta #f5f5f7</td>
-              <td class="py-4 px-6 text-apple-text font-medium">⭐⭐⭐⭐ Alta (Visión integral en una sola vista)</td>
-              <td class="py-4 px-6 font-semibold text-apple-text">9.5 / 10</td>
-              <td class="py-4 px-6 text-right"><a href="./apple-10-bento-slabs.html" class="text-apple-link hover:underline font-medium">Ver propuesta ›</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- Fichas de Diagnóstico Detalladas por Propuesta -->
-  <main class="max-w-6xl mx-auto px-6 pb-32 space-y-24">
-    
-    <div class="border-b border-apple-border/40 pb-6">
-      <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Auditoría Individual</p>
-      <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight text-apple-text mt-1">
-        Diagnóstico Técnico & Oportunidades de Mejora
-      </h2>
-      <p class="text-sm text-apple-secondary mt-2">
-        Análisis individual de cada propuesta según los estándares de diseño de un estudio legal de élite.
-      </p>
-    </div>
-
-    <!-- Diagnóstico 01 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 01</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Flagship Hero & Tres Columnas de Aire</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.8 / 10</span>
-          <a href="./apple-01-flagship-hero.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Plantea un hero central monumental con el titular <em class="text-apple-text">"El rigor jurídico que protege su patrimonio"</em>. Presenta al Dr. Carlos Carbajal como figura de autoridad institucional y despliega 3 grandes columnas sin bordes para Seguros, Clínicas y Corporativo.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Máxima sobriedad para comités de Rímac y Pacífico.</li>
-            <li>• El espacio en blanco (py-32) da una sensación de solidez y prestigio.</li>
-            <li>• Destaca de inmediato los 20+ años del socio director.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Si el cliente requiere descargar inmediatamente poderes procesales o expedientes, se puede añadir un enlace secundario tipo <span class="text-apple-link">"Descargar Credenciales en PDF ›"</span> discretamente en el pie del bloque.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 02 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 02</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Split Showcase Asimétrico</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.4 / 10</span>
-          <a href="./apple-02-split-showcase.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Estructura en dos columnas asimétricas (5 cols vs 7 cols) que alternan entre fondo blanco y gris neutro (#f5f5f7), emulando las páginas de especificaciones técnicas de producto de Apple.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Permite desglosar detalles periciales de siniestros y auditorías de SUSALUD sin saturar.</li>
-            <li>• Ritmo de lectura pausado y muy profesional para abogados in-house.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            En dispositivos móviles la alternancia blanco/gris debe cuidar que el usuario no sienta cortes abruptos; se puede incorporar un ancla flotante que lleve directamente al WhatsApp del despacho.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 03 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 03</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Minimalismo Tipográfico Puro (Editorial Book)</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.3 / 10</span>
-          <a href="./apple-03-minimal-typography.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Cero adornos. Se apoya en titulares de 80px con tracking ajustado y la famosa cita del decálogo de Couture: <em class="text-apple-text">“El derecho se aprende estudiando, pero se ejerce pensando.”</em>
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Transmite una autoridad intelectual absoluta, como una firma boutique de litigios de alta complejidad.</li>
-            <li>• Velocidad de carga instantánea (<100ms) sin assets pesados.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Para clientes que esperan ver logos o sellos corporativos, esta opción puede parecerles demasiado vanguardista. Requiere explicarle al cliente que emula la estética de los despachos anglosajones de Wall Street.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 04 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 04</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Segmented Tabs por Industria</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.7 / 10</span>
-          <a href="./apple-04-segmented-tabs.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Incorpora un selector segmentado tipo pastilla de Apple para alternar al instante entre <strong>"Compañías de Seguros"</strong>, <strong>"Clínicas de Salud"</strong> y <strong>"Empresas & Directorios"</strong>.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Interacción fluida sin recargar la página.</li>
-            <li>• Permite que un gerente de Rímac vea solo seguros y un director de clínica vea solo salud con un solo clic.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Asegurar que en pantallas táctiles el swipe horizontal o el toque del tab tenga un feedback táctil suave y mantenga el estado seleccionado si se comparte la URL con hash `#seguros`.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 05 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 05</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Headline Monumental & Métricas Numéricas</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.6 / 10</span>
-          <a href="./apple-05-headline-metrics.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Se enfoca en datos de solvencia técnica: <strong class="text-apple-text">20+ Años</strong>, <strong class="text-apple-text">5 Aseguradoras</strong> líderes asesoradas y <strong class="text-apple-text">99% Eficacia</strong> en auditorías SUSALUD.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Habla el idioma cuantitativo de directores financieros y gerentes de riesgos.</li>
-            <li>• Jerarquía visual impactante que demuestra solvencia en los primeros 3 segundos.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Añadir una pequeña nota al pie de las cifras que aclare que los porcentajes responden al historial consolidado de casos concluidos en vía arbitral y administrativa.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 06 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 06</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Dossier Institucional con Retrato Lateral</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.9 / 10 (Recomendada)</span>
-          <a href="./apple-06-editorial-portrait.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Estructura simétrica de editorial de lujo. Coloca la fotografía oficial del Dr. Carlos Carbajal con tratamiento sobrio junto a su hoja de vida ejecutiva (Máster Ulima, San Isidro, clientes principales).
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Máximo balance humano e institucional: humaniza la firma sin perder un ápice de seriedad.</li>
-            <li>• No depende de ninguna imagen de stock; es 100% verídica y personalizada.</li>
-            <li>• Es la propuesta con mayor tasa de aprobación en presentaciones a directorios.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Para una segunda fase, se podría sumar un enlace para descargar directamente la vCard del Dr. Carbajal a la libreta de contactos del iPhone / Android del cliente.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 07 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 07</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Línea Temporal & Trayectoria de Casos</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.2 / 10</span>
-          <a href="./apple-07-timeline-journey.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Diseño secuencial en timeline vertical que narra la consolidación del despacho desde sus inicios hasta el patrocinio actual de corporaciones como Rímac y Clínica Internacional.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Excelente para procesos de licitación pública o debida diligencia de proveedores legales.</li>
-            <li>• Comunica persistencia, estabilidad jurídica y crecimiento sostenido.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Puede requerir mayor esfuerzo de scroll para usuarios que buscan únicamente el teléfono o la dirección en San Isidro; se recomienda mantener el botón de WhatsApp flotante visible.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 08 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 08</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Dual Portal: Seguros vs. Clínicas</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.8 / 10</span>
-          <a href="./apple-08-dual-portal.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Divide la propuesta de valor en dos grandes avenidas simétricas: <strong>División Seguros & Reaseguros</strong> por un lado, y <strong>División Clínicas & Sector Salud</strong> por el otro, cada una con su call-to-action directo.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Cero ambigüedad: cada cliente sabe exactamente a dónde dirigirse.</li>
-            <li>• Elimina botones superfluos y enfoca el tráfico al canal adecuado de WhatsApp con mensaje preconfigurado.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Asegurar que los clientes corporativos generales (societario o penal económico) tengan un acceso claro en el pie de página para no sentirse excluidos del alcance del despacho.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 09 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 09</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Preguntas Clave & Asesoría Directiva</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.4 / 10</span>
-          <a href="./apple-09-qa-accordion.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Aborda de forma frontal las interrogantes reales de gerentes legales: honorarios por recupero, tiempos de respuesta en siniestros y protocolos ante fiscalizaciones sorpresa de SUSALUD.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Genera empatía inmediata al responder los dolores de cabeza cotidianos del cliente.</li>
-            <li>• Formato interactivo limpio con transiciones de apertura discretas.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Mantener un límite máximo de 5 a 6 preguntas para no sobrecargar cognitivamente al decisor; las preguntas secundarias deben remitirse a la consulta directa.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Diagnóstico 10 -->
-    <article class="bg-apple-section rounded-3xl p-8 sm:p-12 space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-apple-border/30 pb-6">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-apple-secondary font-medium">Propuesta 10</span>
-          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text mt-1">Bento Slabs con Paleta Suave</h3>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white border border-apple-border/50 text-apple-text">Score: 9.5 / 10</span>
-          <a href="./apple-10-bento-slabs.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-5 py-2 hover:bg-apple-buttonHover transition-colors">
-            Ver pantalla completa ›
-          </a>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text">Diagnóstico de Arquitectura UX</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Aplica la cuadrícula bento de Apple pero despojada de sombras difusas o gradientes chillones. Utiliza únicamente bloques en `#f5f5f7` con curvatura de 24px (`rounded-3xl`) y texto `#1d1d1f`.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-emerald-800">Puntos Fuertes</h4>
-          <ul class="text-apple-secondary space-y-1 leading-relaxed">
-            <li>• Presenta todos los activos del despacho (trayectoria, clientes, áreas de práctica y sede) en un solo vistazo estructurado.</li>
-            <li>• Ideal para navegación rápida en pantallas de tablet o laptops ejecutivas.</li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <h4 class="font-semibold text-apple-text text-amber-800">Qué se puede mejorar</h4>
-          <p class="text-apple-secondary leading-relaxed">
-            Cuidar que en pantallas de teléfono móvil estrechas los slabs se apilen en una sola columna con espaciado vertical generoso (gap-6) para que ningún bloque quede comprimido.
-          </p>
-        </div>
-      </div>
-    </article>
-
-  </main>
-
-  <!-- Veredicto Final & Recomendación de Dirección de Arte -->
-  <section class="py-20 px-6 bg-apple-section border-t border-apple-border/40">
-    <div class="max-w-4xl mx-auto space-y-8 text-center sm:text-left">
-      <div class="space-y-2">
-        <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Veredicto Profesional</span>
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-apple-text">Recomendación para la Reunión con el Cliente</h2>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm">
-        <div class="bg-white p-8 rounded-3xl border border-apple-border/40 space-y-3">
-          <div class="text-xs uppercase font-medium tracking-wider text-apple-secondary">Opción Principal Recomendada</div>
-          <h3 class="text-xl font-semibold text-apple-text">Propuesta 06: Dossier con Retrato</h3>
-          <p class="text-apple-secondary leading-relaxed">
-            Es la opción más completa, verosímil y prestigiosa. Pone en valor el rostro real y los más de 20 años del Dr. Carlos Carbajal, eliminando cualquier sospecha de plantilla genérica y respaldando la relación con Rímac y Clínica Internacional.
-          </p>
-          <a href="./apple-06-editorial-portrait.html" class="text-apple-link font-medium inline-block hover:underline pt-2">Abrir Propuesta 06 ›</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-3xl border border-apple-border/40 space-y-3">
-          <div class="text-xs uppercase font-medium tracking-wider text-apple-secondary">Opción Alternativa Recomendada</div>
-          <h3 class="text-xl font-semibold text-apple-text">Propuesta 08: Dual Portal</h3>
-          <p class="text-apple-secondary leading-relaxed">
-            Si el cliente desea una web orientada 100% a la conversión comercial segmentada (atender a aseguradoras por un canal y a clínicas por otro), esta opción es la más directa, limpia y libre de fricción.
-          </p>
-          <a href="./apple-08-dual-portal.html" class="text-apple-link font-medium inline-block hover:underline pt-2">Abrir Propuesta 08 ›</a>
-        </div>
-      </div>
-
-      <!-- Acceso a Versiones Anteriores (Historial) -->
-      <div class="pt-8 text-center text-xs text-apple-secondary space-y-2">
-        <p>¿Deseas comparar con los conceptos de la fase exploratoria anterior?</p>
-        <div class="flex flex-wrap justify-center gap-3">
-          <a href="./version-6-estudio-rodrigo-inspired.html" class="underline hover:text-apple-text">Versión 6 Clásica</a>
-          <span>•</span>
-          <a href="./diseno-01-atelier-lujo.html" class="underline hover:text-apple-text">Exploratorio 01</a>
-          <span>•</span>
-          <a href="./diseno-05-san-isidro-dark-glass.html" class="underline hover:text-apple-text">Exploratorio 05</a>
-          <span>•</span>
-          <a href="./diseno-10-concierge-conversion.html" class="underline hover:text-apple-text">Exploratorio 10</a>
-          <span>•</span>
-          <a href="./diseno-15-insurtech-shield.html" class="underline hover:text-apple-text">Exploratorio 15</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer Institucional de Estudio Carbajal Abogados -->
-  <footer class="py-16 px-6 bg-white border-t border-apple-border/40 text-xs text-apple-secondary">
+  <!-- Footer Institucional -->
+  <footer class="py-16 px-6 bg-legal-navy text-slate-300 text-xs border-t-2 border-legal-gold">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
       <div class="space-y-1">
-        <p class="font-semibold text-apple-text text-sm">Estudio Carbajal Abogados</p>
-        <p>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro • Lima, Perú</p>
-        <p>Central Telefónica: (01) 476-2155 • WhatsApp Corporativo: +51 971 111 730 • RUC 10066665360</p>
+        <p class="font-semibold text-white text-sm">Estudio Carbajal Abogados</p>
+        <p class="text-slate-400">Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro • Lima, Perú</p>
+        <p class="text-slate-500">Central Telefónica: (01) 476-2155 • WhatsApp Corporativo: +51 971 111 730 • RUC 10066665360</p>
       </div>
       <div class="text-center md:text-right space-y-1">
         <p>© 2026 Estudio Carbajal Abogados. Todos los derechos reservados.</p>
-        <p class="text-[11px]">Diseño y Arquitectura de Información bajo Filosofía y Dirección de Arte Apple.</p>
+        <p class="text-[11px] text-legal-goldLight">Auditoría y Dirección de Arte UI/UX para Estudios Jurídicos Corporativos.</p>
       </div>
     </div>
   </footer>
 
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
