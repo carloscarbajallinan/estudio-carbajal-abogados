@@ -67,10 +67,24 @@
       box-shadow: 0 0 50px -15px rgba(205, 168, 115, 0.18);
     }
     .bg-cinema-hero {
-      background: linear-gradient(135deg, rgba(4, 8, 16, 0.94) 0%, rgba(7, 15, 30, 0.86) 60%, rgba(4, 8, 16, 0.95) 100%), url('./hero-bg-san-isidro-financial.jpg') center top / cover no-repeat;
+      background: linear-gradient(135deg, rgba(4, 8, 16, 0.94) 0%, rgba(7, 15, 30, 0.82) 60%, rgba(4, 8, 16, 0.95) 100%),
+                  url('./hero-tower-authority.jpg') center top / cover no-repeat;
+    }
+    .bg-colonnade-ambient {
+      background: linear-gradient(to right, rgba(4, 8, 16, 0.95) 0%, rgba(7, 15, 30, 0.80) 50%, rgba(4, 8, 16, 0.95) 100%),
+                  url('./architectural-colonnade-prestige.jpg') center / cover no-repeat;
+    }
+    .bg-skyline-ambient {
+      background: linear-gradient(135deg, rgba(4, 8, 16, 0.95) 0%, rgba(7, 15, 30, 0.82) 50%, rgba(4, 8, 16, 0.95) 100%),
+                  url('./hero-prestige-skyline.jpg') center / cover no-repeat;
     }
     .bg-boardroom-ambient {
-      background: linear-gradient(to right, rgba(4, 8, 16, 0.95) 0%, rgba(7, 15, 30, 0.82) 50%, rgba(4, 8, 16, 0.95) 100%), url('./boardroom-directorate.jpg') center / cover no-repeat;
+      background: linear-gradient(to right, rgba(4, 8, 16, 0.95) 0%, rgba(7, 15, 30, 0.82) 50%, rgba(4, 8, 16, 0.95) 100%),
+                  url('./boardroom-prestige-luxury.jpg') center / cover no-repeat;
+    }
+    .bg-chamber-ambient {
+      background: linear-gradient(135deg, rgba(4, 8, 16, 0.96) 0%, rgba(12, 24, 44, 0.86) 50%, rgba(4, 8, 16, 0.96) 100%),
+                  url('./executive-dossier-prestige.jpg') center right / cover no-repeat;
     }
   </style>
 </head>
@@ -155,7 +169,7 @@
     <div class="relative min-h-[490px]">
       
       <!-- Slide 01: Visión de Autoridad -->
-      <div id="ks-0" class="keynote-slide current space-y-8">
+      <div id="ks-0" class="keynote-slide current space-y-8 bg-cinema-hero p-8 sm:p-12 rounded-3xl border border-flagship-border/40 shadow-2xl">
         <div class="space-y-4">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
             <i data-lucide="award" class="w-4 h-4"></i>
@@ -164,7 +178,7 @@
           <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white leading-tight">
             El rigor jurídico que protege su <span class="gold-shimmer italic">patrimonio</span>.
           </h1>
-          <p class="text-flagship-muted text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+          <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
             Especialistas en dar soporte continuo a compañías de seguros líderes, redes asistenciales de salud y corporaciones en el Perú, con estricta confidencialidad y peritaje de alto nivel.
           </p>
         </div>
@@ -187,69 +201,69 @@
       </div>
 
       <!-- Slide 02: División Seguros -->
-      <div id="ks-1" class="keynote-slide out-right space-y-8">
+      <div id="ks-1" class="keynote-slide out-right space-y-8 bg-skyline-ambient p-8 sm:p-12 rounded-3xl border border-flagship-border/40 shadow-2xl">
         <div class="space-y-4">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/20 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/40">
             <i data-lucide="shield-check" class="w-4 h-4"></i>
             División Seguros & Reaseguros
           </div>
           <h2 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
             Controversias de Cobertura & <span class="gold-shimmer italic">Recuperos</span>.
           </h2>
-          <p class="text-flagship-muted text-base leading-relaxed max-w-2xl font-light">
+          <p class="text-slate-200 text-base leading-relaxed max-w-2xl font-light">
             Proveedor homologado en la resolución de siniestros complejos, análisis de pólizas multirriesgo y acciones coactivas de recupero por subrogación.
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <div class="font-serif text-2xl text-flagship-gold">Pólizas CAR/EAR</div>
-            <p class="text-xs text-flagship-muted leading-relaxed">Controversias técnicas de cobertura en proyectos de construcción, montaje y ramos técnicos.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Controversias técnicas de cobertura en proyectos de construcción, montaje y ramos técnicos.</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <div class="font-serif text-2xl text-flagship-gold">Subrogación Inmediata</div>
-            <p class="text-xs text-flagship-muted leading-relaxed">Acción ágil de recupero judicial y extrajudicial frente a terceros civilmente responsables.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Acción ágil de recupero judicial y extrajudicial frente a terceros civilmente responsables.</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <div class="font-serif text-2xl text-flagship-gold">Aseguradoras Líderes</div>
-            <p class="text-xs text-flagship-muted leading-relaxed">Rímac Seguros y Reaseguros, Pacífico Seguros, Protecta Security y HDI Seguros.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Rímac Seguros y Reaseguros, Pacífico Seguros, Protecta Security y HDI Seguros.</p>
           </div>
         </div>
       </div>
 
       <!-- Slide 03: División Clínicas -->
-      <div id="ks-2" class="keynote-slide out-right space-y-8">
+      <div id="ks-2" class="keynote-slide out-right space-y-8 bg-boardroom-ambient p-8 sm:p-12 rounded-3xl border border-flagship-border/40 shadow-2xl">
         <div class="space-y-4">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/20 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/40">
             <i data-lucide="activity" class="w-4 h-4"></i>
             División Clínicas & Sector Salud
           </div>
           <h2 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
             Defensa a Centros Médicos & <span class="gold-shimmer italic">SUSALUD</span>.
           </h2>
-          <p class="text-flagship-muted text-base leading-relaxed max-w-2xl font-light">
+          <p class="text-slate-200 text-base leading-relaxed max-w-2xl font-light">
             Patrocinio especializado para redes hospitalarias frente a fiscalizaciones de SUSALUD, procesos indemnizatorios por mala praxis y arbitraje de salud.
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <div class="font-serif text-2xl text-flagship-gold">Descargos SUSALUD</div>
-            <p class="text-xs text-flagship-muted leading-relaxed">Respaldo técnico en auditorías sanitarias y procedimientos sancionadores.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Respaldo técnico en auditorías sanitarias y procedimientos sancionadores.</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <div class="font-serif text-2xl text-flagship-gold">Lex Artis Médica</div>
-            <p class="text-xs text-flagship-muted leading-relaxed">Defensa procesal en juicios de responsabilidad civil médica con peritajes forenses.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Defensa procesal en juicios de responsabilidad civil médica con peritajes forenses.</p>
           </div>
-          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+          <div class="p-6 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-white/10 hover:border-flagship-gold transition-colors space-y-3">
             <div class="font-serif text-2xl text-flagship-gold">Redes Privadas</div>
-            <p class="text-xs text-flagship-muted leading-relaxed">Asesoría institucional continuada a entidades como Clínica Internacional y EPS.</p>
+            <p class="text-xs text-slate-300 leading-relaxed">Asesoría institucional continuada a entidades como Clínica Internacional y EPS.</p>
           </div>
         </div>
       </div>
 
       <!-- Slide 04: Metodología -->
-      <div id="ks-3" class="keynote-slide out-right space-y-8 bg-boardroom-ambient p-8 sm:p-12 rounded-3xl border border-flagship-border/40 shadow-2xl">
+      <div id="ks-3" class="keynote-slide out-right space-y-8 bg-colonnade-ambient p-8 sm:p-12 rounded-3xl border border-flagship-border/40 shadow-2xl">
         <div class="space-y-4">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/20 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/40">
             <i data-lucide="layers" class="w-4 h-4"></i>
@@ -283,10 +297,10 @@
       </div>
 
       <!-- Slide 05: Socio Director y Despacho -->
-      <div id="ks-4" class="keynote-slide out-right space-y-8">
+      <div id="ks-4" class="keynote-slide out-right space-y-8 bg-chamber-ambient p-8 sm:p-12 rounded-3xl border border-flagship-border/40 shadow-2xl">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           <div class="md:col-span-4">
-            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Alberto Carbajal Gonzales" class="w-full h-96 object-cover object-top rounded-2xl border border-flagship-border ambient-glow shadow-2xl" />
+            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Alberto Carbajal Gonzales" class="w-full h-[360px] sm:h-96 object-cover object-top rounded-2xl border-2 border-flagship-gold/60 ambient-glow shadow-2xl" />
           </div>
           <div class="md:col-span-8 space-y-5">
             <div class="space-y-1">
@@ -295,15 +309,15 @@
               <p class="text-sm text-flagship-gold font-medium">Abogado • Máster en Derecho Empresarial por la Universidad de Lima</p>
             </div>
 
-            <p class="text-xs sm:text-sm text-flagship-muted leading-relaxed font-light">
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
               Más de dos décadas asesorando a directorios y gerencias de siniestros de Rímac Seguros, Pacífico Seguros, Protecta Security y a redes de salud como Clínica Internacional.
             </p>
 
-            <blockquote class="italic font-serif text-sm text-slate-300 border-l-2 border-flagship-gold pl-4 py-1">
+            <blockquote class="italic font-serif text-sm text-slate-200 border-l-2 border-flagship-gold pl-4 py-1">
               “El derecho se aprende estudiando, pero se ejerce pensando.” — Eduardo J. Couture
             </blockquote>
 
-            <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 space-y-1">
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-white/10 text-xs text-slate-300 space-y-1">
               <p><strong class="text-white">Sede San Isidro:</strong> Calle 31 N° 170 Of. 203, Urb. Córpac</p>
               <p><strong class="text-white">Central Telefónica:</strong> (01) 476-2155 • <strong class="text-white">RUC:</strong> 10066665360</p>
             </div>

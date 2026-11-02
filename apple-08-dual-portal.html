@@ -46,7 +46,7 @@
     }
     .hero-pattern {
       background: linear-gradient(to right, rgba(11, 22, 38, 0.94) 0%, rgba(20, 34, 56, 0.84) 50%, rgba(11, 22, 38, 0.94) 100%),
-                  url('./hero-bg-san-isidro-financial.jpg') center top / cover no-repeat;
+                  url('./hero-tower-authority.jpg') center top / cover no-repeat;
     }
   </style>
 </head>
@@ -152,15 +152,20 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-4">
         
         <!-- Tarjeta Portal 1: Compañías de Seguros -->
-        <div id="portal-seguros" class="rounded-2xl bg-gradient-to-b from-legal-navyLight to-legal-navy border-2 border-legal-gold/40 p-8 sm:p-10 space-y-6 flex flex-col justify-between relative group hover:border-legal-gold transition-all duration-300 shadow-xl">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3.5 py-1 rounded-md bg-legal-gold/20 text-legal-goldLight border border-legal-gold/40 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5">
-                <i data-lucide="shield-check" class="w-4 h-4 text-legal-gold"></i>
+        <div id="portal-seguros" class="rounded-2xl bg-gradient-to-b from-legal-navyLight to-legal-navy border-2 border-legal-gold/40 overflow-hidden flex flex-col justify-between relative group hover:border-legal-gold transition-all duration-300 shadow-2xl">
+          <!-- Banner Arquitectónico de Presencia -->
+          <div class="h-44 sm:h-52 w-full relative overflow-hidden border-b border-legal-gold/30">
+            <img src="./hero-prestige-skyline.jpg" alt="Centro Financiero San Isidro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-legal-navy via-legal-navy/50 to-transparent"></div>
+            <div class="absolute bottom-3 left-6 right-6 flex items-center justify-between">
+              <span class="px-3 py-1 rounded-md bg-legal-gold text-legal-navy font-bold text-[11px] uppercase tracking-wider shadow">
                 División 01 • Aseguradoras
               </span>
-              <span class="text-xs text-slate-400 font-mono">SAN ISIDRO</span>
+              <span class="text-[11px] text-white font-mono bg-black/60 px-2 py-0.5 rounded border border-white/20 backdrop-blur-sm">SAN ISIDRO</span>
             </div>
+          </div>
+          <div class="p-8 sm:p-10 space-y-6 flex-1 flex flex-col justify-between">
+          <div class="space-y-4">
 
             <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white leading-snug">
               Derecho de Seguros & Reaseguros
@@ -208,18 +213,24 @@
               <span>Atención para Gerencias de Seguros</span>
             </a>
           </div>
+          </div>
         </div>
 
         <!-- Tarjeta Portal 2: Clínicas y Sector Salud -->
-        <div id="portal-clinicas" class="rounded-2xl bg-gradient-to-b from-legal-navyLight to-legal-navy border-2 border-slate-700 p-8 sm:p-10 space-y-6 flex flex-col justify-between relative group hover:border-legal-gold transition-all duration-300 shadow-xl">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3.5 py-1 rounded-md bg-white/10 text-slate-200 border border-white/20 text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5">
-                <i data-lucide="activity" class="w-4 h-4 text-legal-gold"></i>
+        <div id="portal-clinicas" class="rounded-2xl bg-gradient-to-b from-legal-navyLight to-legal-navy border-2 border-slate-700 overflow-hidden flex flex-col justify-between relative group hover:border-legal-gold transition-all duration-300 shadow-2xl">
+          <!-- Banner Arquitectónico de Presencia -->
+          <div class="h-44 sm:h-52 w-full relative overflow-hidden border-b border-slate-700">
+            <img src="./boardroom-prestige-luxury.jpg" alt="Sala de Directorio y Comités Médicos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-legal-navy via-legal-navy/50 to-transparent"></div>
+            <div class="absolute bottom-3 left-6 right-6 flex items-center justify-between">
+              <span class="px-3 py-1 rounded-md bg-white text-legal-navy font-bold text-[11px] uppercase tracking-wider shadow">
                 División 02 • Sector Salud
               </span>
-              <span class="text-xs text-slate-400 font-mono">SUSALUD</span>
+              <span class="text-[11px] text-white font-mono bg-black/60 px-2 py-0.5 rounded border border-white/20 backdrop-blur-sm">SUSALUD</span>
             </div>
+          </div>
+          <div class="p-8 sm:p-10 space-y-6 flex-1 flex flex-col justify-between">
+          <div class="space-y-4">
 
             <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white leading-snug">
               Defensa para Clínicas & Entidades Médicas
@@ -266,6 +277,7 @@
               <i data-lucide="message-square" class="w-4 h-4 text-legal-goldDark"></i>
               <span>Atención para Clínicas y Hospitales</span>
             </a>
+          </div>
           </div>
         </div>
 
