@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Versión 07: Interactive Executive Suite</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            suite: {
+              black: '#040911',
+              navy: '#091322',
+              card: '#0e1c31',
+              cardHover: '#132540',
+              border: 'rgba(212, 175, 122, 0.25)',
+              gold: '#d4af7a',
+              goldLight: '#f5e7d3',
+              muted: '#7f91ab',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .ambient-gold {
+      box-shadow: 0 0 40px -10px rgba(212, 175, 122, 0.15);
+    }
+    .fade-cross {
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+<body class="bg-suite-black text-slate-100 font-sans antialiased selection:bg-suite-gold selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="py-4 px-6 border-b border-suite-border/30 bg-suite-black/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-xs">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg border border-suite-gold flex items-center justify-center font-serif font-bold text-suite-gold text-base">
+          CC
+        </div>
+        <div>
+          <span class="font-serif font-semibold text-white tracking-widest text-sm">ESTUDIO CARBAJAL ABOGADOS</span>
+          <span class="text-[9px] uppercase tracking-widest text-suite-gold block">Versión 07 • Executive Suite</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-suite-muted">
+        <span class="hidden md:inline">Central: (01) 476-2155</span>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-4 py-1.5 rounded-full bg-suite-gold hover:bg-suite-goldLight text-suite-black font-semibold text-xs transition-colors">
+          WhatsApp 971 111 730
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Executive Suite -->
+  <main class="max-w-5xl mx-auto px-6 py-10 lg:py-16 w-full">
+    
+    <!-- Top Interactive Switcher -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-suite-border/40 mb-10">
+      <div class="flex items-center gap-2 p-1 rounded-full bg-white/5 border border-suite-border/30">
+        <button onclick="setTab(0)" id="t-0" class="px-5 py-2 rounded-full text-xs font-semibold bg-suite-gold text-suite-black transition-all">
+          División Seguros
+        </button>
+        <button onclick="setTab(1)" id="t-1" class="px-5 py-2 rounded-full text-xs font-medium text-suite-muted hover:text-white transition-all">
+          División Clínicas
+        </button>
+        <button onclick="setTab(2)" id="t-2" class="px-5 py-2 rounded-full text-xs font-medium text-suite-muted hover:text-white transition-all">
+          Socio Director & Despacho
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2 text-xs text-suite-muted font-mono">
+        <span id="tab-counter">01 / 03</span>
+      </div>
+    </div>
+
+    <!-- Contenedor Principal de Vista -->
+    <div class="relative min-h-[480px]">
+      
+      <!-- Panel 0: Seguros -->
+      <div id="panel-0" class="fade-cross opacity-100 block space-y-8">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-suite-gold/15 text-suite-gold text-[11px] font-semibold tracking-wider uppercase border border-suite-gold/30">
+            <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+            Proveedor Homologado de Aseguradoras
+          </div>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Defensa Técnica en Siniestros Complejos & <span class="italic text-suite-goldLight">Subrogación</span>.
+          </h1>
+          <p class="text-suite-muted text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Asesoramos en la resolución pericial de controversias de cobertura en ramos patrimoniales, recupero judicial y arbitrajes comerciales de alta envergadura.
+          </p>
+        </div>
+
+        <!-- 3 Tarjetas Ambient -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-suite-card hover:bg-suite-cardHover border border-suite-border/60 ambient-gold transition-all duration-300 space-y-3">
+            <div class="font-serif text-2xl text-suite-gold">Ramos Patrimoniales</div>
+            <p class="text-xs text-suite-muted leading-relaxed">Pólizas multirriesgo, CAR/EAR, rotura de maquinaria y pérdida de beneficios.</p>
+            <div class="text-[11px] text-slate-300 pt-2 border-t border-white/10">Defensa pericial especializada</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-suite-card hover:bg-suite-cardHover border border-suite-border/60 ambient-gold transition-all duration-300 space-y-3">
+            <div class="font-serif text-2xl text-suite-gold">Subrogación Rápida</div>
+            <p class="text-xs text-suite-muted leading-relaxed">Cobranza judicial y recupero inmediato de fondos indemnizados ante causantes.</p>
+            <div class="text-[11px] text-slate-300 pt-2 border-t border-white/10">S/ 48M+ recuperados y blindados</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-suite-card hover:bg-suite-cardHover border border-suite-border/60 ambient-gold transition-all duration-300 space-y-3">
+            <div class="font-serif text-2xl text-suite-gold">Aseguradoras</div>
+            <p class="text-xs text-suite-muted leading-relaxed">Rímac Seguros y Reaseguros, Pacífico Seguros, Protecta Security y HDI Seguros.</p>
+            <div class="text-[11px] text-slate-300 pt-2 border-t border-white/10">20+ años de homologación continua</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 1: Clínicas -->
+      <div id="panel-1" class="fade-cross opacity-0 hidden space-y-8">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-suite-gold/15 text-suite-gold text-[11px] font-semibold tracking-wider uppercase border border-suite-gold/30">
+            <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+            Defensa a Redes Hospitalarias
+          </div>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Blindaje Institucional para Clínicas & <span class="italic text-suite-goldLight">SUSALUD</span>.
+          </h1>
+          <p class="text-suite-muted text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Patrocinio especializado para centros de salud privados en fiscalizaciones sanitarias, imputaciones de responsabilidad civil médica y protocolos preventivos asistenciales.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-suite-card hover:bg-suite-cardHover border border-suite-border/60 ambient-gold transition-all duration-300 space-y-3">
+            <div class="font-serif text-2xl text-suite-gold">Descargos SUSALUD</div>
+            <p class="text-xs text-suite-muted leading-relaxed">Descargos técnicos en auditorías y procedimientos administrativos sancionadores.</p>
+            <div class="text-[11px] text-slate-300 pt-2 border-t border-white/10">0 Sanciones pecuniarias firmes</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-suite-card hover:bg-suite-cardHover border border-suite-border/60 ambient-gold transition-all duration-300 space-y-3">
+            <div class="font-serif text-2xl text-suite-gold">Lex Artis Médica</div>
+            <p class="text-xs text-suite-muted leading-relaxed">Defensa procesal sustentada en comités de bioética y peritajes médico-forenses.</p>
+            <div class="text-[11px] text-slate-300 pt-2 border-t border-white/10">Patrocinio a directores médicos</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-suite-card hover:bg-suite-cardHover border border-suite-border/60 ambient-gold transition-all duration-300 space-y-3">
+            <div class="font-serif text-2xl text-suite-gold">Redes Asistenciales</div>
+            <p class="text-xs text-suite-muted leading-relaxed">Experiencia destacada con Clínica Internacional, Rímac EPS y clínicas privadas.</p>
+            <div class="text-[11px] text-slate-300 pt-2 border-t border-white/10">Acompañamiento 24/7 en contingencias</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Socio Director -->
+      <div id="panel-2" class="fade-cross opacity-0 hidden space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div class="md:col-span-4">
+            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-88 object-cover object-top rounded-2xl border border-suite-border shadow-2xl" />
+          </div>
+          <div class="md:col-span-8 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-suite-gold font-semibold">Socio Director Fundador</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white">Dr. Carlos Alberto Carbajal Gonzales</h2>
+            <p class="text-sm text-suite-gold">Abogado • Máster en Derecho Empresarial por la Universidad de Lima</p>
+            <p class="text-xs text-suite-muted leading-relaxed">
+              Más de 20 años de ejercicio ininterrumpido en San Isidro. Asesoría directa y estricta confidencialidad para directorios corporativos de aseguradoras y centros de salud.
+            </p>
+            <blockquote class="italic font-serif text-sm text-slate-300 border-l-2 border-suite-gold pl-4 py-1">
+              “El derecho se aprende estudiando, pero se ejerce pensando.” — Couture
+            </blockquote>
+            <div class="pt-4 flex flex-wrap gap-3">
+              <a href="https://wa.me/51971111730" target="_blank" class="px-5 py-2.5 rounded-full bg-suite-gold hover:bg-suite-goldLight text-suite-black font-semibold text-xs transition-colors">
+                Coordinar con Despacho San Isidro
+              </a>
+              <a href="tel:+5114762155" class="px-5 py-2.5 rounded-full border border-suite-border hover:border-suite-gold text-slate-200 text-xs transition-colors">
+                (01) 476-2155
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="py-6 border-t border-suite-border/30 text-center text-xs text-suite-muted">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro • <a href="./index.html" class="text-suite-gold hover:underline">Volver a Auditoría</a></p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let current = 0;
+
+    function setTab(index) {
+      document.querySelectorAll('[id^="panel-"]').forEach((panel, i) => {
+        if (i === index) {
+          panel.classList.remove('hidden');
+          setTimeout(() => {
+            panel.classList.remove('opacity-0');
+            panel.classList.add('opacity-100');
+          }, 20);
+        } else {
+          panel.classList.remove('opacity-100');
+          panel.classList.add('opacity-0');
+          setTimeout(() => panel.classList.add('hidden'), 300);
+        }
+      });
+
+      document.querySelectorAll('[id^="t-"]').forEach((btn, i) => {
+        if (i === index) {
+          btn.className = 'px-5 py-2 rounded-full text-xs font-semibold bg-suite-gold text-suite-black transition-all';
+        } else {
+          btn.className = 'px-5 py-2 rounded-full text-xs font-medium text-suite-muted hover:text-white transition-all';
+        }
+      });
+
+      document.getElementById('tab-counter').innerText = '0' + (index + 1) + ' / 03';
+      current = index;
+    }
+  </script>
+</body>
+</html>

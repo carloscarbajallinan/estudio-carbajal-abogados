@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Versión 06: Director Showcase & Stagger</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            vault: {
+              black: '#050b14',
+              navy: '#0a1322',
+              card: '#0f1c30',
+              border: 'rgba(212, 175, 122, 0.22)',
+              gold: '#d4af7a',
+              goldLight: '#f5e5ce',
+              goldDark: '#a3804d',
+              slate: '#8797b0',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-up {
+      animation: fadeUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+  </style>
+</head>
+<body class="bg-vault-black text-slate-100 font-sans antialiased selection:bg-vault-gold selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- Nav -->
+  <header class="py-4 px-6 border-b border-vault-border/30 bg-vault-black/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-xs">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border border-vault-gold flex items-center justify-center font-serif font-bold text-vault-gold">
+          CC
+        </div>
+        <div>
+          <span class="font-serif font-semibold text-white tracking-widest text-sm">ESTUDIO CARBAJAL ABOGADOS</span>
+          <span class="text-[9px] uppercase tracking-widest text-vault-gold block">Versión 06 • Motion Stagger</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-vault-slate">
+        <span>San Isidro: (01) 476-2155</span>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-4 py-1.5 rounded-full bg-vault-gold hover:bg-vault-goldLight text-vault-black font-semibold text-xs transition-colors">
+          WhatsApp 971 111 730
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Keynote Stage con Stagger Animations -->
+  <main class="max-w-5xl mx-auto px-6 py-10 lg:py-14 w-full">
+    
+    <!-- Controls Bar -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-vault-border/40 mb-10">
+      <div class="flex items-center gap-3">
+        <button onclick="changeSlide(0)" id="pill-0" class="px-4 py-1.5 rounded-full text-xs font-semibold bg-vault-gold text-vault-black transition-all">
+          01. Seguros & Siniestros
+        </button>
+        <button onclick="changeSlide(1)" id="pill-1" class="px-4 py-1.5 rounded-full text-xs font-medium text-vault-slate hover:text-white border border-vault-border/40 transition-all">
+          02. Redes Médicas & SUSALUD
+        </button>
+        <button onclick="changeSlide(2)" id="pill-2" class="px-4 py-1.5 rounded-full text-xs font-medium text-vault-slate hover:text-white border border-vault-border/40 transition-all">
+          03. Socio Director
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="prev()" class="w-8 h-8 rounded-full border border-vault-border flex items-center justify-center text-vault-slate hover:text-white hover:border-vault-gold transition-colors">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        </button>
+        <button onclick="next()" class="w-8 h-8 rounded-full border border-vault-border flex items-center justify-center text-vault-slate hover:text-white hover:border-vault-gold transition-colors">
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Slides Container -->
+    <div id="slide-stage" class="min-h-[460px]">
+      
+      <!-- Slide 01: Seguros -->
+      <div id="v6-slide-0" class="space-y-8 block">
+        <div class="space-y-3 animate-fade-up">
+          <span class="text-xs uppercase tracking-widest text-vault-gold font-semibold">Litigios de Alta Complejidad</span>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Resolución de Siniestros & Recuperos para <span class="text-vault-goldLight italic">Aseguradoras</span>.
+          </h1>
+          <p class="text-vault-slate text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Más de dos décadas como proveedor homologado de Rímac Seguros, Pacífico Seguros, Protecta Security y HDI Seguros en controversias de cobertura patrimonial y subrogación judicial.
+          </p>
+        </div>
+
+        <!-- 3 Tarjetas con animación secuencial escalonada -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-vault-card border border-vault-border animate-fade-up delay-1 space-y-2">
+            <div class="font-serif text-2xl text-vault-gold">Pólizas CAR/EAR</div>
+            <p class="text-xs text-vault-slate leading-relaxed">Controversias técnicas en riesgos de construcción, montaje y daño patrimonial masivo.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-vault-card border border-vault-border animate-fade-up delay-2 space-y-2">
+            <div class="font-serif text-2xl text-vault-gold">Subrogación Rápida</div>
+            <p class="text-xs text-vault-slate leading-relaxed">Acción inmediata para el recupero de fondos indemnizados frente a terceros responsables.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-vault-card border border-vault-border animate-fade-up delay-3 space-y-2">
+            <div class="font-serif text-2xl text-vault-gold">Arbitraje Especializado</div>
+            <p class="text-xs text-vault-slate leading-relaxed">Patrocinio arbitral comercial ante controversias de pólizas de alto impacto.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 02: Clínicas -->
+      <div id="v6-slide-1" class="space-y-8 hidden">
+        <div class="space-y-3 animate-fade-up">
+          <span class="text-xs uppercase tracking-widest text-vault-gold font-semibold">Sector Sanitario Privado</span>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Defensa a Centros Médicos & Auditorías <span class="text-vault-goldLight italic">SUSALUD</span>.
+          </h1>
+          <p class="text-vault-slate text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Representación de redes hospitalarias (Clínica Internacional) y comités médicos ante presuntas imputaciones de mala praxis y procedimientos sancionadores de salud.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-vault-card border border-vault-border animate-fade-up delay-1 space-y-2">
+            <div class="font-serif text-2xl text-vault-gold">Descargos SUSALUD</div>
+            <p class="text-xs text-vault-slate leading-relaxed">Respaldo técnico en fiscalizaciones y procedimientos administrativos sancionadores.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-vault-card border border-vault-border animate-fade-up delay-2 space-y-2">
+            <div class="font-serif text-2xl text-vault-gold">Lex Artis Médica</div>
+            <p class="text-xs text-vault-slate leading-relaxed">Patrocinio procesal respaldado en peritajes forenses clínicos colegiados.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-vault-card border border-vault-border animate-fade-up delay-3 space-y-2">
+            <div class="font-serif text-2xl text-vault-gold">Consentimiento</div>
+            <p class="text-xs text-vault-slate leading-relaxed">Blindaje preventivo de autorizaciones quirúrgicas y documentación asistencial.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 03: Socio Director -->
+      <div id="v6-slide-2" class="space-y-8 hidden">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center animate-fade-up">
+          <div class="md:col-span-4">
+            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-88 object-cover object-top rounded-2xl border border-vault-border shadow-2xl" />
+          </div>
+          <div class="md:col-span-8 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-vault-gold font-semibold">Socio Director Fundador</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white">Dr. Carlos Alberto Carbajal Gonzales</h2>
+            <p class="text-sm text-vault-gold font-medium">Abogado • Máster en Derecho Empresarial por la Universidad de Lima</p>
+            <p class="text-xs text-vault-slate leading-relaxed">
+              Más de 20 años de ejercicio ininterrumpido en San Isidro. Asesoría directa y estricta confidencialidad para directorios corporativos de aseguradoras y centros de salud.
+            </p>
+            <blockquote class="italic font-serif text-sm text-slate-300 border-l-2 border-vault-gold pl-4 py-1">
+              “El derecho se aprende estudiando, pero se ejerce pensando.” — Couture
+            </blockquote>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="https://wa.me/51971111730" target="_blank" class="px-5 py-2.5 rounded-full bg-vault-gold hover:bg-vault-goldLight text-vault-black font-semibold text-xs transition-colors">
+                Coordinar con Despacho San Isidro
+              </a>
+              <a href="tel:+5114762155" class="px-5 py-2.5 rounded-full border border-vault-border hover:border-vault-gold text-slate-200 text-xs transition-colors">
+                (01) 476-2155
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="py-6 border-t border-vault-border/30 text-center text-xs text-vault-slate">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro • <a href="./index.html" class="text-vault-gold hover:underline">Volver a Auditoría</a></p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let current = 0;
+    const total = 3;
+
+    function changeSlide(index) {
+      document.querySelectorAll('#slide-stage > div').forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.remove('hidden');
+          slide.classList.add('block');
+        } else {
+          slide.classList.add('hidden');
+          slide.classList.remove('block');
+        }
+      });
+
+      document.querySelectorAll('[id^="pill-"]').forEach((pill, i) => {
+        if (i === index) {
+          pill.className = 'px-4 py-1.5 rounded-full text-xs font-semibold bg-vault-gold text-vault-black transition-all';
+        } else {
+          pill.className = 'px-4 py-1.5 rounded-full text-xs font-medium text-vault-slate hover:text-white border border-vault-border/40 transition-all';
+        }
+      });
+
+      current = index;
+    }
+
+    function next() {
+      changeSlide((current + 1) % total);
+    }
+
+    function prev() {
+      changeSlide((current - 1 + total) % total);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') next();
+      if (e.key === 'ArrowLeft') prev();
+    });
+  </script>
+</body>
+</html>

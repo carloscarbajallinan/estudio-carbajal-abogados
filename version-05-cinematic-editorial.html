@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Versión 05: Cinematic Editorial</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: {
+              bg: '#060d17',
+              stage: '#0a1424',
+              gold: '#c5a880',
+              goldLight: '#f0e2d0',
+              border: 'rgba(197, 168, 128, 0.20)',
+              muted: '#8292a8',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .cinema-slide {
+      transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .cinema-slide.hidden-left {
+      opacity: 0;
+      transform: scale(0.97) translateY(12px);
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+    }
+    .cinema-slide.hidden-right {
+      opacity: 0;
+      transform: scale(0.97) translateY(-12px);
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+    }
+    .cinema-slide.visible {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      position: relative;
+    }
+  </style>
+</head>
+<body class="bg-noir-bg text-slate-100 font-sans antialiased selection:bg-noir-gold selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- Topbar -->
+  <header class="py-4 px-6 border-b border-noir-border/30 bg-noir-bg/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-xs">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border border-noir-gold/60 flex items-center justify-center font-serif font-bold text-noir-gold">
+          CC
+        </div>
+        <div>
+          <span class="font-serif font-semibold text-white tracking-widest text-sm">ESTUDIO CARBAJAL ABOGADOS</span>
+          <span class="text-[9px] uppercase tracking-widest text-noir-gold block">Versión 05 • Cinematic Editorial</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-noir-muted">
+        <span class="hidden md:inline">Calle 31 N° 170 Of. 203, San Isidro</span>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-4 py-1.5 rounded-full bg-noir-gold hover:bg-noir-goldLight text-noir-bg font-semibold text-xs transition-colors">
+          WhatsApp 971 111 730
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cinema Keynote Container -->
+  <main class="max-w-5xl mx-auto px-6 py-10 lg:py-16 w-full">
+    
+    <!-- Header de Navegación de Diapositivas -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-noir-border/30 mb-10">
+      <div class="flex items-center gap-2">
+        <button onclick="setSlide(0)" class="nav-chip px-4 py-1.5 rounded-full text-xs font-medium transition-all bg-noir-gold text-noir-bg font-semibold">
+          I. Seguros
+        </button>
+        <button onclick="setSlide(1)" class="nav-chip px-4 py-1.5 rounded-full text-xs font-medium transition-all text-noir-muted hover:text-white border border-noir-border/40">
+          II. Clínicas
+        </button>
+        <button onclick="setSlide(2)" class="nav-chip px-4 py-1.5 rounded-full text-xs font-medium transition-all text-noir-muted hover:text-white border border-noir-border/40">
+          III. Metodología
+        </button>
+        <button onclick="setSlide(3)" class="nav-chip px-4 py-1.5 rounded-full text-xs font-medium transition-all text-noir-muted hover:text-white border border-noir-border/40">
+          IV. Socio Director
+        </button>
+      </div>
+
+      <div class="flex items-center gap-3 text-xs text-noir-muted">
+        <span id="slide-indicator" class="font-mono text-noir-gold">01 / 04</span>
+        <div class="flex items-center gap-1.5">
+          <button onclick="prev()" class="w-8 h-8 rounded-full border border-noir-border flex items-center justify-center hover:border-noir-gold hover:text-white transition-colors">
+            <i data-lucide="chevron-left" class="w-4 h-4"></i>
+          </button>
+          <button onclick="next()" class="w-8 h-8 rounded-full border border-noir-border flex items-center justify-center hover:border-noir-gold hover:text-white transition-colors">
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Escenario de Diapositivas -->
+    <div class="relative min-h-[460px]">
+      
+      <!-- Slide 1: Seguros -->
+      <div id="c-slide-0" class="cinema-slide visible space-y-8">
+        <div class="space-y-4">
+          <p class="text-xs uppercase tracking-widest text-noir-gold font-semibold">División Especializada • Siniestros Complejos</p>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Resolución Técnica & Recupero para <span class="italic text-noir-goldLight">Aseguradoras</span>.
+          </h1>
+          <p class="text-noir-muted text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Proveedor homologado de Rímac Seguros, Pacífico Seguros, Protecta Security y HDI Seguros en controversias de cobertura patrimonial, liquidación de siniestros y acciones de subrogación inmediata.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 hover:border-noir-gold/60 transition-colors space-y-2">
+            <span class="text-xs text-noir-gold font-serif font-bold">01</span>
+            <h3 class="font-serif text-xl text-white">Ramos Patrimoniales</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Defensa ante reclamaciones por siniestros multirriesgo industrial, CAR/EAR y transporte.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 hover:border-noir-gold/60 transition-colors space-y-2">
+            <span class="text-xs text-noir-gold font-serif font-bold">02</span>
+            <h3 class="font-serif text-xl text-white">Subrogación Judicial</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Acción ágil de recupero de fondos indemnizados frente a los causantes del daño.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 hover:border-noir-gold/60 transition-colors space-y-2">
+            <span class="text-xs text-noir-gold font-serif font-bold">03</span>
+            <h3 class="font-serif text-xl text-white">Arbitraje Técnico</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Representación de alta especialidad ante tribunales arbitrales comerciales.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Clínicas -->
+      <div id="c-slide-1" class="cinema-slide hidden-right space-y-8">
+        <div class="space-y-4">
+          <p class="text-xs uppercase tracking-widest text-noir-gold font-semibold">Sector Sanitario • Entidades Asistenciales</p>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Defensa a Centros Médicos & Fiscalización <span class="italic text-noir-goldLight">SUSALUD</span>.
+          </h1>
+          <p class="text-noir-muted text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Patrocinio integral para redes hospitalarias (Clínica Internacional) en reclamaciones de responsabilidad médica, auditorías preventivas y descargos administrativos.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 hover:border-noir-gold/60 transition-colors space-y-2">
+            <span class="text-xs text-noir-gold font-serif font-bold">01</span>
+            <h3 class="font-serif text-xl text-white">Descargos SUSALUD</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Respaldo técnico en procedimientos administrativos sancionadores de salud.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 hover:border-noir-gold/60 transition-colors space-y-2">
+            <span class="text-xs text-noir-gold font-serif font-bold">02</span>
+            <h3 class="font-serif text-xl text-white">Lex Artis Médica</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Defensa procesal en juicios indemnizatorios basada en peritajes forenses colegiados.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 hover:border-noir-gold/60 transition-colors space-y-2">
+            <span class="text-xs text-noir-gold font-serif font-bold">03</span>
+            <h3 class="font-serif text-xl text-white">Consentimiento</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Protocolización preventiva de historias clínicas y autorizaciones asistenciales.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Metodología -->
+      <div id="c-slide-2" class="cinema-slide hidden-right space-y-8">
+        <div class="space-y-4">
+          <p class="text-xs uppercase tracking-widest text-noir-gold font-semibold">Rigor Procesal • 3 Fases</p>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Metodología Predictiva de <span class="italic text-noir-goldLight">Intervención</span>.
+          </h1>
+          <p class="text-noir-muted text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Un protocolo milimétrico diseñado para minimizar contingencias patrimoniales y acelerar el recupero de fondos en cada etapa procesal.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 space-y-2">
+            <div class="text-xs font-mono text-noir-gold">FASE 01</div>
+            <h3 class="font-serif text-xl text-white">Auditoría Pericial</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Dictamen temprano de procedencia legal, eximentes de póliza y evaluación de riesgo.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 space-y-2">
+            <div class="text-xs font-mono text-noir-gold">FASE 02</div>
+            <h3 class="font-serif text-xl text-white">Defensa Blindada</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Patrocinio arbitral y judicial comercial sustentado en pruebas periciales formales.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-noir-stage border border-noir-border/60 space-y-2">
+            <div class="text-xs font-mono text-noir-gold">FASE 03</div>
+            <h3 class="font-serif text-xl text-white">Recupero de Fondos</h3>
+            <p class="text-xs text-noir-muted leading-relaxed">Cobranza ejecutiva y protección integral de las reservas técnicas de la firma.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Socio Director -->
+      <div id="c-slide-3" class="cinema-slide hidden-right space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div class="md:col-span-4">
+            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-88 object-cover object-top rounded-2xl border border-noir-border shadow-2xl" />
+          </div>
+          <div class="md:col-span-8 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-noir-gold font-semibold">Socio Director Fundador</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white">Dr. Carlos Alberto Carbajal Gonzales</h2>
+            <p class="text-sm text-noir-gold">Abogado • Máster en Derecho Empresarial por la Universidad de Lima</p>
+            <p class="text-xs text-noir-muted leading-relaxed">
+              Más de 20 años de ejercicio ininterrumpido en San Isidro. Asesoría directa y estricta confidencialidad para directorios corporativos de aseguradoras y centros de salud.
+            </p>
+            <div class="pt-4 flex flex-wrap gap-3">
+              <a href="https://wa.me/51971111730" target="_blank" class="px-5 py-2.5 rounded-full bg-noir-gold hover:bg-noir-goldLight text-noir-bg font-semibold text-xs transition-colors">
+                WhatsApp Directo: 971 111 730
+              </a>
+              <a href="tel:+5114762155" class="px-5 py-2.5 rounded-full border border-noir-border hover:border-noir-gold text-slate-200 text-xs transition-colors">
+                Central: (01) 476-2155
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="py-6 border-t border-noir-border/30 text-center text-xs text-noir-muted">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro • <a href="./index.html" class="text-noir-gold hover:underline">Volver a Auditoría</a></p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let currentSlide = 0;
+    const total = 4;
+
+    function setSlide(index) {
+      if (index === currentSlide) return;
+      const prevEl = document.getElementById('c-slide-' + currentSlide);
+      const nextEl = document.getElementById('c-slide-' + index);
+
+      if (index > currentSlide) {
+        prevEl.className = 'cinema-slide hidden-left';
+        nextEl.className = 'cinema-slide hidden-right';
+      } else {
+        prevEl.className = 'cinema-slide hidden-right';
+        nextEl.className = 'cinema-slide hidden-left';
+      }
+
+      setTimeout(() => {
+        nextEl.className = 'cinema-slide visible';
+      }, 30);
+
+      document.querySelectorAll('.nav-chip').forEach((chip, i) => {
+        if (i === index) {
+          chip.className = 'nav-chip px-4 py-1.5 rounded-full text-xs font-semibold transition-all bg-noir-gold text-noir-bg';
+        } else {
+          chip.className = 'nav-chip px-4 py-1.5 rounded-full text-xs font-medium transition-all text-noir-muted hover:text-white border border-noir-border/40';
+        }
+      });
+
+      document.getElementById('slide-indicator').innerText = '0' + (index + 1) + ' / 0' + total;
+      currentSlide = index;
+    }
+
+    function next() {
+      setSlide((currentSlide + 1) % total);
+    }
+
+    function prev() {
+      setSlide((currentSlide - 1 + total) % total);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') next();
+      if (e.key === 'ArrowLeft') prev();
+    });
+  </script>
+</body>
+</html>

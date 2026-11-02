@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Versión 08: Flagship Keynote Cinema</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            flagship: {
+              black: '#040810',
+              deep: '#070f1e',
+              card: '#0c182c',
+              gold: '#cda873',
+              goldLight: '#f5e8d5',
+              goldDark: '#997645',
+              border: 'rgba(205, 168, 115, 0.24)',
+              muted: '#8596af',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .keynote-slide {
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .keynote-slide.out-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+    }
+    .keynote-slide.out-right {
+      opacity: 0;
+      transform: translateX(40px);
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+    }
+    .keynote-slide.current {
+      opacity: 1;
+      transform: translateX(0);
+      position: relative;
+    }
+    .gold-shimmer {
+      background: linear-gradient(135deg, #cda873 0%, #faecd7 50%, #997645 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .ambient-glow {
+      box-shadow: 0 0 50px -15px rgba(205, 168, 115, 0.18);
+    }
+  </style>
+</head>
+<body class="bg-flagship-black text-slate-100 font-sans antialiased selection:bg-flagship-gold selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- Header Superior Institucional -->
+  <header class="py-4 px-6 border-b border-flagship-border/40 bg-flagship-black/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-xs">
+      <div class="flex items-center gap-3.5">
+        <div class="w-10 h-10 rounded-lg border border-flagship-gold/80 flex items-center justify-center font-serif font-bold text-flagship-gold text-lg shadow-sm">
+          CC
+        </div>
+        <div>
+          <span class="font-serif font-bold text-white tracking-widest text-base block leading-none">ESTUDIO CARBAJAL</span>
+          <span class="text-[9px] uppercase tracking-[0.2em] text-flagship-gold block mt-1">Abogados & Consultores • San Isidro</span>
+        </div>
+      </div>
+
+      <!-- Quick Info -->
+      <div class="flex items-center gap-5 text-flagship-muted">
+        <span class="hidden lg:inline text-slate-400">Calle 31 N° 170 Of. 203, Urb. Córpac</span>
+        <span class="hidden sm:inline">Central: (01) 476-2155</span>
+        <a 
+          href="https://wa.me/51971111730" 
+          target="_blank" 
+          class="px-4 py-2 rounded-full bg-flagship-gold hover:bg-flagship-goldLight text-flagship-black font-semibold text-xs tracking-wider transition-all duration-200 shadow-md flex items-center gap-1.5"
+        >
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+          <span>WhatsApp 971 111 730</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Keynote Cinema Stage -->
+  <main class="max-w-5xl mx-auto px-6 py-10 lg:py-16 w-full relative">
+    
+    <!-- Barra de Progreso Superior -->
+    <div class="w-full bg-white/10 h-1 rounded-full mb-8 overflow-hidden">
+      <div id="cinema-progress" class="bg-flagship-gold h-full w-1/5 transition-all duration-500 ease-out"></div>
+    </div>
+
+    <!-- Navegación de Diapositivas Keynote -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-flagship-border/40 mb-10">
+      
+      <!-- Pastillas de Navegación Rápida -->
+      <div class="flex items-center gap-1.5 sm:gap-2 p-1 rounded-full bg-white/5 border border-flagship-border/30 overflow-x-auto">
+        <button onclick="jumpTo(0)" id="k-tab-0" class="px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-semibold bg-flagship-gold text-flagship-black transition-all">
+          01. Visión
+        </button>
+        <button onclick="jumpTo(1)" id="k-tab-1" class="px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-medium text-flagship-muted hover:text-white transition-all">
+          02. Seguros
+        </button>
+        <button onclick="jumpTo(2)" id="k-tab-2" class="px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-medium text-flagship-muted hover:text-white transition-all">
+          03. Clínicas
+        </button>
+        <button onclick="jumpTo(3)" id="k-tab-3" class="px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-medium text-flagship-muted hover:text-white transition-all">
+          04. Metodología
+        </button>
+        <button onclick="jumpTo(4)" id="k-tab-4" class="px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-medium text-flagship-muted hover:text-white transition-all">
+          05. Despacho
+        </button>
+      </div>
+
+      <!-- Controles de Teclado y Flechas -->
+      <div class="flex items-center gap-3 text-xs text-flagship-muted">
+        <span class="hidden md:inline text-[11px]">Navega con [←] y [→]</span>
+        <span id="counter" class="font-mono text-flagship-gold text-sm font-semibold">01 / 05</span>
+        <div class="flex items-center gap-1.5">
+          <button onclick="goPrev()" class="w-8 h-8 rounded-full border border-flagship-border flex items-center justify-center text-flagship-muted hover:text-white hover:border-flagship-gold transition-colors">
+            <i data-lucide="chevron-left" class="w-4 h-4"></i>
+          </button>
+          <button onclick="goNext()" class="w-8 h-8 rounded-full border border-flagship-border flex items-center justify-center text-flagship-muted hover:text-white hover:border-flagship-gold transition-colors">
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Escenario de Contenido (Sin texto amontonado) -->
+    <div class="relative min-h-[490px]">
+      
+      <!-- Slide 01: Visión de Autoridad -->
+      <div id="ks-0" class="keynote-slide current space-y-8">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            20+ Años de Solvencia Jurídica en San Isidro
+          </div>
+          <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white leading-tight">
+            El rigor jurídico que protege su <span class="gold-shimmer italic">patrimonio</span>.
+          </h1>
+          <p class="text-flagship-muted text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+            Especialistas en dar soporte continuo a compañías de seguros líderes, redes asistenciales de salud y corporaciones en el Perú, con estricta confidencialidad y peritaje de alto nivel.
+          </p>
+        </div>
+
+        <!-- 3 Métricas Aireadas -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/50 ambient-glow space-y-2">
+            <div class="font-serif text-3xl sm:text-4xl text-flagship-gold font-bold">+20 Años</div>
+            <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">De Ejercicio Continuo en Córpac</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/50 ambient-glow space-y-2">
+            <div class="font-serif text-3xl sm:text-4xl text-flagship-gold font-bold">S/ 48M+</div>
+            <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">En Reservas y Fondos Protegidos</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/50 ambient-glow space-y-2">
+            <div class="font-serif text-3xl sm:text-4xl text-flagship-gold font-bold">100%</div>
+            <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Reserva Procesal y Confidencialidad</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 02: División Seguros -->
+      <div id="ks-1" class="keynote-slide out-right space-y-8">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            División Seguros & Reaseguros
+          </div>
+          <h2 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Controversias de Cobertura & <span class="gold-shimmer italic">Recuperos</span>.
+          </h2>
+          <p class="text-flagship-muted text-base leading-relaxed max-w-2xl font-light">
+            Proveedor homologado en la resolución de siniestros complejos, análisis de pólizas multirriesgo y acciones coactivas de recupero por subrogación.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+            <div class="font-serif text-2xl text-flagship-gold">Pólizas CAR/EAR</div>
+            <p class="text-xs text-flagship-muted leading-relaxed">Controversias técnicas de cobertura en proyectos de construcción, montaje y ramos técnicos.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+            <div class="font-serif text-2xl text-flagship-gold">Subrogación Inmediata</div>
+            <p class="text-xs text-flagship-muted leading-relaxed">Acción ágil de recupero judicial y extrajudicial frente a terceros civilmente responsables.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+            <div class="font-serif text-2xl text-flagship-gold">Aseguradoras Líderes</div>
+            <p class="text-xs text-flagship-muted leading-relaxed">Rímac Seguros y Reaseguros, Pacífico Seguros, Protecta Security y HDI Seguros.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 03: División Clínicas -->
+      <div id="ks-2" class="keynote-slide out-right space-y-8">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
+            <i data-lucide="activity" class="w-4 h-4"></i>
+            División Clínicas & Sector Salud
+          </div>
+          <h2 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Defensa a Centros Médicos & <span class="gold-shimmer italic">SUSALUD</span>.
+          </h2>
+          <p class="text-flagship-muted text-base leading-relaxed max-w-2xl font-light">
+            Patrocinio especializado para redes hospitalarias frente a fiscalizaciones de SUSALUD, procesos indemnizatorios por mala praxis y arbitraje de salud.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+            <div class="font-serif text-2xl text-flagship-gold">Descargos SUSALUD</div>
+            <p class="text-xs text-flagship-muted leading-relaxed">Respaldo técnico en auditorías sanitarias y procedimientos sancionadores.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+            <div class="font-serif text-2xl text-flagship-gold">Lex Artis Médica</div>
+            <p class="text-xs text-flagship-muted leading-relaxed">Defensa procesal en juicios de responsabilidad civil médica con peritajes forenses.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 hover:border-flagship-gold transition-colors space-y-3">
+            <div class="font-serif text-2xl text-flagship-gold">Redes Privadas</div>
+            <p class="text-xs text-flagship-muted leading-relaxed">Asesoría institucional continuada a entidades como Clínica Internacional y EPS.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 04: Metodología -->
+      <div id="ks-3" class="keynote-slide out-right space-y-8">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-flagship-gold/15 text-flagship-gold text-xs font-semibold uppercase tracking-widest border border-flagship-gold/30">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            Protocolo Procesal en 3 Etapas
+          </div>
+          <h2 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Metodología Predictiva de <span class="gold-shimmer italic">Intervención</span>.
+          </h2>
+          <p class="text-flagship-muted text-base leading-relaxed max-w-2xl font-light">
+            Estructura rigurosa para acelerar la resolución de controversias periciales y resguardar las reservas matemáticas de la empresa.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 space-y-3">
+            <span class="text-xs font-mono text-flagship-gold">FASE 01</span>
+            <h3 class="font-serif text-xl text-white">Auditoría Pericial</h3>
+            <p class="text-xs text-flagship-muted leading-relaxed">Examen preliminar de la póliza o historia clínica. Determinación de cobertura y eximentes.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 space-y-3">
+            <span class="text-xs font-mono text-flagship-gold">FASE 02</span>
+            <h3 class="font-serif text-xl text-white">Defensa Blindada</h3>
+            <p class="text-xs text-flagship-muted leading-relaxed">Patrocinio en juzgados comerciales, arbitrajes y descargos técnicos ante SUSALUD.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-flagship-card border border-flagship-border/60 space-y-3">
+            <span class="text-xs font-mono text-flagship-gold">FASE 03</span>
+            <h3 class="font-serif text-xl text-white">Recupero de Fondos</h3>
+            <p class="text-xs text-flagship-muted leading-relaxed">Ejecución efectiva del recupero por subrogación y protección de reservas técnicas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 05: Socio Director y Despacho -->
+      <div id="ks-4" class="keynote-slide out-right space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div class="md:col-span-4">
+            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Alberto Carbajal Gonzales" class="w-full h-96 object-cover object-top rounded-2xl border border-flagship-border ambient-glow shadow-2xl" />
+          </div>
+          <div class="md:col-span-8 space-y-5">
+            <div class="space-y-1">
+              <span class="text-xs uppercase tracking-widest text-flagship-gold font-semibold">Socio Director Fundador</span>
+              <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white">Dr. Carlos Alberto Carbajal Gonzales</h2>
+              <p class="text-sm text-flagship-gold font-medium">Abogado • Máster en Derecho Empresarial por la Universidad de Lima</p>
+            </div>
+
+            <p class="text-xs sm:text-sm text-flagship-muted leading-relaxed font-light">
+              Más de dos décadas asesorando a directorios y gerencias de siniestros de Rímac Seguros, Pacífico Seguros, Protecta Security y a redes de salud como Clínica Internacional.
+            </p>
+
+            <blockquote class="italic font-serif text-sm text-slate-300 border-l-2 border-flagship-gold pl-4 py-1">
+              “El derecho se aprende estudiando, pero se ejerce pensando.” — Eduardo J. Couture
+            </blockquote>
+
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 space-y-1">
+              <p><strong class="text-white">Sede San Isidro:</strong> Calle 31 N° 170 Of. 203, Urb. Córpac</p>
+              <p><strong class="text-white">Central Telefónica:</strong> (01) 476-2155 • <strong class="text-white">RUC:</strong> 10066665360</p>
+            </div>
+
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="https://wa.me/51971111730" target="_blank" class="px-6 py-2.5 rounded-full bg-flagship-gold hover:bg-flagship-goldLight text-flagship-black font-semibold text-xs tracking-wider uppercase transition-colors shadow-lg">
+                Coordinar por WhatsApp
+              </a>
+              <a href="tel:+5114762155" class="px-6 py-2.5 rounded-full border border-flagship-border hover:border-flagship-gold text-slate-200 text-xs transition-colors">
+                Llamar al Despacho
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 border-t border-flagship-border/40 text-center text-xs text-flagship-muted bg-flagship-black">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 px-6">
+      <p>© 2026 Estudio Carbajal Abogados • San Isidro, Lima - Perú</p>
+      <div class="flex items-center gap-4">
+        <a href="./index.html" class="text-flagship-gold hover:underline">Ver Auditoría Completa de Diseños</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let cur = 0;
+    const maxSlides = 5;
+
+    function jumpTo(index) {
+      if (index === cur) return;
+      const prevSlide = document.getElementById('ks-' + cur);
+      const nextSlide = document.getElementById('ks-' + index);
+
+      if (index > cur) {
+        prevSlide.className = 'keynote-slide out-left';
+        nextSlide.className = 'keynote-slide out-right';
+      } else {
+        prevSlide.className = 'keynote-slide out-right';
+        nextSlide.className = 'keynote-slide out-left';
+      }
+
+      setTimeout(() => {
+        nextSlide.className = 'keynote-slide current';
+      }, 30);
+
+      document.querySelectorAll('[id^="k-tab-"]').forEach((tab, i) => {
+        if (i === index) {
+          tab.className = 'px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-semibold bg-flagship-gold text-flagship-black transition-all';
+        } else {
+          tab.className = 'px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-medium text-flagship-muted hover:text-white transition-all';
+        }
+      });
+
+      document.getElementById('counter').innerText = '0' + (index + 1) + ' / 0' + maxSlides;
+      document.getElementById('cinema-progress').style.width = ((index + 1) / maxSlides * 100) + '%';
+      cur = index;
+    }
+
+    function goNext() {
+      jumpTo((cur + 1) % maxSlides);
+    }
+
+    function goPrev() {
+      jumpTo((cur - 1 + maxSlides) % maxSlides);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') goNext();
+      if (e.key === 'ArrowLeft') goPrev();
+    });
+  </script>
+</body>
+</html>

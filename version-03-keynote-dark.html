@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Versión 03: Keynote Dark</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            luxury: {
+              bg: '#08111e',
+              card: '#0d1a2d',
+              border: 'rgba(197, 168, 128, 0.25)',
+              gold: '#c5a880',
+              goldLight: '#e4cfb4',
+              goldDark: '#96794f',
+              text: '#f1f5f9',
+              muted: '#94a3b8',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .gold-gradient {
+      background: linear-gradient(135deg, #c5a880 0%, #f3e5d0 50%, #96794f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-luxury-bg text-luxury-text font-sans antialiased selection:bg-luxury-gold selection:text-black">
+
+  <!-- Nav Minimalista -->
+  <header class="sticky top-0 z-50 bg-luxury-bg/90 backdrop-blur-md border-b border-luxury-border py-4 px-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-xs">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded border border-luxury-gold flex items-center justify-center font-serif font-bold text-luxury-gold text-base">
+          CC
+        </div>
+        <div>
+          <span class="font-serif text-base tracking-wider text-white block leading-none">ESTUDIO CARBAJAL</span>
+          <span class="text-[9px] uppercase tracking-widest text-luxury-gold block mt-0.5">Versión 03 • Keynote Dark</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-luxury-muted">
+        <span>San Isidro: (01) 476-2155</span>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-3.5 py-1.5 rounded-full bg-luxury-gold hover:bg-luxury-goldLight text-luxury-bg font-semibold text-[11px] transition-colors">
+          WhatsApp 971 111 730
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Keynote Presentation Stage -->
+  <main class="max-w-5xl mx-auto px-6 py-12 lg:py-20">
+    
+    <!-- Controles de Diapositiva -->
+    <div class="flex items-center justify-between border-b border-luxury-border/40 pb-4 mb-8">
+      <div class="flex items-center gap-3 text-xs uppercase tracking-widest text-luxury-muted">
+        <span class="text-luxury-gold font-serif font-bold text-lg" id="slide-num">01</span>
+        <span>/ 03</span>
+        <span class="text-white/40">•</span>
+        <span id="slide-topic" class="text-white font-medium">División Seguros & Reaseguros</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="prevSlide()" class="w-9 h-9 rounded-full border border-luxury-border hover:border-luxury-gold flex items-center justify-center text-luxury-muted hover:text-white transition-colors">
+          <i data-lucide="chevron-left" class="w-4 h-4"></i>
+        </button>
+        <button onclick="nextSlide()" class="w-9 h-9 rounded-full border border-luxury-border hover:border-luxury-gold flex items-center justify-center text-luxury-muted hover:text-white transition-colors">
+          <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Contenedor de Slides -->
+    <div class="min-h-[460px] relative">
+      
+      <!-- Slide 1: Seguros -->
+      <div id="slide-0" class="slide-item transition-all duration-500 opacity-100 block space-y-8">
+        <div class="space-y-3">
+          <span class="text-xs uppercase tracking-widest text-luxury-gold font-semibold">Defensa & Liquidación de Siniestros</span>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Soporte Legal de Alta Cuantía para <span class="gold-gradient">Compañías de Seguros</span>.
+          </h1>
+          <p class="text-luxury-muted text-base max-w-2xl font-light leading-relaxed">
+            Asesoramos en la resolución de controversias de cobertura patrimonial, acciones de recupero frente a terceros causantes y arbitrajes comerciales de complejidad pericial.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="p-6 rounded-2xl bg-luxury-card border border-luxury-border space-y-2">
+            <div class="font-serif text-2xl text-luxury-gold font-bold">Patrimoniales</div>
+            <p class="text-xs text-luxury-muted leading-relaxed">Pólizas multirriesgo, CAR/EAR, rotura de maquinaria y pérdida de beneficios.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-card border border-luxury-border space-y-2">
+            <div class="font-serif text-2xl text-luxury-gold font-bold">Subrogación</div>
+            <p class="text-xs text-luxury-muted leading-relaxed">Recupero de fondos indemnizados ante terceros civilmente responsables.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-card border border-luxury-border space-y-2">
+            <div class="font-serif text-2xl text-luxury-gold font-bold">Homologado</div>
+            <p class="text-xs text-luxury-muted leading-relaxed">Proveedor de Rímac Seguros, Pacífico Seguros, Protecta y HDI Seguros.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Clínicas -->
+      <div id="slide-1" class="slide-item transition-all duration-500 opacity-0 hidden space-y-8">
+        <div class="space-y-3">
+          <span class="text-xs uppercase tracking-widest text-luxury-gold font-semibold">Sector Sanitario & Asistencial</span>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Blindaje Institucional para <span class="gold-gradient">Clínicas & Hospitales</span>.
+          </h1>
+          <p class="text-luxury-muted text-base max-w-2xl font-light leading-relaxed">
+            Defensa integral de redes de salud y directores médicos frente a fiscalizaciones de SUSALUD, procesos indemnizatorios por mala praxis y arbitraje de salud.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="p-6 rounded-2xl bg-luxury-card border border-luxury-border space-y-2">
+            <div class="font-serif text-2xl text-luxury-gold font-bold">SUSALUD</div>
+            <p class="text-xs text-luxury-muted leading-relaxed">Descargos técnicos en procedimientos administrativos sancionadores.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-card border border-luxury-border space-y-2">
+            <div class="font-serif text-2xl text-luxury-gold font-bold">Lex Artis</div>
+            <p class="text-xs text-luxury-muted leading-relaxed">Patrocinio en reclamaciones fundadas en peritajes clínicos especializados.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-card border border-luxury-border space-y-2">
+            <div class="font-serif text-2xl text-luxury-gold font-bold">Experiencia</div>
+            <p class="text-xs text-luxury-muted leading-relaxed">Asesoría continuada a entidades como Clínica Internacional y EPS.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Socio Director -->
+      <div id="slide-2" class="slide-item transition-all duration-500 opacity-0 hidden space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div class="md:col-span-4">
+            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-80 object-cover object-top rounded-2xl border border-luxury-border shadow-xl" />
+          </div>
+          <div class="md:col-span-8 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-luxury-gold font-semibold">Dirección General</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white">Dr. Carlos Alberto Carbajal Gonzales</h2>
+            <p class="text-sm text-luxury-gold font-medium">Abogado • Máster en Derecho Empresarial por la Universidad de Lima</p>
+            <p class="text-xs text-luxury-muted leading-relaxed">
+              Más de 20 años de experiencia asesorando a las firmas más exigentes del mercado asegurador y sanitario peruano. Sede en Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro.
+            </p>
+            <div class="pt-2">
+              <a href="https://wa.me/51971111730" target="_blank" class="px-5 py-2.5 rounded-full bg-luxury-gold text-luxury-bg font-semibold text-xs inline-block">
+                Coordinar con Despacho San Isidro
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="py-8 text-center text-xs text-luxury-muted border-t border-luxury-border/30">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro • <a href="./index.html" class="text-luxury-gold hover:underline">Volver a Auditoría</a></p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let currentSlide = 0;
+    const topics = [
+      "División Seguros & Reaseguros",
+      "División Sector Salud & Clínicas",
+      "Socio Director • Dr. Carlos Carbajal"
+    ];
+
+    function showSlide(index) {
+      document.querySelectorAll('.slide-item').forEach((el, i) => {
+        if (i === index) {
+          el.classList.remove('hidden');
+          setTimeout(() => el.classList.remove('opacity-0'), 10);
+        } else {
+          el.classList.add('opacity-0');
+          setTimeout(() => el.classList.add('hidden'), 300);
+        }
+      });
+      document.getElementById('slide-num').innerText = '0' + (index + 1);
+      document.getElementById('slide-topic').innerText = topics[index];
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % 3;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + 3) % 3;
+      showSlide(currentSlide);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Versión 04: Transiciones Cinematográficas</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            luxury: {
+              bg: '#070f1b',
+              surface: '#0d1829',
+              border: 'rgba(197, 168, 128, 0.22)',
+              gold: '#c5a880',
+              goldLight: '#ebd7bf',
+              muted: '#8b9bb4',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .slide-stage {
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease;
+    }
+    .slide-stage.inactive-left {
+      transform: translateX(-30px);
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+    }
+    .slide-stage.inactive-right {
+      transform: translateX(30px);
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+    }
+    .slide-stage.active {
+      transform: translateX(0);
+      opacity: 1;
+      position: relative;
+    }
+  </style>
+</head>
+<body class="bg-luxury-bg text-slate-100 font-sans antialiased selection:bg-luxury-gold selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="border-b border-luxury-border/30 bg-luxury-bg/95 py-4 px-6 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-xs">
+      <div class="flex items-center gap-3">
+        <span class="font-serif font-bold text-lg text-luxury-gold">CC</span>
+        <div class="border-l border-luxury-border/40 pl-3">
+          <span class="font-serif text-sm text-white tracking-wider font-semibold block leading-none">ESTUDIO CARBAJAL ABOGADOS</span>
+          <span class="text-[10px] text-luxury-gold uppercase tracking-widest mt-0.5 block">Versión 04 • Motion Cinema</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-luxury-muted">
+        <span class="hidden sm:inline">Usa las teclas [←] y [→]</span>
+        <a href="https://wa.me/51971111730" target="_blank" class="px-4 py-1.5 rounded-full bg-luxury-gold text-luxury-bg font-semibold text-xs hover:bg-luxury-goldLight transition-all">
+          WhatsApp 971 111 730
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Keynote Stage con Barra de Progreso -->
+  <main class="max-w-5xl mx-auto px-6 py-10 lg:py-16 w-full relative">
+    
+    <!-- Barra de Progreso Discreta -->
+    <div class="w-full bg-white/5 h-1 rounded-full mb-8 overflow-hidden">
+      <div id="progress-bar" class="bg-luxury-gold h-full w-1/3 transition-all duration-500 ease-out"></div>
+    </div>
+
+    <!-- Sub-Nav de Pasos / Diapositivas -->
+    <div class="flex items-center justify-between pb-6 mb-10 border-b border-luxury-border/30">
+      <div class="flex gap-4 sm:gap-8 text-xs font-medium">
+        <button onclick="goToSlide(0)" id="tab-0" class="tab-btn text-luxury-gold border-b-2 border-luxury-gold pb-1 transition-all">
+          01. Seguros & Siniestros
+        </button>
+        <button onclick="goToSlide(1)" id="tab-1" class="tab-btn text-luxury-muted hover:text-white pb-1 transition-all">
+          02. Redes Médicas & SUSALUD
+        </button>
+        <button onclick="goToSlide(2)" id="tab-2" class="tab-btn text-luxury-muted hover:text-white pb-1 transition-all">
+          03. Dirección & San Isidro
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="prevSlide()" class="p-2 rounded-full border border-luxury-border hover:border-luxury-gold text-luxury-muted hover:text-white transition-colors" title="Anterior">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        </button>
+        <button onclick="nextSlide()" class="p-2 rounded-full border border-luxury-border hover:border-luxury-gold text-luxury-muted hover:text-white transition-colors" title="Siguiente">
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Contenedor con animación fluida -->
+    <div class="relative min-h-[420px]">
+      
+      <!-- Slide 1 -->
+      <div id="slide-0" class="slide-stage active space-y-8">
+        <div class="space-y-4">
+          <span class="text-xs uppercase tracking-widest text-luxury-gold font-semibold">División Especializada</span>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Controversias de Cobertura & Recuperos para <span class="text-luxury-goldLight italic">Aseguradoras</span>.
+          </h1>
+          <p class="text-luxury-muted text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Más de dos décadas patrocinando en sede judicial y arbitral frente a siniestros de alta complejidad. Proveedor de Rímac Seguros, Pacífico Seguros, Protecta Security y HDI Seguros.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-luxury-surface border border-luxury-border space-y-2">
+            <span class="text-[11px] text-luxury-gold uppercase tracking-wider font-semibold">Ramos</span>
+            <h3 class="font-serif text-xl text-white">Patrimoniales & CAR/EAR</h3>
+            <p class="text-xs text-luxury-muted leading-relaxed">Liquidación pericial en pólizas multirriesgo e indemnizaciones industriales.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-surface border border-luxury-border space-y-2">
+            <span class="text-[11px] text-luxury-gold uppercase tracking-wider font-semibold">Subrogación</span>
+            <h3 class="font-serif text-xl text-white">Recupero Coactivo</h3>
+            <p class="text-xs text-luxury-muted leading-relaxed">Acción inmediata para el recupero de fondos indemnizados ante terceros.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-surface border border-luxury-border space-y-2">
+            <span class="text-[11px] text-luxury-gold uppercase tracking-wider font-semibold">Solvencia</span>
+            <h3 class="font-serif text-xl text-white">S/ 48M+ Blindados</h3>
+            <p class="text-xs text-luxury-muted leading-relaxed">Protección milimétrica de las reservas técnicas de las compañías.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div id="slide-1" class="slide-stage inactive-right space-y-8">
+        <div class="space-y-4">
+          <span class="text-xs uppercase tracking-widest text-luxury-gold font-semibold">Sector Clínicas & Salud</span>
+          <h1 class="font-serif text-4xl sm:text-6xl font-normal text-white leading-tight">
+            Defensa Integral Sanitaria & Fiscalización <span class="text-luxury-goldLight italic">SUSALUD</span>.
+          </h1>
+          <p class="text-luxury-muted text-sm sm:text-base leading-relaxed max-w-2xl font-light">
+            Patrocinio de entidades médicas y redes hospitalarias (Clínica Internacional) en reclamaciones de responsabilidad médica, auditorías preventivas y consentimientos informados.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+          <div class="p-6 rounded-2xl bg-luxury-surface border border-luxury-border space-y-2">
+            <span class="text-[11px] text-luxury-gold uppercase tracking-wider font-semibold">SUSALUD</span>
+            <h3 class="font-serif text-xl text-white">Descargos Técnicos</h3>
+            <p class="text-xs text-luxury-muted leading-relaxed">Atención de procedimientos administrativos y resoluciones impugnadas.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-surface border border-luxury-border space-y-2">
+            <span class="text-[11px] text-luxury-gold uppercase tracking-wider font-semibold">Lex Artis</span>
+            <h3 class="font-serif text-xl text-white">Defensa Quirúrgica</h3>
+            <p class="text-xs text-luxury-muted leading-relaxed">Sustento pericial clínico ante demandas por presunta negligencia médica.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-luxury-surface border border-luxury-border space-y-2">
+            <span class="text-[11px] text-luxury-gold uppercase tracking-wider font-semibold">Hospitales</span>
+            <h3 class="font-serif text-xl text-white">Redes Privadas</h3>
+            <p class="text-xs text-luxury-muted leading-relaxed">Respaldo continuo a comités médicos y direcciones asistenciales.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div id="slide-2" class="slide-stage inactive-right space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-5">
+            <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-88 object-cover object-top rounded-2xl border border-luxury-border shadow-2xl" />
+          </div>
+          <div class="md:col-span-7 space-y-4">
+            <span class="text-xs uppercase tracking-widest text-luxury-gold font-semibold">Socio Director Fundador</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white">Dr. Carlos Alberto Carbajal Gonzales</h2>
+            <p class="text-sm text-luxury-gold">Máster en Derecho Empresarial por la Universidad de Lima • 20+ Años</p>
+            <p class="text-xs text-luxury-muted leading-relaxed">
+              Despacho en Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro. Atención reservada y estricta confidencialidad para directorios corporativos.
+            </p>
+            <div class="pt-3 flex flex-wrap gap-3">
+              <a href="https://wa.me/51971111730" target="_blank" class="px-5 py-2.5 rounded-full bg-luxury-gold hover:bg-luxury-goldLight text-luxury-bg font-semibold text-xs transition-colors">
+                Coordinar con Despacho
+              </a>
+              <a href="tel:+5114762155" class="px-5 py-2.5 rounded-full border border-luxury-border hover:border-luxury-gold text-slate-200 text-xs transition-colors">
+                Llamar: (01) 476-2155
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="py-6 border-t border-luxury-border/30 text-center text-xs text-luxury-muted">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro • <a href="./index.html" class="text-luxury-gold hover:underline">Volver a Auditoría</a></p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    let current = 0;
+    const total = 3;
+
+    function goToSlide(index) {
+      if (index === current) return;
+      const prevEl = document.getElementById('slide-' + current);
+      const nextEl = document.getElementById('slide-' + index);
+
+      if (index > current) {
+        prevEl.className = 'slide-stage inactive-left';
+        nextEl.className = 'slide-stage inactive-right';
+      } else {
+        prevEl.className = 'slide-stage inactive-right';
+        nextEl.className = 'slide-stage inactive-left';
+      }
+
+      setTimeout(() => {
+        nextEl.className = 'slide-stage active';
+      }, 20);
+
+      document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+        if (i === index) {
+          btn.className = 'tab-btn text-luxury-gold border-b-2 border-luxury-gold pb-1 transition-all';
+        } else {
+          btn.className = 'tab-btn text-luxury-muted hover:text-white pb-1 transition-all';
+        }
+      });
+
+      document.getElementById('progress-bar').style.width = ((index + 1) / total * 100) + '%';
+      current = index;
+    }
+
+    function nextSlide() {
+      goToSlide((current + 1) % total);
+    }
+
+    function prevSlide() {
+      goToSlide((current - 1 + total) % total);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+  </script>
+</body>
+</html>
