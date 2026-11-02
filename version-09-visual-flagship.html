@@ -42,12 +42,13 @@
       -webkit-text-fill-color: transparent;
     }
     .hero-architectural-bg {
-      background: linear-gradient(to right, rgba(4, 8, 16, 0.95) 0%, rgba(7, 15, 30, 0.82) 55%, rgba(4, 8, 16, 0.92) 100%),
+      background: linear-gradient(180deg, rgba(4, 8, 16, 0.94) 0%, rgba(7, 15, 30, 0.82) 45%, rgba(4, 8, 16, 0.96) 100%),
+                  linear-gradient(to right, rgba(4, 8, 16, 0.96) 0%, rgba(7, 15, 30, 0.78) 55%, rgba(4, 8, 16, 0.94) 100%),
                   url('./hero-bg-san-isidro-financial.jpg') center top / cover no-repeat;
     }
     .boardroom-strip-bg {
       background: linear-gradient(to right, rgba(4, 8, 16, 0.94) 0%, rgba(7, 15, 30, 0.85) 50%, rgba(4, 8, 16, 0.94) 100%),
-                  url('./boardroom-directorate.jpg') center / cover fixed no-repeat;
+                  url('./boardroom-directorate.jpg') center / cover no-repeat;
     }
     .glass-slab {
       background: rgba(8, 16, 30, 0.75);
@@ -133,9 +134,10 @@
       <a 
         href="https://wa.me/51971111730?text=Estimado%20Dr.%20Carbajal,%20deseo%20coordinar%20una%20consulta%20institucional" 
         target="_blank"
-        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-flagship-gold hover:bg-flagship-goldLight text-flagship-black font-semibold text-xs tracking-wider uppercase transition-all shadow-lg"
+        class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-full bg-flagship-gold hover:bg-flagship-goldLight text-flagship-black font-semibold text-xs tracking-wider uppercase transition-all shadow-lg shrink-0"
       >
-        <span>Consulta Corporativa</span>
+        <span class="hidden sm:inline">Consulta Corporativa</span>
+        <span class="sm:hidden font-bold">Contacto</span>
         <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
       </a>
     </div>
@@ -399,7 +401,7 @@
             <img 
               src="./dr-carlos-carbajal.jpg" 
               alt="Dr. Carlos Alberto Carbajal Gonzales" 
-              class="w-64 sm:w-72 h-88 sm:h-96 object-cover object-top rounded-xl shadow-inner"
+              class="w-64 sm:w-72 h-[360px] sm:h-96 object-cover object-top rounded-xl shadow-inner"
             />
           </div>
           <p class="text-[11px] text-slate-400 text-center mt-4">
@@ -579,6 +581,25 @@
       </div>
     </div>
   </footer>
+
+  <!-- Botón Flotante WhatsApp Institucional -->
+  <aside class="fixed bottom-6 right-6 z-50">
+    <a 
+      href="https://wa.me/51971111730?text=Estimado%20Dr.%20Carbajal,%20deseo%20coordinar%20una%20consulta%20institucional" 
+      target="_blank" 
+      class="group flex items-center gap-2.5 px-4 py-3 rounded-full bg-slate-950/90 text-white border border-flagship-gold/50 shadow-2xl backdrop-blur-md hover:bg-slate-900 hover:border-flagship-gold transition-all duration-300"
+      aria-label="Contacto WhatsApp directo"
+    >
+      <span class="relative flex h-2.5 w-2.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+      </span>
+      <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+      <span class="text-xs font-semibold text-flagship-goldLight tracking-wider uppercase group-hover:text-white transition-colors">
+        WhatsApp 971 111 730
+      </span>
+    </a>
+  </aside>
 
   <script>
     lucide.createIcons();
