@@ -24,6 +24,7 @@ const versions = [
   { port: 5019, file: 'diseno-13-sovereign-diplomatic.html', name: 'v19: Gabinete Soberano & Diplomático' },
   { port: 5020, file: 'diseno-14-organic-warm-atelier.html', name: 'v20: Atelier Cálido & Resguardo Patrimonial' },
   { port: 5021, file: 'diseno-15-insurtech-shield.html', name: 'v21: InsurTech Shield & Corporate Defense' },
+  { port: 5022, file: 'diseno-16-apple-minimalism.html', name: 'v22: Filosofía & Estética Apple Puro' },
 ];
 
 versions.forEach(({ port, file, name }) => {

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apple: {
+              bg: '#ffffff',
+              section: '#f5f5f7',
+              text: '#1d1d1f',
+              secondary: '#86868b',
+              link: '#0066cc',
+              linkHover: '#004499',
+              button: '#000000',
+              buttonHover: '#333336',
+              border: '#d2d2d7',
+            }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-apple-bg text-apple-text font-sans antialiased selection:bg-apple-text selection:text-white">
+
+  <!-- Navegación Superior Estilo Apple (44px, translúcida, minimalista) -->
+  <header class="h-[44px] bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-apple-border/40">
+    <div class="max-w-5xl mx-auto h-full px-6 flex items-center justify-between text-[12px] tracking-tight">
+      
+      <a href="./index.html" class="font-semibold text-apple-text hover:text-black transition-colors">
+        Estudio Carbajal
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-apple-text/80 font-normal">
+        <a href="#director" class="hover:text-apple-text transition-colors">Director</a>
+        <a href="#seguros" class="hover:text-apple-text transition-colors">Seguros</a>
+        <a href="#salud" class="hover:text-apple-text transition-colors">Salud</a>
+        <a href="#practica" class="hover:text-apple-text transition-colors">Áreas</a>
+        <a href="#contacto" class="hover:text-apple-text transition-colors">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="rounded-full bg-apple-button text-white text-[11px] font-medium px-3.5 py-1 hover:bg-apple-buttonHover transition-colors">
+        Consultar
+      </a>
+
+    </div>
+  </header>
+
+  <!-- Hero Principal (Gran escala, espaciado extremo, titular de 4 palabras) -->
+  <section class="py-28 lg:py-36 px-6 text-center bg-apple-bg">
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">
+        San Isidro, Lima
+      </p>
+
+      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-semibold tracking-tight text-apple-text leading-[1.04]">
+        Rigor legal. Serenidad absoluta.
+      </h1>
+
+      <p class="text-xl sm:text-2xl text-apple-secondary font-normal max-w-2xl mx-auto leading-relaxed">
+        Asesoría estratégica en derecho de seguros y responsabilidad sanitaria para corporaciones líderes.
+      </p>
+
+      <div class="pt-4 flex items-center justify-center gap-6">
+        <a href="#contacto" class="rounded-full bg-apple-button text-white text-sm font-medium px-7 py-3 hover:bg-apple-buttonHover transition-colors">
+          Iniciar consulta
+        </a>
+        <a href="#director" class="text-apple-link text-sm font-normal hover:text-apple-linkHover inline-flex items-center gap-1">
+          Conocer la firma <span aria-hidden="true">›</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Presentación Visual Monolítica del Socio Director (Espacio en blanco puro, sin marcos ni sombras) -->
+  <section id="director" class="py-20 lg:py-28 bg-apple-section px-6">
+    <div class="max-w-5xl mx-auto space-y-16">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">
+          Liderazgo
+        </p>
+        <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight text-apple-text">
+          Dos décadas de jurisprudencia.
+        </h2>
+        <p class="text-base sm:text-lg text-apple-secondary leading-relaxed">
+          Más de 20 años de experiencia asesorando a compañías de seguros y entidades de salud de alta exigencia.
+        </p>
+      </div>
+
+      <!-- Imagen Central Limpia -->
+      <div class="max-w-md mx-auto">
+        <img 
+          src="./dr-carlos-carbajal.jpg" 
+          alt="Dr. Carlos Alberto Carbajal Gonzales" 
+          class="w-full h-[520px] object-cover object-top rounded-3xl"
+        />
+        <div class="pt-6 text-center space-y-1">
+          <h3 class="text-lg font-semibold text-apple-text">
+            Dr. Carlos Alberto Carbajal Gonzales
+          </h3>
+          <p class="text-xs text-apple-secondary">
+            Máster en Derecho Empresarial por la Universidad de Lima
+          </p>
+          <p class="text-xs text-apple-secondary pt-2 italic">
+            “El derecho se aprende estudiando, pero se ejerce pensando.” — Eduardo J. Couture
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Módulo Seguros (Separación por espacio puro en blanco, sin tarjetas) -->
+  <section id="seguros" class="py-28 lg:py-36 bg-apple-bg px-6">
+    <div class="max-w-5xl mx-auto space-y-20">
+      
+      <div class="max-w-2xl space-y-4">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">
+          Práctica Principal
+        </p>
+        <h2 class="text-4xl sm:text-6xl font-semibold tracking-tight text-apple-text">
+          Derecho de seguros.
+        </h2>
+        <p class="text-lg text-apple-secondary leading-relaxed">
+          Soporte integral a aseguradoras y reaseguradoras en controversias contractuales y análisis técnico de cobertura.
+        </p>
+      </div>
+
+      <!-- Columnas generosas sin líneas ni cajas -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
+        
+        <div class="space-y-3">
+          <h3 class="text-xl font-semibold tracking-tight text-apple-text">
+            Auditoría de siniestros
+          </h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Evaluación técnica de causalidad, procedencia de cobertura y eximentes en siniestros de alta cuantía.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-xl font-semibold tracking-tight text-apple-text">
+            Recuperos y subrogación
+          </h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Estrategia procesal inmediata para el resguardo de las reservas técnicas ante causantes del daño.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-xl font-semibold tracking-tight text-apple-text">
+            Pólizas patrimoniales
+          </h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Litigación rigurosa en reclamos de incendios, ramos generales, transporte y responsabilidad civil.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Módulo Salud y Redes Clínicas (Fondo alterno #f5f5f7) -->
+  <section id="salud" class="py-28 lg:py-36 bg-apple-section px-6">
+    <div class="max-w-5xl mx-auto space-y-20">
+      
+      <div class="max-w-2xl space-y-4">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">
+          Sector Sanitario
+        </p>
+        <h2 class="text-4xl sm:text-6xl font-semibold tracking-tight text-apple-text">
+          Defensa para clínicas.
+        </h2>
+        <p class="text-lg text-apple-secondary leading-relaxed">
+          Protección jurídica integral y gestión de contingencias para redes hospitalarias y personal médico.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
+        
+        <div class="space-y-3">
+          <h3 class="text-xl font-semibold tracking-tight text-apple-text">
+            Responsabilidad médica
+          </h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Defensa especializada en procesos civiles y penales derivados de la praxis y protocolos clínicos.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-xl font-semibold tracking-tight text-apple-text">
+            Defensa ante SUSALUD
+          </h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Atención rigurosa de fiscalizaciones, auditorías sanitarias y descargos en vía administrativa.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-xl font-semibold tracking-tight text-apple-text">
+            Conciliación temprana
+          </h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Mecanismos extrajudiciales que resuelven controversias salvaguardando la reputación institucional.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Confianza Institucional (Sin tarjetas, tipografía sobria) -->
+  <section class="py-24 bg-apple-bg px-6 border-b border-apple-border/30">
+    <div class="max-w-5xl mx-auto space-y-12">
+      <p class="text-center text-xs uppercase font-medium tracking-widest text-apple-secondary">
+        Entidades Patrocinadas
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-10 sm:gap-16 text-sm font-medium text-apple-text/70">
+        <span>Rímac Seguros</span>
+        <span>Pacífico Seguros</span>
+        <span>Clínica Internacional</span>
+        <span>Protecta Security</span>
+        <span>HDI Seguros</span>
+        <span>ADECCO Perú</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Áreas de Práctica Complementarias -->
+  <section id="practica" class="py-28 lg:py-36 bg-apple-bg px-6">
+    <div class="max-w-5xl mx-auto space-y-20">
+      
+      <div class="max-w-2xl space-y-4">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">
+          Cobertura Integral
+        </p>
+        <h2 class="text-4xl sm:text-6xl font-semibold tracking-tight text-apple-text">
+          Capacidades legales.
+        </h2>
+        <p class="text-lg text-apple-secondary leading-relaxed">
+          Asistencia multidisciplinaria orientada a la contención de contingencias empresariales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold text-apple-text">Corporativo</h3>
+          <p class="text-xs text-apple-secondary leading-relaxed">
+            Gobierno societario, auditoría contractual preventiva y reestructuración mercantil.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold text-apple-text">Penal de Empresa</h3>
+          <p class="text-xs text-apple-secondary leading-relaxed">
+            Patrocinio en delitos societarios y contingencias penales de directores.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold text-apple-text">Civil y Laboral</h3>
+          <p class="text-xs text-apple-secondary leading-relaxed">
+            Litigios de indemnización, controversias contractuales y fiscalizaciones SUNAFIL.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold text-apple-text">Patrimonio Familiar</h3>
+          <p class="text-xs text-apple-secondary leading-relaxed">
+            Planificación sucesoria, testamentos y protección de activos familiares.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto & Despacho (Espaciado extremo, formulario limpio sin sombras) -->
+  <section id="contacto" class="py-28 lg:py-36 bg-apple-section px-6">
+    <div class="max-w-4xl mx-auto space-y-16">
+      
+      <div class="text-center space-y-4">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">
+          Despacho
+        </p>
+        <h2 class="text-4xl sm:text-6xl font-semibold tracking-tight text-apple-text">
+          Converse con nosotros.
+        </h2>
+        <p class="text-base sm:text-lg text-apple-secondary max-w-xl mx-auto leading-relaxed">
+          Atención concertada en nuestra sede corporativa en San Isidro o mediante consulta digital directa.
+        </p>
+      </div>
+
+      <!-- Datos de contacto limpios -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center text-xs text-apple-secondary">
+        <div>
+          <span class="block text-apple-text font-semibold text-sm mb-1">Dirección</span>
+          Calle 31 N° 170 Of. 203<br />Urb. Córpac, San Isidro
+        </div>
+        <div>
+          <span class="block text-apple-text font-semibold text-sm mb-1">Central Telefónica</span>
+          <a href="tel:+5114762155" class="hover:text-apple-link transition-colors">(01) 476-2155</a><br />
+          Lunes a Viernes 9:00 - 18:00
+        </div>
+        <div>
+          <span class="block text-apple-text font-semibold text-sm mb-1">Urgencias</span>
+          <a href="https://wa.me/51971111730" target="_blank" class="hover:text-apple-link transition-colors">+51 971 111 730</a><br />
+          estudiocarbajal@usa.com
+        </div>
+      </div>
+
+      <!-- Formulario Puro Apple -->
+      <div class="max-w-lg mx-auto bg-white p-8 sm:p-10 rounded-3xl">
+        <form onsubmit="enviarApple(event)" class="space-y-5 text-xs">
+          <div>
+            <label class="block text-apple-text font-medium mb-1.5">Nombre completo</label>
+            <input type="text" id="a-nom" required class="w-full px-4 py-3 rounded-xl bg-apple-section text-apple-text outline-none focus:ring-1 focus:ring-apple-text" />
+          </div>
+
+          <div>
+            <label class="block text-apple-text font-medium mb-1.5">Empresa o entidad (Rímac, Clínica, Corporación)</label>
+            <input type="text" id="a-emp" class="w-full px-4 py-3 rounded-xl bg-apple-section text-apple-text outline-none focus:ring-1 focus:ring-apple-text" />
+          </div>
+
+          <div>
+            <label class="block text-apple-text font-medium mb-1.5">Teléfono de contacto</label>
+            <input type="tel" id="a-tel" required class="w-full px-4 py-3 rounded-xl bg-apple-section text-apple-text outline-none focus:ring-1 focus:ring-apple-text" />
+          </div>
+
+          <div>
+            <label class="block text-apple-text font-medium mb-1.5">Materia legal</label>
+            <select id="a-mat" class="w-full px-4 py-3 rounded-xl bg-apple-section text-apple-text outline-none focus:ring-1 focus:ring-apple-text">
+              <option value="Derecho de Seguros y Siniestros">Derecho de Seguros y Siniestros</option>
+              <option value="Responsabilidad Sanitaria / Clínicas">Responsabilidad Sanitaria / Clínicas</option>
+              <option value="Derecho Corporativo">Derecho Corporativo</option>
+              <option value="Litigios Civiles">Litigios Civiles</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-apple-text font-medium mb-1.5">Mensaje o resumen del caso</label>
+            <textarea id="a-men" rows="3" required class="w-full px-4 py-3 rounded-xl bg-apple-section text-apple-text outline-none focus:ring-1 focus:ring-apple-text"></textarea>
+          </div>
+
+          <button type="submit" class="w-full rounded-full bg-apple-button text-white text-xs font-medium py-3.5 hover:bg-apple-buttonHover transition-colors mt-2">
+            Enviar solicitud
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Estilo Apple (Limpio, discreto, texto #86868b a 11px) -->
+  <footer class="py-12 px-6 bg-apple-bg border-t border-apple-border/40 text-[11px] text-apple-secondary">
+    <div class="max-w-5xl mx-auto space-y-4">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span>© 2026 Estudio Carbajal Abogados. Todos los derechos reservados. RUC 10066665360.</span>
+        <div class="flex items-center gap-6">
+          <a href="tel:+5114762155" class="hover:text-apple-text transition-colors">Central: (01) 476-2155</a>
+          <a href="./index.html" class="hover:text-apple-text transition-colors">Ver todas las propuestas</a>
+        </div>
+      </div>
+      <p class="text-[10px] text-apple-secondary/80">
+        Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú. Asesoría especializada para Rímac Seguros, Pacífico Seguros y redes clínicas.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function enviarApple(e) {
+      e.preventDefault();
+      const n = document.getElementById('a-nom').value;
+      const em = document.getElementById('a-emp').value || 'Sin especificar';
+      const t = document.getElementById('a-tel').value;
+      const m = document.getElementById('a-mat').value;
+      const d = document.getElementById('a-men').value;
+      const msg = `Consulta de ${n} (${em}, Tel: ${t}) sobre *${m}*: ${d}`;
+      window.open(`https://wa.me/51971111730?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
