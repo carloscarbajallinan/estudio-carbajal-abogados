@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Apple Concept 09</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apple: {
+              bg: '#ffffff',
+              section: '#f5f5f7',
+              text: '#1d1d1f',
+              secondary: '#86868b',
+              link: '#0066cc',
+              button: '#000000',
+              border: '#d2d2d7',
+            }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-apple-bg text-apple-text font-sans antialiased selection:bg-apple-text selection:text-white">
+
+  <!-- Nav -->
+  <header class="h-[44px] bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-apple-border/40">
+    <div class="max-w-4xl mx-auto h-full px-6 flex items-center justify-between text-[12px]">
+      <a href="./index.html" class="font-semibold text-apple-text">Carbajal Abogados</a>
+      <a href="./index.html" class="rounded-full bg-apple-button text-white text-[11px] font-medium px-3.5 py-1">Catálogo</a>
+    </div>
+  </header>
+
+  <!-- Concierge Flow -->
+  <section class="py-24 lg:py-36 px-6 max-w-3xl mx-auto text-center space-y-12">
+    <div class="space-y-4">
+      <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Asistente de Consulta</p>
+      <h1 class="text-5xl sm:text-6xl font-semibold tracking-tight text-apple-text leading-[1.08]">
+        ¿Cómo podemos asistirle hoy?
+      </h1>
+      <p class="text-lg text-apple-secondary max-w-lg mx-auto">
+        Seleccione el área de su consulta para derivar su caso con la secretaría del Dr. Carlos Carbajal.
+      </p>
+    </div>
+
+    <!-- Opciones de selección en píldoras grandes estilo Apple -->
+    <div class="space-y-3 max-w-lg mx-auto text-left">
+      <a href="https://wa.me/51971111730?text=Hola,%20solicito%20atenci%C3%B3n%20para%20un%20Siniestro%20de%20Seguros" target="_blank" class="block p-5 bg-apple-section rounded-2xl hover:bg-slate-200 transition-colors">
+        <span class="block font-semibold text-apple-text text-base">Siniestro o Reclamación de Seguros</span>
+        <span class="block text-xs text-apple-secondary mt-1">Para compañías aseguradoras, reaseguros y pólizas patrimoniales.</span>
+      </a>
+
+      <a href="https://wa.me/51971111730?text=Hola,%20solicito%20atenci%C3%B3n%20para%20un%20caso%20de%20Cl%C3%ADnica%20o%20Responsabilidad%20M%C3%A9dica" target="_blank" class="block p-5 bg-apple-section rounded-2xl hover:bg-slate-200 transition-colors">
+        <span class="block font-semibold text-apple-text text-base">Clínica de Salud o Responsabilidad Médica</span>
+        <span class="block text-xs text-apple-secondary mt-1">Patrocinio sanitario, fiscalizaciones de SUSALUD y mediación médica.</span>
+      </a>
+
+      <a href="https://wa.me/51971111730?text=Hola,%20solicito%20atenci%C3%B3n%20para%20un%20asunto%20Corporativo%20o%20Litigio%20Civil" target="_blank" class="block p-5 bg-apple-section rounded-2xl hover:bg-slate-200 transition-colors">
+        <span class="block font-semibold text-apple-text text-base">Asuntos Corporativos y Litigios Civiles</span>
+        <span class="block text-xs text-apple-secondary mt-1">Gobierno societario, acuerdos mercantiles y defensas en juzgados.</span>
+      </a>
+    </div>
+
+    <div class="pt-8 text-xs text-apple-secondary">
+      O llámenos a nuestra central en San Isidro: <a href="tel:+5114762155" class="text-apple-link hover:underline font-medium">(01) 476-2155</a>
+    </div>
+  </section>
+
+  <!-- Resumen del Director -->
+  <section class="py-16 bg-apple-section px-6 text-center">
+    <div class="max-w-md mx-auto space-y-3">
+      <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-36 h-48 object-cover object-top rounded-2xl mx-auto" />
+      <h3 class="text-lg font-semibold text-apple-text">Dr. Carlos Alberto Carbajal Gonzales</h3>
+      <p class="text-xs text-apple-secondary">Máster en Derecho Empresarial (U. de Lima) • Socio Fundador</p>
+    </div>
+  </section>
+
+  <footer class="py-12 px-6 bg-apple-bg border-t border-apple-border/40 text-[11px] text-apple-secondary text-center">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro</p>
+    <a href="./index.html" class="text-apple-link hover:underline block mt-2">Volver al Catálogo</a>
+  </footer>
+
+</body>
+</html>

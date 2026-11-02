@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Apple Concept 04</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apple: {
+              bg: '#ffffff',
+              section: '#f5f5f7',
+              text: '#1d1d1f',
+              secondary: '#86868b',
+              link: '#0066cc',
+              button: '#000000',
+              buttonHover: '#333336',
+              border: '#d2d2d7',
+            }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-apple-bg text-apple-text font-sans antialiased selection:bg-apple-text selection:text-white">
+
+  <!-- Nav -->
+  <header class="h-[44px] bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-apple-border/40">
+    <div class="max-w-5xl mx-auto h-full px-6 flex items-center justify-between text-[12px]">
+      <a href="./index.html" class="font-semibold text-apple-text">Estudio Carbajal</a>
+      <a href="./index.html" class="rounded-full bg-apple-button text-white text-[11px] font-medium px-3.5 py-1">Catálogo</a>
+    </div>
+  </header>
+
+  <!-- Hero con Segmented Control -->
+  <section class="py-24 lg:py-32 px-6 text-center">
+    <div class="max-w-4xl mx-auto space-y-6">
+      <h1 class="text-5xl sm:text-7xl font-semibold tracking-tight text-apple-text leading-[1.05]">
+        Elige tu sector legal.
+      </h1>
+      <p class="text-xl text-apple-secondary font-normal max-w-xl mx-auto">
+        Asesoría especializada adaptada a la dinámica operativa de cada industria.
+      </p>
+
+      <!-- Segmented Control Estilo Apple -->
+      <div class="pt-6 inline-flex p-1 bg-apple-section rounded-full border border-apple-border/40 text-xs font-medium">
+        <button onclick="setTab('seguros')" id="btn-seguros" class="tab-btn px-6 py-2 rounded-full bg-white text-apple-text transition-all">
+          Aseguradoras
+        </button>
+        <button onclick="setTab('clinicas')" id="btn-clinicas" class="tab-btn px-6 py-2 rounded-full text-apple-secondary hover:text-apple-text transition-all">
+          Clínicas de Salud
+        </button>
+        <button onclick="setTab('empresas')" id="btn-empresas" class="tab-btn px-6 py-2 rounded-full text-apple-secondary hover:text-apple-text transition-all">
+          Empresas
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido Dinámico según Tab -->
+  <main class="max-w-5xl mx-auto px-6 pb-32">
+    
+    <!-- Tab 1: Aseguradoras -->
+    <div id="tab-seguros" class="tab-content space-y-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="space-y-4">
+          <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Rímac, Pacífico, Protecta</p>
+          <h2 class="text-4xl sm:text-5xl font-semibold tracking-tight text-apple-text">Soporte técnico para seguros.</h2>
+          <p class="text-base text-apple-secondary leading-relaxed">
+            Más de dos décadas asesorando en resolución pericial de siniestros, controversias de cobertura y defensa patrimonial.
+          </p>
+          <div class="pt-4">
+            <a href="https://wa.me/51971111730" target="_blank" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 inline-block">
+              Consultar área de seguros
+            </a>
+          </div>
+        </div>
+        <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-[460px] object-cover object-top rounded-3xl" />
+      </div>
+    </div>
+
+    <!-- Tab 2: Clínicas de Salud -->
+    <div id="tab-clinicas" class="tab-content hidden space-y-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="space-y-4">
+          <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Clínica Internacional y Hospitales</p>
+          <h2 class="text-4xl sm:text-5xl font-semibold tracking-tight text-apple-text">Defensa para centros médicos.</h2>
+          <p class="text-base text-apple-secondary leading-relaxed">
+            Patrocinio en reclamaciones de responsabilidad médica, descargos y auditorías ante SUSALUD y conciliaciones extrajudiciales.
+          </p>
+          <div class="pt-4">
+            <a href="https://wa.me/51971111730" target="_blank" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 inline-block">
+              Consultar área de salud
+            </a>
+          </div>
+        </div>
+        <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-[460px] object-cover object-top rounded-3xl" />
+      </div>
+    </div>
+
+    <!-- Tab 3: Empresas -->
+    <div id="tab-empresas" class="tab-content hidden space-y-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="space-y-4">
+          <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Corporaciones y Directorios</p>
+          <h2 class="text-4xl sm:text-5xl font-semibold tracking-tight text-apple-text">Continuidad de negocio.</h2>
+          <p class="text-base text-apple-secondary leading-relaxed">
+            Estructuración societaria, acuerdos entre accionistas, litigios civiles y penal económico directivo.
+          </p>
+          <div class="pt-4">
+            <a href="https://wa.me/51971111730" target="_blank" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 inline-block">
+              Consultar área corporativa
+            </a>
+          </div>
+        </div>
+        <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-[460px] object-cover object-top rounded-3xl" />
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="py-12 px-6 bg-apple-section border-t border-apple-border/40 text-[11px] text-apple-secondary text-center">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro</p>
+    <a href="./index.html" class="text-apple-link hover:underline block mt-2">Volver al Catálogo</a>
+  </footer>
+
+  <script>
+    function setTab(tab) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('bg-white', 'text-apple-text');
+        el.classList.add('text-apple-secondary');
+      });
+      document.getElementById('tab-' + tab).classList.remove('hidden');
+      const activeBtn = document.getElementById('btn-' + tab);
+      activeBtn.classList.add('bg-white', 'text-apple-text');
+      activeBtn.classList.remove('text-apple-secondary');
+    }
+  </script>
+</body>
+</html>

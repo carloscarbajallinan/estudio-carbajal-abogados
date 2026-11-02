@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Master Showcase & Matriz Comparativa | Estudio Carbajal Abogados</title>
+  <title>Estudio Carbajal Abogados | Catálogo de 10 Diseños Apple</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -15,843 +15,242 @@
       theme: {
         extend: {
           colors: {
-            master: {
-              teal: '#1B4D4F',
-              navy: '#0C1E36',
-              gold: '#C5A880',
-              goldHover: '#D4AF37',
-              bg: '#F8FAFC',
-              card: '#FFFFFF',
-              border: '#E2E8F0',
+            apple: {
+              bg: '#ffffff',
+              section: '#f5f5f7',
+              text: '#1d1d1f',
+              secondary: '#86868b',
+              link: '#0066cc',
+              button: '#000000',
+              buttonHover: '#333336',
+              border: '#d2d2d7',
             }
           },
           fontFamily: {
-            cinzel: ['"Cinzel"', 'serif'],
-            serif: ['"Playfair Display"', 'Georgia', 'serif'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['ui-monospace', 'monospace'],
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Inter"', 'sans-serif'],
           }
         }
       }
     }
   </script>
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-master-bg text-slate-800 font-sans antialiased selection:bg-master-teal selection:text-white">
+<body class="bg-apple-bg text-apple-text font-sans antialiased selection:bg-apple-text selection:text-white">
 
-  <!-- Header Superior -->
-  <header class="bg-white border-b border-slate-200 py-5 px-6 sm:px-12 shadow-xs sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-3.5">
-        <div class="w-11 h-11 rounded-xl bg-master-navy text-master-gold flex items-center justify-center font-cinzel font-bold text-2xl shadow-sm border border-master-gold/30">
-          ⚖
-        </div>
-        <div>
-          <h1 class="font-cinzel text-xl sm:text-2xl font-bold tracking-wider text-slate-900 leading-none">
-            ESTUDIO CARBAJAL ABOGADOS
-          </h1>
-          <span class="text-xs text-master-teal font-semibold tracking-wider uppercase block mt-1">
-            Asesoría Corporativa • Proveedor de Rímac Seguros, Pacífico y Clínicas de Salud
-          </span>
-        </div>
-      </div>
-
-      <div class="flex items-center gap-3 text-xs">
-        <a href="tel:+5114762155" class="hidden sm:inline-flex px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold items-center gap-1.5 transition-colors border border-slate-200">
-          <i data-lucide="phone" class="w-4 h-4 text-master-teal"></i>
-          <span>Central: (01) 476-2155</span>
-        </a>
-        <a href="https://wa.me/51971111730" target="_blank" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold flex items-center gap-1.5 transition-colors shadow-xs">
-          <i data-lucide="message-square" class="w-4 h-4"></i>
-          <span>WhatsApp Oficial (971 111 730)</span>
+  <!-- Nav 44px -->
+  <header class="h-[44px] bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-apple-border/40">
+    <div class="max-w-6xl mx-auto h-full px-6 flex items-center justify-between text-[12px]">
+      <span class="font-semibold text-apple-text">Estudio Carbajal Abogados</span>
+      <div class="flex items-center gap-4 text-apple-secondary">
+        <span>San Isidro, Lima</span>
+        <a href="tel:+5114762155" class="hover:text-apple-text transition-colors">Central: (01) 476-2155</a>
+        <a href="https://wa.me/51971111730" target="_blank" class="rounded-full bg-apple-button text-white text-[11px] font-medium px-3.5 py-1 hover:bg-apple-buttonHover transition-colors">
+          WhatsApp 971 111 730
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Presentación del Master Showcase con Tarjeta Oficial del Socio Director -->
-  <section class="py-12 bg-white border-b border-slate-200 px-6">
-    <div class="max-w-6xl mx-auto space-y-8">
-      
-      <!-- Ficha del Socio Director -->
-      <div class="flex flex-col md:flex-row gap-6 items-center bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-xs">
-        <img 
-          src="./dr-carlos-carbajal.jpg" 
-          alt="Dr. Carlos Alberto Carbajal Gonzales" 
-          class="w-32 h-40 sm:w-36 sm:h-44 object-cover object-top rounded-xl border-2 border-master-navy shadow-md shrink-0"
-        />
-        <div class="space-y-3 text-left">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-master-navy text-master-gold text-[11px] font-bold uppercase tracking-wider">
-            <span>Socio Director Fundador</span>
-          </div>
-          <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-slate-900 leading-tight">
-            Dr. Carlos Alberto Carbajal Gonzales
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">
-            Abogado y <strong>Máster en Derecho Empresarial por la Universidad de Lima</strong> con especialización en Derecho Corporativo, de Seguros y Penal. Más de 20 años de ejercicio profesional continuo brindando soporte de alto nivel a compañías de seguros (<strong>Pacífico Seguros</strong>, <strong>Rímac</strong>, <strong>Protecta Security</strong>, <strong>HDI Seguros</strong>) y entidades de salud (<strong>Clínica Internacional</strong>).
-          </p>
-          <p class="font-serif italic text-xs text-master-teal font-semibold">
-            “El derecho se aprende estudiando, pero se ejerce pensando.” — Eduardo J. Couture
-          </p>
-        </div>
-      </div>
+  <!-- Hero Header del Catálogo -->
+  <section class="py-20 lg:py-28 px-6 text-center max-w-4xl mx-auto space-y-5">
+    <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">
+      Catálogo de Dirección de Arte
+    </p>
+    <h1 class="text-5xl sm:text-7xl font-semibold tracking-tight text-apple-text leading-[1.05]">
+      10 Propuestas. Filosofía Apple.
+    </h1>
+    <p class="text-lg sm:text-xl text-apple-secondary max-w-2xl mx-auto leading-relaxed">
+      Diseñadas para evaluar con tu cliente la presencia digital de Estudio Carbajal Abogados. Máxima elegancia, espacio en blanco y sobriedad para Rímac Seguros y Clínicas de Salud.
+    </p>
+  </section>
 
-
-      <!-- Encabezado de la Matriz Comparativa -->
-      <div class="text-center space-y-3 pt-4">
-        <span class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-widest border border-slate-200">
-          Dirección de Arte & Arquitectura Visual
-        </span>
-        <h3 class="font-cinzel text-2xl sm:text-4xl font-bold text-slate-900 leading-tight">
-          Matriz Comparativa de los 16 Diseños
-        </h3>
-        <p class="text-slate-600 text-sm max-w-3xl mx-auto leading-relaxed">
-          Cada diseño responde a una psicología de cliente específica. A continuación, puedes filtrar por estilo y revisar la <strong>paleta cromática exacta (HEX)</strong>, <strong>familias tipográficas</strong>, <strong>jerarquía visual</strong> y <strong>perfil de cliente</strong> que proyecta cada propuesta.
+  <!-- Ficha del Socio Director (Puro Apple) -->
+  <section class="pb-20 px-6">
+    <div class="max-w-5xl mx-auto bg-apple-section rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center gap-10">
+      <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Alberto Carbajal Gonzales" class="w-40 h-52 object-cover object-top rounded-2xl shrink-0" />
+      <div class="space-y-3 text-center md:text-left">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Socio Director Fundador</p>
+        <h2 class="text-3xl font-semibold text-apple-text">Dr. Carlos Alberto Carbajal Gonzales</h2>
+        <p class="text-sm text-apple-secondary leading-relaxed">
+          Abogado y Máster en Derecho Empresarial por la Universidad de Lima. Más de 20 años de trayectoria asesorando a compañías de seguros (Pacífico Seguros, Rímac, Protecta Security, HDI) y redes de salud (Clínica Internacional).
+        </p>
+        <p class="text-xs text-apple-secondary italic pt-1">
+          “El derecho se aprende estudiando, pero se ejerce pensando.” — Eduardo J. Couture
         </p>
       </div>
-
-      <!-- Filtros Interactivos por Categoría de Estilo -->
-      <div class="flex flex-wrap items-center justify-center gap-2 pt-2" id="filter-buttons">
-        <button onclick="filterDesigns('all')" class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-master-navy text-white shadow-xs" data-filter="all">
-          Todos los Conceptos (16)
-        </button>
-        <button onclick="filterDesigns('clasico')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-white text-slate-600 hover:bg-slate-100 border border-slate-200" data-filter="clasico">
-          Clásicos & Solemnes (4)
-        </button>
-        <button onclick="filterDesigns('minimalista')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-white text-slate-600 hover:bg-slate-100 border border-slate-200" data-filter="minimalista">
-          Minimalistas & Vanguardistas (4)
-        </button>
-        <button onclick="filterDesigns('dark')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-white text-slate-600 hover:bg-slate-100 border border-slate-200" data-filter="dark">
-          Dark Mode & Exclusivos (3)
-        </button>
-        <button onclick="filterDesigns('corporativo')" class="filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-white text-slate-600 hover:bg-slate-100 border border-slate-200" data-filter="corporativo">
-          Corporativos & Conversión (5)
-        </button>
-      </div>
-
     </div>
   </section>
 
-  <!-- Grilla de Tarjetas Ricas de la Matriz Comparativa -->
-  <main class="max-w-7xl mx-auto px-6 sm:px-12 py-14 space-y-12">
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="designs-grid">
+  <!-- Grilla de los 10 Diseños Apple -->
+  <main class="max-w-6xl mx-auto px-6 pb-32">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
-      <!-- ============================================== -->
-      <!-- NUEVAS VERSIONES (11 a 16) DESTACADAS          -->
-      <!-- ============================================== -->
-
-      <!-- 16. Filosofía & Estética Apple Puro -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group md:col-span-2 lg:col-span-3" data-category="minimalista">
-        <div class="p-8 sm:p-10 bg-[#f5f5f7] border-b border-slate-200 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-          <div class="space-y-3 max-w-2xl">
-            <div class="flex items-center gap-2">
-              <span class="px-3 py-1 rounded-full bg-[#1d1d1f] text-white text-[10px] font-medium uppercase tracking-wider">Filosofía de Producto Apple</span>
-              <span class="text-xs text-[#86868b]">Concepto 16 • Minimalismo Humano & Espacio Puro</span>
-            </div>
-            <h3 class="text-3xl sm:text-4xl font-semibold tracking-tight text-[#1d1d1f]">
-              Rigor legal. Serenidad absoluta.
-            </h3>
-            <p class="text-sm text-[#86868b] leading-relaxed">
-              Cumplimiento estricto del sistema de diseño de Apple: fondos <span class="font-mono text-xs text-[#1d1d1f]">#ffffff</span> y <span class="font-mono text-xs text-[#1d1d1f]">#f5f5f7</span>, textos <span class="font-mono text-xs text-[#1d1d1f]">#1d1d1f</span> y <span class="font-mono text-xs text-[#1d1d1f]">#86868b</span>, botones en píldora negra <span class="font-mono text-xs text-[#1d1d1f]">#000000</span> sin sombras, titulares de máximo 6 palabras y separación vertical extrema de 128px (py-32). Cero tarjetas apretadas, cero clichés de IA.
-            </p>
-            <div class="pt-2 flex flex-wrap items-center gap-3 text-xs">
-              <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200">
-                <span class="w-3.5 h-3.5 rounded-full bg-white border border-slate-300"></span>
-                <span class="font-mono text-[11px] text-[#1d1d1f]">#ffffff</span>
-              </div>
-              <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200">
-                <span class="w-3.5 h-3.5 rounded-full bg-[#f5f5f7] border border-slate-300"></span>
-                <span class="font-mono text-[11px] text-[#1d1d1f]">#f5f5f7</span>
-              </div>
-              <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200">
-                <span class="w-3.5 h-3.5 rounded-full bg-[#1d1d1f]"></span>
-                <span class="font-mono text-[11px] text-[#1d1d1f]">#1d1d1f</span>
-              </div>
-              <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200">
-                <span class="w-3.5 h-3.5 rounded-full bg-[#86868b]"></span>
-                <span class="font-mono text-[11px] text-[#1d1d1f]">#86868b</span>
-              </div>
-              <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200">
-                <span class="w-3.5 h-3.5 rounded-full bg-[#000000]"></span>
-                <span class="font-mono text-[11px] text-[#1d1d1f]">#000000</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="shrink-0">
-            <a href="./diseno-16-apple-minimalism.html" class="px-8 py-4 rounded-full bg-[#000000] hover:bg-[#333336] text-white font-medium text-xs tracking-wider uppercase transition-colors inline-flex items-center gap-2">
-              <span>Abrir Propuesta Apple</span>
-              <i data-lucide="external-link" class="w-4 h-4"></i>
-            </a>
-          </div>
+      <!-- 01. Flagship Hero -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 01</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Flagship Hero & Columnas</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Titular monumental central, retrato icónico del Dr. Carlos Carbajal y tres grandes columnas de aire puro para Seguros y Salud.
+          </p>
         </div>
-      </div>
-
-      <!-- 11. Wall Street Prestige Clásico -->
-      <div class="design-card bg-white rounded-2xl border-2 border-emerald-900/30 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="clasico">
-        <div>
-          <div class="p-6 bg-[#0B2B20] text-white space-y-2 border-b border-[#C5A059]/30">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A059]">NUEVO • CONCEPTO 11</span>
-              <span class="px-2 py-0.5 rounded bg-[#C5A059]/20 text-[#C5A059] text-[9px] font-bold uppercase">Clásico Solemne</span>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white">Wall Street Prestige</h3>
-            <p class="text-xs text-emerald-100/80 font-light leading-relaxed">
-              Inspirado en los despachos de Park Avenue. Simetría noble, filetes ornamentales de grabado bancario y solemnidad centenaria.
-            </p>
-          </div>
-
-          <div class="p-6 space-y-4 text-xs">
-            <!-- Paleta Cromática -->
-            <div class="space-y-1.5">
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Paleta Cromática (HEX):</span>
-              <div class="flex items-center gap-2">
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#0B2B20] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#0B2B20 (Verde Ivy)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#C5A059] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#C5A059 (Oro)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#FBF9F5] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#FBF9F5</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tipografía -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Tipografía:</span>
-              <p class="text-slate-600 font-serif text-sm">Cormorant Garamond <span class="font-sans text-xs text-slate-400">+ Outfit</span></p>
-            </div>
-
-            <!-- Estructura UX -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Estructura & Narrativa:</span>
-              <p class="text-slate-600 font-light leading-relaxed">
-                Hero monumental centrado, citas solemnes de Couture, tabla de litigios de alta cuantía y marco de honor para el Dr. Carlos Carbajal.
-              </p>
-            </div>
-
-            <!-- Percepción del Cliente -->
-            <div class="p-3 rounded-lg bg-emerald-50/60 border border-emerald-200/60 text-emerald-950">
-              <strong class="block text-[11px] font-bold">Público / Percepción:</strong>
-              Transmite máxima honorabilidad, tradición y peso institucional para juntas directivas de compañías de seguros y litigios civiles de alto patrimonio.
-            </div>
-          </div>
-        </div>
-
-        <div class="p-6 pt-0">
-          <a href="./diseno-11-wall-street-prestige.html" class="w-full py-3 rounded-xl bg-[#0B2B20] hover:bg-[#C5A059] hover:text-black text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-xs">
-            <span>Abrir Concepto 11</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-01-flagship-hero.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 01 ›
           </a>
         </div>
       </div>
 
-      <!-- 12. Racionalismo Jurídico & Corporativo -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="minimalista">
-        <div>
-          <div class="p-6 bg-[#0F172A] text-white space-y-2 border-b border-slate-700">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] uppercase font-bold tracking-widest text-slate-300">NUEVO • CONCEPTO 12</span>
-              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[9px] font-bold uppercase">Racionalismo Jurídico</span>
-            </div>
-            <h3 class="font-display text-2xl font-bold text-white tracking-tight">Racionalismo Jurídico</h3>
-            <p class="text-xs text-slate-300 font-light leading-relaxed">
-              Precisión geométrica y rigor procesal. Arquitectura visual límpida, sin estridencias, orientada a la contención del riesgo en seguros y salud.
-            </p>
-          </div>
-
-          <div class="p-6 space-y-4 text-xs">
-            <!-- Paleta Cromática -->
-            <div class="space-y-1.5">
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Paleta Cromática (HEX):</span>
-              <div class="flex items-center gap-2">
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#0F172A] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#0F172A (Navy)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#334155] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#334155 (Acero)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#FFFFFF] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#FFFFFF</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tipografía -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Tipografía:</span>
-              <p class="text-slate-800 font-bold text-sm font-display">Space Grotesk <span class="font-normal font-sans text-xs text-slate-500">+ Inter</span></p>
-            </div>
-
-            <!-- Estructura UX -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Estructura & Narrativa:</span>
-              <p class="text-slate-600 font-light leading-relaxed">
-                Módulos ordenados de práctica, datos curriculares en primer plano y síntesis ejecutiva para evaluación por comités legales.
-              </p>
-            </div>
-
-            <!-- Percepción del Cliente -->
-            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 text-slate-800">
-              <strong class="block text-[11px] font-bold">Público / Percepción:</strong>
-              Transmite máximo rigor analítico, orden y seriedad ejecutiva para gerencias de Rímac Seguros, Pacífico y clínicas hospitalarias.
-            </div>
-          </div>
+      <!-- 02. Split Showcase -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 02</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Split Showcase 50/50</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Composición horizontal dividida: tipografía expansiva a la izquierda y fotografía de gran formato a la derecha con bloques alternos.
+          </p>
         </div>
-
-        <div class="p-6 pt-0">
-          <a href="./diseno-12-bauhaus-vanguardia.html" class="w-full py-3 rounded-xl bg-[#0F172A] hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-xs">
-            <span>Abrir Concepto 12</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-02-split-showcase.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 02 ›
           </a>
         </div>
       </div>
 
-      <!-- 13. Gabinete Soberano & Diplomático -->
-      <div class="design-card bg-white rounded-2xl border-2 border-indigo-900/30 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="clasico">
-        <div>
-          <div class="p-6 bg-[#040914] text-white space-y-2 border-b border-[#D4AF37]/30">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] uppercase font-bold tracking-widest text-[#D4AF37]">NUEVO • CONCEPTO 13</span>
-              <span class="px-2 py-0.5 rounded bg-[#D4AF37]/20 text-[#D4AF37] text-[9px] font-bold uppercase">Soberano Imperial</span>
-            </div>
-            <h3 class="font-cinzel text-2xl font-bold text-white">Gabinete Soberano</h3>
-            <p class="text-xs text-slate-300 font-light leading-relaxed">
-              Tono de tratado internacional o gabinete de arbitraje de La Haya. Azul real profundo con destellos de oro bruñido.
-            </p>
-          </div>
-
-          <div class="p-6 space-y-4 text-xs">
-            <!-- Paleta Cromática -->
-            <div class="space-y-1.5">
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Paleta Cromática (HEX):</span>
-              <div class="flex items-center gap-2">
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#040914] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#040914 (Void)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#0E1F42] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#0E1F42 (Royal)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#D4AF37] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#D4AF37 (Oro)</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tipografía -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Tipografía:</span>
-              <p class="text-slate-800 font-cinzel font-bold text-sm">Cinzel <span class="font-sans font-normal text-xs text-slate-500">+ Plus Jakarta Sans</span></p>
-            </div>
-
-            <!-- Estructura UX -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Estructura & Narrativa:</span>
-              <p class="text-slate-600 font-light leading-relaxed">
-                Escudo institucional dinámico, sección especial de "Blindaje a Aseguradoras" con infografía de protocolos ante siniestros y botón de audiencia directa.
-              </p>
-            </div>
-
-            <!-- Percepción del Cliente -->
-            <div class="p-3 rounded-lg bg-indigo-50/60 border border-indigo-200/60 text-indigo-950">
-              <strong class="block text-[11px] font-bold">Público / Percepción:</strong>
-              Genera una percepción de poder institucional incuestionable, alta reserva y capacidad de arbitraje para resolver litigios de millones de dólares.
-            </div>
-          </div>
+      <!-- 03. White Room Monolith -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 03</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">White Room Monolith</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            100% fondo blanco inmaculado. Cero fondos grises. Espaciado vertical extremo (144px) y máxima escala tipográfica.
+          </p>
         </div>
-
-        <div class="p-6 pt-0">
-          <a href="./diseno-13-sovereign-diplomatic.html" class="w-full py-3 rounded-xl bg-[#040914] hover:bg-[#C5A880] hover:text-black text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-xs">
-            <span>Abrir Concepto 13</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-03-white-monolith.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 03 ›
           </a>
         </div>
       </div>
 
-      <!-- 14. Atelier Cálido & Resguardo Patrimonial -->
-      <div class="design-card bg-white rounded-2xl border-2 border-amber-800/30 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="corporativo">
-        <div>
-          <div class="p-6 bg-[#2B231F] text-white space-y-2 border-b border-[#B36A47]/30">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] uppercase font-bold tracking-widest text-[#B36A47]">NUEVO • CONCEPTO 14</span>
-              <span class="px-2 py-0.5 rounded bg-[#B36A47]/20 text-[#B36A47] text-[9px] font-bold uppercase">Cálido & Humano</span>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white">Atelier Cálido</h3>
-            <p class="text-xs text-amber-100/80 font-light leading-relaxed">
-              Enfoque humano, sofisticado y sereno. Rompe la frialdad corporativa sin perder un ápice de seriedad técnica.
-            </p>
-          </div>
-
-          <div class="p-6 space-y-4 text-xs">
-            <!-- Paleta Cromática -->
-            <div class="space-y-1.5">
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Paleta Cromática (HEX):</span>
-              <div class="flex items-center gap-2">
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#F6F3EE] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#F6F3EE (Lino)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#2B231F] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#2B231F (Nogal)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#B36A47] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#B36A47 (Cuero)</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tipografía -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Tipografía:</span>
-              <p class="text-slate-800 font-serif font-bold text-sm">Playfair Display <span class="font-sans font-normal text-xs text-slate-500">+ DM Sans</span></p>
-            </div>
-
-            <!-- Estructura UX -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Estructura & Narrativa:</span>
-              <p class="text-slate-600 font-light leading-relaxed">
-                Fotografía del Dr. Carlos Carbajal con estética de galería de arte, bordes redondeados orgánicos y narrativa centrada en la tranquilidad familiar y continuidad empresarial.
-              </p>
-            </div>
-
-            <!-- Percepción del Cliente -->
-            <div class="p-3 rounded-lg bg-amber-50/60 border border-amber-200/60 text-amber-950">
-              <strong class="block text-[11px] font-bold">Público / Percepción:</strong>
-              Transmite enorme confianza y empatía personal. Ideal para resguardo patrimonial de familias, divisiones sucesorias, litigios civiles y empresarios independientes.
-            </div>
-          </div>
+      <!-- 04. Segmented Tabs -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 04</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Segmented Control</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Selector en píldora interactivo para alternar al instante entre Aseguradoras, Clínicas de Salud y Empresas con cero recarga.
+          </p>
         </div>
-
-        <div class="p-6 pt-0">
-          <a href="./diseno-14-organic-warm-atelier.html" class="w-full py-3 rounded-xl bg-[#2B231F] hover:bg-[#8E593E] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-xs">
-            <span>Abrir Concepto 14</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-04-segmented-tabs.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 04 ›
           </a>
         </div>
       </div>
 
-      <!-- 15. Seguros & Responsabilidad Sanitaria -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="corporativo">
-        <div>
-          <div class="p-6 bg-[#0B192C] text-white space-y-2 border-b border-slate-700">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] uppercase font-bold tracking-widest text-slate-300">NUEVO • CONCEPTO 15</span>
-              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 text-[9px] font-bold uppercase">Seguros & Salud</span>
-            </div>
-            <h3 class="font-serif text-2xl font-bold text-white">Seguros & Sanitario</h3>
-            <p class="text-xs text-slate-300 font-light leading-relaxed">
-              Diseño de máxima sobriedad institucional. Concebido especialmente para gerencias de siniestros de Rímac Seguros, Pacífico y clínicas privadas.
-            </p>
-          </div>
-
-          <div class="p-6 space-y-4 text-xs">
-            <!-- Paleta Cromática -->
-            <div class="space-y-1.5">
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Paleta Cromática (HEX):</span>
-              <div class="flex items-center gap-2">
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#0B192C] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#0B192C (Navy)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#1E293B] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#1E293B (Slate)</span>
-                </div>
-                <div class="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded border border-slate-200">
-                  <span class="w-3.5 h-3.5 rounded-full bg-[#F8FAFC] inline-block border border-slate-300"></span>
-                  <span class="text-[10px] font-mono">#F8FAFC</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tipografía -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Tipografía:</span>
-              <p class="text-slate-800 font-serif font-bold text-sm">Playfair Display <span class="font-sans font-normal text-xs text-slate-500">+ Plus Jakarta Sans</span></p>
-            </div>
-
-            <!-- Estructura UX -->
-            <div>
-              <span class="font-bold text-slate-900 uppercase text-[10px] tracking-wider block">Estructura & Narrativa:</span>
-              <p class="text-slate-600 font-light leading-relaxed">
-                Módulos específicos para aseguradoras (auditoría pericial, recuperos) y clínicas (SUSALUD, responsabilidad médica), sin botones superfluos.
-              </p>
-            </div>
-
-            <!-- Percepción del Cliente -->
-            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 text-slate-800">
-              <strong class="block text-[11px] font-bold">Público / Percepción:</strong>
-              Máxima seriedad y confidencialidad. Cumple con la exigencia formal de las gerencias de Rímac, Pacífico y Clínica Internacional.
-            </div>
-          </div>
+      <!-- 05. Executive Dossier -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 05</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">The Executive Dossier</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Formato narrativo de alta lectura (estilo Apple Newsroom), enfatizando la doctrina y la jurisprudencia del Dr. Carlos Carbajal.
+          </p>
         </div>
-
-        <div class="p-6 pt-0">
-          <a href="./diseno-15-insurtech-shield.html" class="w-full py-3 rounded-xl bg-[#0B192C] hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-xs">
-            <span>Abrir Concepto 15</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-05-editorial-narrative.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 05 ›
           </a>
         </div>
       </div>
 
-      <!-- ============================================== -->
-      <!-- CONCEPTOS EXISTENTES PREVIOS (01 al 10 + V6)   -->
-      <!-- ============================================== -->
-
-      <!-- 01. L'Atelier Jurídico -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="clasico">
-        <div>
-          <div class="p-6 bg-[#090A0C] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#B89255] block">Concepto 01 • Haute Expertise</span>
-            <h3 class="font-serif text-2xl font-bold">L’Atelier Jurídico</h3>
-            <p class="text-xs text-slate-400 font-light leading-relaxed">Negro obsidiana, bronce y tipografía monumental. Cero cajas: elegancia cinematográfica.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#090A0C]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#B89255]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#FAF9F6] border border-slate-300"></span>
-              <span class="text-[10px] font-mono text-slate-500">#090A0C | #B89255</span>
-            </div>
-            <p><strong>Tipografía:</strong> Italiana Serif + Plus Jakarta Sans</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Firma boutique de ultra alto standing, defensas de máximo calibre.</p>
-          </div>
+      <!-- 06. Keynote Metrics -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 06</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Big Metrics & Stats</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Tipografía numérica gigante (+20 Años, 100% Reserva, RÍMAC) para transmitir credenciales contundentes de un solo vistazo.
+          </p>
         </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-01-atelier-lujo.html" class="w-full py-3 rounded-lg bg-[#090A0C] hover:bg-[#B89255] text-white hover:text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 01</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-06-keynote-metrics.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 06 ›
           </a>
         </div>
       </div>
 
-      <!-- 02. Monolito Nórdico -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="minimalista">
-        <div>
-          <div class="p-6 bg-[#F9F8F5] text-slate-900 border-b border-slate-200 space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#A64B38] block">Concepto 02 • Escandinavo Cálido</span>
-            <h3 class="font-sans text-2xl font-light">Monolito Nórdico</h3>
-            <p class="text-xs text-slate-600 font-light leading-relaxed">Fondo blanco hueso, líneas de 1px, acento terracota apagado y navegación flotante.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#F9F8F5] border border-slate-300"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#1C1D21]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#A64B38]"></span>
-              <span class="text-[10px] font-mono text-slate-500">#F9F8F5 | #A64B38</span>
-            </div>
-            <p><strong>Tipografía:</strong> Plus Jakarta Sans (Light & Semibold)</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Modernidad pulcra, sobria, contemporánea y accesible.</p>
-          </div>
+      <!-- 07. Sticky Rail -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 07</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Sticky Sub-Nav Rail</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Barra secundaria flotante que ancla las 4 secciones principales (Director, Seguros, Clínicas, Despacho) con desplazamiento suave.
+          </p>
         </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-02-nordic-monolith.html" class="w-full py-3 rounded-lg bg-[#1C1D21] hover:bg-[#A64B38] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 02</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-07-sticky-rail.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 07 ›
           </a>
         </div>
       </div>
 
-      <!-- 03. Directorio Suizo -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="minimalista">
-        <div>
-          <div class="p-6 bg-[#0D2C54] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-sky-300 block">Concepto 03 • Precisión Helvética</span>
-            <h3 class="font-sans text-2xl font-bold">Directorio Suizo</h3>
-            <p class="text-xs text-slate-300 font-light leading-relaxed">Puro orden tipográfico: números grandes, tabla analítica interactiva y estilo Zúrich.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#0D2C54]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-sky-400"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-white border border-slate-300"></span>
-              <span class="text-[10px] font-mono text-slate-500">#0D2C54 | #38BDF8</span>
-            </div>
-            <p><strong>Tipografía:</strong> Inter / Helvetica Neue</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Rigor numérico, tabla de peritajes y máxima claridad documental.</p>
-          </div>
+      <!-- 08. Dual Portal -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 08</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Dual Portal Seguros vs. Salud</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Arquitectura dual que presenta frontalmente las dos grandes áreas institucionales de la firma sin mezclar audiencias.
+          </p>
         </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-03-directorio-suizo.html" class="w-full py-3 rounded-lg bg-[#0D2C54] hover:bg-black text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 03</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-08-dual-portal.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 08 ›
           </a>
         </div>
       </div>
 
-      <!-- 04. Narrativa Cronológica Dossier -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="clasico">
-        <div>
-          <div class="p-6 bg-[#F4F0E8] text-[#1C1B19] border-b border-[#E0DBD0] space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#7A1C28] block">Concepto 04 • The Dossier</span>
-            <h3 class="font-serif text-2xl font-bold">Dossier Institucional</h3>
-            <p class="text-xs text-slate-600 font-light leading-relaxed">Papel pergamino cálido, tipografía Garamond clásica y tono doctrinal solemne.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#F4F0E8] border border-slate-300"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#7A1C28]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#1C1B19]"></span>
-              <span class="text-[10px] font-mono text-slate-500">#F4F0E8 | #7A1C28</span>
-            </div>
-            <p><strong>Tipografía:</strong> EB Garamond + Plus Jakarta Sans</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Tradición jurídica de gran prestigio y peso curricular de 20 años.</p>
-          </div>
+      <!-- 09. Concierge Flow -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 09</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Conversational Concierge</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Flujo guiado mínimo y sin fricción para derivar inmediatamente al cliente al canal directo de WhatsApp según su necesidad.
+          </p>
         </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-04-narrativa-cronologica.html" class="w-full py-3 rounded-lg bg-[#7A1C28] hover:bg-black text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 04</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-09-concierge-flow.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 09 ›
           </a>
         </div>
       </div>
 
-      <!-- 05. San Isidro Dark Glass -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="dark">
-        <div>
-          <div class="p-6 bg-[#040711] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#D4AF37] block">Concepto 05 • Private Wealth</span>
-            <h3 class="font-serif text-2xl font-bold">San Isidro Dark Glass</h3>
-            <p class="text-xs text-slate-300 font-light leading-relaxed">Azul noche ultra profundo, paneles de vidrio ahumado (*backdrop-blur*) y oro sutil.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#040711]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#0D1B2A]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#D4AF37]"></span>
-              <span class="text-[10px] font-mono text-slate-500">#040711 | #D4AF37</span>
-            </div>
-            <p><strong>Tipografía:</strong> Cinzel + Inter</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Modernidad tecnológica y exclusividad corporativa en San Isidro.</p>
-          </div>
+      <!-- 10. Bento Matrix -->
+      <div class="bg-apple-section rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Concepto 10</span>
+          <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">The Clean Bento Matrix</h3>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Módulos bento geométricos sobre bloques sólidos #f5f5f7 (sin bordes ni sombras) que organizan los activos clave de la firma.
+          </p>
         </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-05-san-isidro-dark-glass.html" class="w-full py-3 rounded-lg bg-gradient-to-r from-amber-500 to-amber-400 text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 05</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- 06. Revista Legal Contemporánea -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="corporativo">
-        <div>
-          <div class="p-6 bg-[#FBF8F3] text-slate-900 border-b border-[#E5E0D8] space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#8B1E2D] block">Concepto 06 • The Legal Journal</span>
-            <h3 class="font-serif text-2xl font-black">Revista Contemporánea</h3>
-            <p class="text-xs text-slate-600 font-light leading-relaxed">Estilo prensa financiera (*Financial Times*). Maquetación a columnas y letras capitales.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#FBF8F3] border border-slate-300"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#8B1E2D]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#1A1A1A]"></span>
-              <span class="text-[10px] font-mono text-slate-500">#FBF8F3 | #8B1E2D</span>
-            </div>
-            <p><strong>Tipografía:</strong> Playfair Display Black + Inter</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Autoridad doctrinal, opinión letrada y análisis de casos de seguros.</p>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-06-editorial-revista.html" class="w-full py-3 rounded-lg bg-[#8B1E2D] hover:bg-black text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 06</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- 07. Inmersión Cinemática -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="dark">
-        <div>
-          <div class="p-6 bg-[#07080B] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A880] block">Concepto 07 • Fullpage Storytelling</span>
-            <h3 class="font-serif text-2xl font-bold">Inmersión Cinemática</h3>
-            <p class="text-xs text-slate-400 font-light leading-relaxed">Secciones a pantalla completa organizadas por escenas que sumergen al visitante.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#07080B]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#C5A880]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-white"></span>
-              <span class="text-[10px] font-mono text-slate-500">#07080B | #C5A880</span>
-            </div>
-            <p><strong>Tipografía:</strong> Cinzel + Plus Jakarta Sans</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Impacto visual máximo en monitores grandes y presentaciones de directorio.</p>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-07-interactive-slider.html" class="w-full py-3 rounded-lg bg-[#C5A880] hover:bg-white text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 07</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- 08. Bicolor Split 50/50 -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="corporativo">
-        <div>
-          <div class="p-6 bg-[#0B0C10] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A880] block">Concepto 08 • Split Architecture</span>
-            <h3 class="font-cinzel text-2xl font-bold">Bicolor Split 50/50</h3>
-            <p class="text-xs text-slate-400 font-light leading-relaxed">Panel izquierdo fijo en negro mate con la autoridad siempre a la vista mientras el contenido fluye.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#0B0C10]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#F8FAFC] border border-slate-300"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#C5A880]"></span>
-              <span class="text-[10px] font-mono text-slate-500">#0B0C10 | #F8FAFC</span>
-            </div>
-            <p><strong>Tipografía:</strong> Cinzel + Outfit</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Navegación ejecutiva sin pérdida de contexto ni dispersión.</p>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-08-dual-split-monochrome.html" class="w-full py-3 rounded-lg bg-[#0B0C10] hover:bg-[#C5A880] text-white hover:text-black font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 08</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- 09. Alta Firma Iberoamericana -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="corporativo">
-        <div>
-          <div class="p-6 bg-[#0A2540] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-sky-400 block">Concepto 09 • Estilo Uría & Cuatrecasas</span>
-            <h3 class="font-serif text-2xl font-bold">Alta Firma Corporativa</h3>
-            <p class="text-xs text-slate-300 font-light leading-relaxed">Blanco inmaculado, azul cobalto, buscador interactivo en vivo y fichas curriculares.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#0A2540]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#FFFFFF] border border-slate-300"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-sky-500"></span>
-              <span class="text-[10px] font-mono text-slate-500">#0A2540 | #0284C7</span>
-            </div>
-            <p><strong>Tipografía:</strong> Playfair Display + Inter</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Funcionalidad B2B de despacho multinacional y filtrado ágil de materias.</p>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-09-corporate-firm-uriamendez.html" class="w-full py-3 rounded-lg bg-[#0A2540] hover:bg-black text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 09</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- 10. Concierge Legal Privado -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="corporativo">
-        <div>
-          <div class="p-6 bg-[#1B4D4F] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-[#C5A880] block">Concepto 10 • White-Glove Concierge</span>
-            <h3 class="font-serif text-2xl font-bold">Concierge Legal Privado</h3>
-            <p class="text-xs text-slate-200 font-light leading-relaxed">Diseño fluido y sedoso para resolver la consulta del cliente con intake guiado en 3 pasos.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#1B4D4F]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#C5A880]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#F8FAFC] border border-slate-300"></span>
-              <span class="text-[10px] font-mono text-slate-500">#1B4D4F | #C5A880</span>
-            </div>
-            <p><strong>Tipografía:</strong> Playfair Display + Plus Jakarta Sans</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Alta conversión con experiencia guiada que califica y atiende de inmediato.</p>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="./diseno-10-concierge-conversion.html" class="w-full py-3 rounded-lg bg-[#1B4D4F] hover:bg-[#C5A880] hover:text-black text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Concepto 10</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Versión 6: Inspiración Estudio Rodrigo -->
-      <div class="design-card bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl transition-all overflow-hidden flex flex-col justify-between group" data-category="minimalista">
-        <div>
-          <div class="p-6 bg-[#0F172A] text-white space-y-2">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block">Concepto V6 • Estudio Rodrigo</span>
-            <h3 class="font-serif text-2xl font-bold">Inspiración Rodrigo</h3>
-            <p class="text-xs text-slate-300 font-light leading-relaxed">Minimalismo asimétrico, tipografía corporativa sobria, amplio espacio blanco y seriedad pura.</p>
-          </div>
-          <div class="p-6 space-y-3 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#FFFFFF] border border-slate-300"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#0F172A]"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-[#475569]"></span>
-              <span class="text-[10px] font-mono text-slate-500">#FFFFFF | #0F172A</span>
-            </div>
-            <p><strong>Tipografía:</strong> Serif Clásica + Sans-Serif Minimalista</p>
-            <p class="text-slate-600 font-light"><strong>Enfoque:</strong> Estilo de firma jurídica tradicional líder de San Isidro.</p>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="./version-6-estudio-rodrigo-inspired.html" class="w-full py-3 rounded-lg bg-[#0F172A] hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
-            <span>Abrir Inspiración Rodrigo</span>
-            <i data-lucide="external-link" class="w-4 h-4"></i>
+        <div class="pt-4">
+          <a href="./apple-10-bento-slabs.html" class="rounded-full bg-apple-button text-white text-xs font-medium px-6 py-3 hover:bg-apple-buttonHover transition-colors inline-block">
+            Abrir Concepto 10 ›
           </a>
         </div>
       </div>
 
     </div>
-
   </main>
 
-  <!-- Footer con Identidad Institucional -->
-  <footer class="bg-slate-900 text-slate-400 py-12 px-6 sm:px-12 text-xs border-t border-slate-800 text-center">
-    <div class="max-w-4xl mx-auto space-y-3">
-      <strong class="text-white font-cinzel text-base tracking-wider">ESTUDIO CARBAJAL ABOGADOS</strong>
-      <p>Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú • Teléfono: (01) 476-2155 • WhatsApp: 971 111 730 • RUC: 10066665360</p>
-      <p class="text-slate-500 text-[11px] pt-1">
-        Plataforma Maestra de Dirección de Arte Jurídica • Desarrollada con estándares web de alta precisión.
-      </p>
-    </div>
+  <footer class="py-12 px-6 bg-apple-section border-t border-apple-border/40 text-[11px] text-apple-secondary text-center">
+    <p>© 2026 Estudio Carbajal Abogados • Calle 31 N° 170 Of. 203, Urb. Córpac, San Isidro — Lima, Perú</p>
+    <p class="text-[10px] text-apple-secondary/70 pt-1">Central Telefónica: (01) 476-2155 • WhatsApp Oficial: 971 111 730 • RUC: 10066665360</p>
   </footer>
 
-  <script>
-    lucide.createIcons();
-
-    // Filtros interactivos de la galería
-    function filterDesigns(category) {
-      const cards = document.querySelectorAll('.design-card');
-      const buttons = document.querySelectorAll('.filter-btn');
-
-      // Actualizar botón activo
-      buttons.forEach(btn => {
-        if (btn.getAttribute('data-filter') === category) {
-          btn.classList.add('bg-master-navy', 'text-white');
-          btn.classList.remove('bg-white', 'text-slate-600');
-        } else {
-          btn.classList.remove('bg-master-navy', 'text-white');
-          btn.classList.add('bg-white', 'text-slate-600');
-        }
-      });
-
-      // Mostrar u ocultar tarjetas con transición suave
-      cards.forEach(card => {
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
 </body>
 </html>

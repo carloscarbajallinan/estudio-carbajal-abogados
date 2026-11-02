@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Carbajal Abogados | Apple Concept 10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apple: {
+              bg: '#ffffff',
+              section: '#f5f5f7',
+              text: '#1d1d1f',
+              secondary: '#86868b',
+              link: '#0066cc',
+              button: '#000000',
+              border: '#d2d2d7',
+            }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-apple-bg text-apple-text font-sans antialiased selection:bg-apple-text selection:text-white">
+
+  <!-- Nav -->
+  <header class="h-[44px] bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-apple-border/40">
+    <div class="max-w-6xl mx-auto h-full px-6 flex items-center justify-between text-[12px]">
+      <a href="./index.html" class="font-semibold text-apple-text">Estudio Carbajal</a>
+      <a href="./index.html" class="rounded-full bg-apple-button text-white text-[11px] font-medium px-3.5 py-1">Catálogo</a>
+    </div>
+  </header>
+
+  <!-- Hero Bento Header -->
+  <section class="py-20 lg:py-28 px-6 text-center max-w-4xl mx-auto space-y-4">
+    <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Arquitectura de Servicios</p>
+    <h1 class="text-5xl sm:text-7xl font-semibold tracking-tight text-apple-text leading-[1.05]">
+      Todo lo que defendemos.
+    </h1>
+    <p class="text-xl text-apple-secondary max-w-xl mx-auto">
+      Estructura de práctica jurídica para entidades de seguros y sector salud en San Isidro.
+    </p>
+  </section>
+
+  <!-- Apple Bento Grid (Slabs sólidos #f5f5f7 sin bordes ni sombras) -->
+  <main class="max-w-6xl mx-auto px-6 pb-32">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      
+      <!-- Bento 1: Director y Trayectoria (7 cols) -->
+      <div class="md:col-span-7 bg-apple-section rounded-3xl p-8 sm:p-12 flex flex-col justify-between space-y-8">
+        <div class="space-y-3">
+          <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Socio Director Fundador</p>
+          <h2 class="text-3xl sm:text-4xl font-semibold text-apple-text">Dr. Carlos Alberto Carbajal Gonzales.</h2>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Máster en Derecho Empresarial por la Universidad de Lima. Más de 20 años asesorando compañías aseguradoras líderes y directorios corporativos.
+          </p>
+        </div>
+        <img src="./dr-carlos-carbajal.jpg" alt="Dr. Carlos Carbajal" class="w-full h-80 object-cover object-top rounded-2xl" />
+      </div>
+
+      <!-- Bento 2: Clientes Clave (5 cols) -->
+      <div class="md:col-span-5 bg-apple-section rounded-3xl p-8 sm:p-12 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Confianza Comprobada</p>
+          <h2 class="text-3xl font-semibold text-apple-text">Entidades asesoradas.</h2>
+          <p class="text-sm text-apple-secondary leading-relaxed">
+            Relaciones contractuales sostenidas con empresas de alta exigencia técnica.
+          </p>
+        </div>
+        <div class="space-y-3 text-sm font-semibold text-apple-text/80 pt-4">
+          <div class="py-2 border-b border-apple-border/30">Rímac Seguros y Reaseguros</div>
+          <div class="py-2 border-b border-apple-border/30">Pacífico Seguros</div>
+          <div class="py-2 border-b border-apple-border/30">Clínica Internacional</div>
+          <div class="py-2 border-b border-apple-border/30">Protecta Security</div>
+          <div class="py-2">HDI Seguros</div>
+        </div>
+      </div>
+
+      <!-- Bento 3: Práctica de Seguros (6 cols) -->
+      <div class="md:col-span-6 bg-apple-section rounded-3xl p-8 sm:p-12 space-y-4">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Área Central</p>
+        <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Derecho de Seguros</h3>
+        <p class="text-sm text-apple-secondary leading-relaxed">
+          Liquidación de siniestros, controversias de cobertura en ramos patrimoniales y acciones de recupero frente a terceros responsables.
+        </p>
+      </div>
+
+      <!-- Bento 4: Práctica de Clínicas (6 cols) -->
+      <div class="md:col-span-6 bg-apple-section rounded-3xl p-8 sm:p-12 space-y-4">
+        <p class="text-xs uppercase font-medium tracking-widest text-apple-secondary">Área Sanitaria</p>
+        <h3 class="text-2xl sm:text-3xl font-semibold text-apple-text">Defensa para Clínicas</h3>
+        <p class="text-sm text-apple-secondary leading-relaxed">
+          Patrocinio en reclamaciones de responsabilidad médica, auditorías y descargos ante SUSALUD y conciliaciones extrajudiciales.
+        </p>
+      </div>
+
+      <!-- Bento 5: Contacto Directo (12 cols) -->
+      <div class="md:col-span-12 bg-apple-section rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div>
+          <h3 class="text-2xl font-semibold text-apple-text">Despacho en San Isidro</h3>
+          <p class="text-sm text-apple-secondary mt-1">Calle 31 N° 170 Of. 203, Urb. Córpac • Central: (01) 476-2155 • WhatsApp: 971 111 730</p>
+        </div>
+        <a href="https://wa.me/51971111730" target="_blank" class="rounded-full bg-apple-button text-white text-xs font-medium px-8 py-3.5 hover:bg-apple-buttonHover transition-colors shrink-0">
+          Iniciar conversación
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="py-12 px-6 bg-apple-bg border-t border-apple-border/40 text-[11px] text-apple-secondary text-center">
+    <p>© 2026 Estudio Carbajal Abogados • San Isidro</p>
+    <a href="./index.html" class="text-apple-link hover:underline block mt-2">Volver al Catálogo</a>
+  </footer>
+
+</body>
+</html>
